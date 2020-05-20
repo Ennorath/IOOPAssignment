@@ -1,0 +1,14 @@
+C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\bin\Debug\APUIOOPAssignment.exe.config
+C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\bin\Debug\APUIOOPAssignment.exe
+C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\bin\Debug\APUIOOPAssignment.pdb
+C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csprojAssemblyReference.cache
+C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\MainWindow.g.cs
+C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\App.g.cs
+C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment_MarkupCompile.cache
+C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment_MarkupCompile.lref
+C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\MainWindow.baml
+C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.g.resources
+C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.Properties.Resources.resources
+C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csproj.GenerateResource.cache
+C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.exe
+C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.pdb
