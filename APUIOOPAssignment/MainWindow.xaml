@@ -186,13 +186,13 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <Image Source="C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\Images\BackG.jpg" Stretch="UniformToFill"/>
-        <Image Source="C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\Images\APULogo.png" Margin="589,10,133,284"/>
-        <Button Content="Login" HorizontalAlignment="Left" Margin="525,403,0,0" VerticalAlignment="Top" Width="114" Height="37" FontSize="24" FontFamily="Berlin Sans FB" Background="#FFF15B5B" Style="{DynamicResource ButtonStyle1}" Click="Button_Click"/>
-        <Button Content="Register" HorizontalAlignment="Left" Margin="742,403,0,0" VerticalAlignment="Top" Width="120" Height="37" Background="#FFF15B5B" FontFamily="Berlin Sans FB" FontSize="24" Style="{DynamicResource ButtonStyle2}"/>
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="638,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" FontFamily="Berlin Sans FB" FontSize="20" Name="LoginUsernameBox" Style="{DynamicResource TextBoxStyle1}" TextChanged="TextBox_TextChanged_1"/>
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="638,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" FontFamily="Berlin Sans FB" FontSize="20" TextChanged="TextBox_TextChanged" Name="LoginPasswordBox" Style="{DynamicResource TextBoxStyle2}"/>
-        <Label Content="Username:" HorizontalAlignment="Left" Margin="496,245,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="24"/>
+        <Image Source="/Images/BackG.jpg" Stretch="UniformToFill"/>
+        <Image Source="/Images/APULogo.png" Margin="589,10,133,284"/>
+        <Button x:Name="LoginBtn" Content="Login" HorizontalAlignment="Left" Margin="525,403,0,0" VerticalAlignment="Top" Width="114" Height="37" FontSize="24" FontFamily="Berlin Sans FB" Background="#FFF15B5B" Style="{DynamicResource ButtonStyle1}" Click="LoginBtn_Click"/>
+        <Button x:Name="RegisterBtn" Content="Register" HorizontalAlignment="Left" Margin="742,403,0,0" VerticalAlignment="Top" Width="120" Height="37" Background="#FFF15B5B" FontFamily="Berlin Sans FB" FontSize="24" Style="{DynamicResource ButtonStyle2}" Click="RegisterBtn_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="638,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" FontFamily="Berlin Sans FB" FontSize="20" Name="LoginUsernameBox" Style="{DynamicResource TextBoxStyle1}"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="638,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" FontFamily="Berlin Sans FB" FontSize="20" Name="LoginPasswordBox" Style="{DynamicResource TextBoxStyle2}"/>
+        <Label Content="Student TP:" HorizontalAlignment="Left" Margin="496,245,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="24"/>
         <Label Content="Password:" HorizontalAlignment="Left" Margin="502,319,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="24"/>
     </Grid>
 

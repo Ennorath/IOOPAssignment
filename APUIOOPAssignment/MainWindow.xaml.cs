@@ -25,21 +25,25 @@ namespace APUIOOPAssignment
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
-        {
-            
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
             string username = LoginUsernameBox.Text;
             string password = LoginPasswordBox.Text;
-            MessageBox.Show(username + " " + password);
+            if (Authorization.Login(username, password) == true)
+            {
+                MessageBox.Show("Hooray authorized");
+            }
+            else {
+                MessageBox.Show("Incorrect creditionals");
+            }
         }
+
+        private void RegisterBtn_Click(object sender, RoutedEventArgs e)
+        {
+            RegisterWindow sw = new RegisterWindow();
+            sw.Show();
+            this.Close();
+        }
+        
     }
 }
