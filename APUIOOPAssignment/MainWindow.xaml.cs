@@ -27,6 +27,7 @@ namespace APUIOOPAssignment
 
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
+            string Adminstatus;
             string username = LoginUsernameBox.Text;
             string password = LoginPasswordBox.Text;
             if (Authorization.Login(username, password) == true)
