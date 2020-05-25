@@ -1,4 +1,5 @@
-﻿using System;
+﻿//using Admin;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
@@ -27,9 +29,14 @@ namespace APUIOOPAssignment
 
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
+            Edit_News f2 = new Edit_News();
+            f2.Show();
+            this.Close();
+
             string Adminstatus;
             string username = LoginUsernameBox.Text;
             string password = LoginPasswordBox.Text;
+
             if (Authorization.Login(username, password) == true)
             {
                 MessageBox.Show("Hooray authorized");
@@ -44,7 +51,7 @@ namespace APUIOOPAssignment
             RegisterWindow sw = new RegisterWindow();
             sw.Show();
             this.Close();
+
         }
-        
     }
 }

@@ -7,8 +7,12 @@
         mc:Ignorable="d"
         Title="RegisterWindow" Height="520" Width="960">
     <Grid>
-        <Grid Background="White" RenderTransformOrigin="0.491,0.521">
-            <Image Source="/Images/RegisterPic.jpg" Height="520" Margin="462,0,-130,0" VerticalAlignment="Top"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180*"/>
+            <ColumnDefinition Width="773*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Background="White" RenderTransformOrigin="0.491,0.521" Grid.ColumnSpan="2" Margin="0,0,-0.4,0.4">
+            <Image Source="images\RegisterPic.jpg" Height="520" Margin="462,0,-130,0" VerticalAlignment="Top"/>
             <Label Content="   Member&#xD;&#xA;Registration" HorizontalAlignment="Left" Margin="336,52,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="36"/>
             <Label Content="Clubs and Activities" HorizontalAlignment="Left" Margin="70,123,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="24" RenderTransformOrigin="1.003,0.226"/>
             <Label Content="First name:" HorizontalAlignment="Left" Margin="79,178,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="18"/>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="APUIOOPAssignment.News_List_Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:APUIOOPAssignment"
+        mc:Ignorable="d"
+        Title="News_List_Admin" Height="450" Width="800">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="85" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794" Source="BG up.jpg" />
+        <Image HorizontalAlignment="Left" Height="79" Margin="0,84,-0.4,0" VerticalAlignment="Top" Width="794" Source="edit News UP.jpg"/>
+        <Image x:Name="NewNewsImg" HorizontalAlignment="Left" Height="234" Margin="53,183,0,0" VerticalAlignment="Top" Width="376" Source="No Image News.jpg"/>
+        <Button Content="+ Add News" HorizontalAlignment="Left" Margin="536,285,0,0" VerticalAlignment="Top" Width="97" Height="34" Click="Button_Click"/>
+
+    </Grid>
+</Window>
