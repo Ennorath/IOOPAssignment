@@ -9,7 +9,7 @@
     <Grid>
         <Image HorizontalAlignment="Left" Height="85" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\BG up.jpg" />
         <Image HorizontalAlignment="Left" Height="79" Margin="0,84,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\edit News UP.jpg"/>
-        <Image x:Name="Images\NewNewsImg.jpg" HorizontalAlignment="Left" Height="234" Margin="53,183,0,0" VerticalAlignment="Top" Width="376" Source="No Image News.jpg"/>
+        <Image x:Name="NewNewsImg" HorizontalAlignment="Left" Height="234" Margin="53,183,0,0" VerticalAlignment="Top" Width="376" Source="No Image News.jpg"/>
         <Button Content="+ Add News" HorizontalAlignment="Left" Margin="536,285,0,0" VerticalAlignment="Top" Width="97" Height="34" Click="Button_Click"/>
 
     </Grid>

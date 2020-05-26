@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
-        Title="MainWindow" ResizeMode="NoResize" Height="520" Width="960">
+        Title="MainWindow" Height="720" Width="520">
     <Grid>
-        
+        <Image Source="Images\Member_Clubsback.jpg" Stretch="Fill"/>
+
     </Grid>
 </Window>

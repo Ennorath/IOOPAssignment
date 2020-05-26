@@ -18,7 +18,7 @@
                 <RowDefinition Height="46*"/>
                 <RowDefinition Height="59*"/>
             </Grid.RowDefinitions>
-            <Image HorizontalAlignment="Left" Height="820" VerticalAlignment="Top" Width="937" Margin="0,0,-0.2,-329.6" Source="Bg Admin Menu.jpg" Grid.RowSpan="2" Grid.ColumnSpan="4"/>
+            <Image HorizontalAlignment="Left" Height="820" VerticalAlignment="Top" Width="937" Margin="0,0,-0.2,-329.6" Source="Images\Bg Admin Menu.jpg" Grid.RowSpan="2" Grid.ColumnSpan="4"/>
             <Button Margin="85.6,105,505.8,-18.6" Grid.Row="1" Click="Button_Click_1" Background="#ffcf4d" Grid.Column="1" Grid.ColumnSpan="3">
                 <StackPanel>
                     <Image Source="/Images/Add News.png" Width="257" Height="164"/>

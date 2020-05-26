@@ -186,7 +186,7 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <Image Source="/Images/BackG.jpg" Stretch="UniformToFill"/>
+        <Image Source="/Images/Login_Background.jpg" Stretch="UniformToFill"/>
         <Image Source="/Images/APULogo.png" Margin="589,10,133,284"/>
         <Button x:Name="LoginBtn" Content="Login" HorizontalAlignment="Left" Margin="525,403,0,0" VerticalAlignment="Top" Width="114" Height="37" FontSize="24" FontFamily="Berlin Sans FB" Background="#FFF15B5B" Style="{DynamicResource ButtonStyle1}" Click="LoginBtn_Click"/>
         <Button x:Name="RegisterBtn" Content="Register" HorizontalAlignment="Left" Margin="742,403,0,0" VerticalAlignment="Top" Width="120" Height="37" Background="#FFF15B5B" FontFamily="Berlin Sans FB" FontSize="24" Style="{DynamicResource ButtonStyle2}" Click="RegisterBtn_Click"/>

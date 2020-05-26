@@ -199,7 +199,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\APULogo.png" />
-    <Resource Include="Images\BackG.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -240,6 +239,9 @@
   <ItemGroup>
     <Resource Include="Images\Back button clicked.png" />
     <Resource Include="Images\Back button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Login_Background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
