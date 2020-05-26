@@ -36,9 +36,9 @@ namespace APUIOOPAssignment
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Club_List_Admin cl = new Club_List_Admin();
-            cl.Show();
-            this.Close();
+            //Club_List_Admin cl = new Club_List_Admin();
+            //cl.Show();
+            //this.Close();
         }
     }
 }

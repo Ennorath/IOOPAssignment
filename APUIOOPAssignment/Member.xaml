@@ -7,7 +7,44 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="720" Width="520">
     <Grid>
-        <Image Source="Images\Member_Clubsback.jpg" Stretch="Fill"/>
+        <Image Source="Images\Member_Clubs_back.jpg" Stretch="Fill"/>
+        <TabControl HorizontalAlignment="Left" Height="431" Margin="0,141,0,0" VerticalAlignment="Top" Width="512" FontFamily="Berlin Sans FB">
+            <TabItem Header="Sports" FontSize="16" Margin="10,0,-14,-2" BorderBrush="White" Foreground="#FFFF4C64">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="White">
+                    <Image Source="Images\TemporaryLogos\Sport_1.png" HorizontalAlignment="Left" Height="134" Margin="20,40,0,0" VerticalAlignment="Top" Width="139"/>
+                    <Image Source="Images\TemporaryLogos\Sport_2.png" HorizontalAlignment="Left" Height="134" Margin="190,40,0,0" VerticalAlignment="Top" Width="139"/>
+                    <Image Source="Images\TemporaryLogos\Sport_3.png" HorizontalAlignment="Left" Height="134" Margin="350,40,0,0" VerticalAlignment="Top" Width="139"/>
+                    <Image Source="Images\TemporaryLogos\Sport_4.png" HorizontalAlignment="Left" Height="134" Margin="20,220,0,0" VerticalAlignment="Top" Width="139"/>
+                    <Image Source="Images\TemporaryLogos\Sport_5.png" HorizontalAlignment="Left" Height="134" Margin="190,220,0,0" VerticalAlignment="Top" Width="139"/>
+                    <Image Source="Images\TemporaryLogos\Sport_6.png" HorizontalAlignment="Left" Height="134" Margin="350,220,0,0" VerticalAlignment="Top" Width="139"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Societies" Margin="42,0,-46,-2" FontSize="16" BorderBrush="White">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="White"/>
+            </TabItem>
+            <TabItem Header="Others" Margin="71,0,-75,-2" FontSize="16" BorderBrush="White">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="White"/>
+            </TabItem>
+        </TabControl>
+        <Button Content="🔍" HorizontalAlignment="Left" Margin="465,74,0,0" VerticalAlignment="Top" Width="35" Background="#FF43A9FD" Height="19"/>
 
     </Grid>
 </Window>
