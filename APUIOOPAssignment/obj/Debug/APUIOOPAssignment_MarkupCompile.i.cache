@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\App.xaml
-21019166891
+4-1520808021
 
-8-892153641
+10-920772682
 138837132266
-MainWindow.xaml;RegisterWindow.xaml;
+AdminPage.xaml;MainWindow.xaml;Member.xaml;RegisterWindow.xaml;
 
 True
 
