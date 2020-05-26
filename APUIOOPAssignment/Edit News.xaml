@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
-        Title="Edit_News" Height="925.2" Width="792">
+        Title="Edit_News" Height="488.4" Width="792">
     <ScrollViewer Margin="0,0,3.6,0">
         <Grid Height="880" Width="756">
             <Image HorizontalAlignment="Left" Height="94" Margin="-2,-10,-6,0" VerticalAlignment="Top" Width="764" Source="BG up.jpg"/>
             <Image HorizontalAlignment="Left" Height="76" Margin="0,70,-6,0" VerticalAlignment="Top" Width="762" Source="edit News UP.jpg"/>
-            <Image HorizontalAlignment="Left" Margin="0,146,-6,-10" Width="762" Source="red BG.jpg" Stretch="UniformToFill"/>
+            <Image HorizontalAlignment="Left" Margin="0,146,-6,-10" Width="762" Source="C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\Images\red BG.jpg" Stretch="UniformToFill"/>
             <Image HorizontalAlignment="Left" Height="743" Margin="99,146,0,-9" VerticalAlignment="Top" Width="566" RenderTransformOrigin="0.5,0.5" OpacityMask="#FFD42D2D" Source="White bg.jpg" Stretch="UniformToFill">
                 <Image.RenderTransform>
                     <TransformGroup>
@@ -53,11 +53,11 @@
             </RichTextBox>
             <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Height="30" Margin="346,816,0,0" VerticalAlignment="Top" Width="112" Click="btnSave_Click"/>
             <DatePicker x:Name="DateNews" HorizontalAlignment="Left" Margin="278,579,0,0" VerticalAlignment="Top" SelectedDateChanged="DateNews_SelectedDateChanged"/>
-            <Button x:Name="btnAddImageNews" Content="Add Image" HorizontalAlignment="Left" Margin="383,421,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btnAddImageNews_Click"/>
-            <TextBox x:Name="textbox1" HorizontalAlignment="Left" Height="17" Margin="282,370,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321"/>
+            <Button x:Name="btnAddImageNews" Content="Add Image" HorizontalAlignment="Left" Margin="383,361,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btnAddImageNews_Click"/>
+            <TextBox x:Name="textbox1" HorizontalAlignment="Left" Height="17" Margin="278,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321"/>
             <Image x:Name="ImageNewsNew" HorizontalAlignment="Left" Height="159" Margin="278,190,0,0" VerticalAlignment="Top" Width="259" Source="No Image News.jpg"/>
             <Label Content="Images" HorizontalAlignment="Left" Margin="175,261,0,0" VerticalAlignment="Top"/>
-            <Label Content="Image address" HorizontalAlignment="Left" Margin="153,361,0,0" VerticalAlignment="Top"/>
+            <Label Content="Image address" HorizontalAlignment="Left" Margin="153,392,0,0" VerticalAlignment="Top"/>
             <Label Content="Headline" HorizontalAlignment="Left" Margin="171,472,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
                 <Label.RenderTransform>
                     <TransformGroup>

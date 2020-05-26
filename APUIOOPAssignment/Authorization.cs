@@ -114,5 +114,34 @@ namespace APUIOOPAssignment
             }
             return hash.ToString();
         }
+        public static bool AddClub(string Image, string ClubName, string Type, string Date, string President, string Vice, string Secretary, string Details)
+        {
+            try
+            {
+                if (!(Image == null || ClubName == null || Type == null || Date == null || President == null || Vice == null || Secretary == null || Details == null))
+                {
+                    using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                    {
+                        string CreatingNews = $"INSERT into News (Image, ClubName, Type, Date, President, Vice, Secretary, Details) VALUES ('{Image}','{Type}','{Date}','{President}','{Vice},'{Secretary}','{Details}')";
+                        MySqlCommand cmd = new MySqlCommand(CreatingNews, MySqlConn);
+                        MySqlConn.Open();
+                        cmd.ExecuteNonQuery();
+                        MySqlConn.Close();
+                        MessageBox.Show("News Successfully created");
+                        return true;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error: " + e);
+                return false;
+            }
+
+        }
     }
 }
