@@ -1,0 +1,36 @@
+﻿<Window x:Class="APUIOOPAssignment.Admin_Page"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:APUIOOPAssignment"
+        mc:Ignorable="d"
+        Title="Admin_Page" Height="520" Width="960">
+    <ScrollViewer>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="19*"/>
+                <ColumnDefinition Width="167*"/>
+                <ColumnDefinition Width="152*"/>
+                <ColumnDefinition Width="455*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="46*"/>
+                <RowDefinition Height="59*"/>
+            </Grid.RowDefinitions>
+            <Image HorizontalAlignment="Left" Height="820" VerticalAlignment="Top" Width="937" Margin="0,0,-0.2,-329.6" Source="Bg Admin Menu.jpg" Grid.RowSpan="2" Grid.ColumnSpan="4"/>
+            <Button Margin="85.6,105,505.8,-18.6" Grid.Row="1" Click="Button_Click_1" Background="#ffcf4d" Grid.Column="1" Grid.ColumnSpan="3">
+                <StackPanel>
+                    <Image Source="/Images/Add News.png" Width="257" Height="164"/>
+                </StackPanel>
+            </Button>
+            <Button Margin="110.8,105,98.8,-18.6" Grid.Row="1" Background="#33d3b7" Grid.Column="3">
+                <StackPanel>
+                    <Image Source="/Images/btn club.png" Height="146" Width="256" />
+
+                </StackPanel>
+            </Button>
+
+        </Grid>
+    </ScrollViewer>
+</Window>
