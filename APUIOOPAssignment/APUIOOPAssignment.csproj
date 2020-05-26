@@ -243,5 +243,13 @@
   <ItemGroup>
     <Resource Include="Images\Login_Background.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\TemporaryLogos\Sport_1.png" />
+    <Resource Include="Images\TemporaryLogos\Sport_2.png" />
+    <Resource Include="Images\TemporaryLogos\Sport_3.png" />
+    <Resource Include="Images\TemporaryLogos\Sport_4.png" />
+    <Resource Include="Images\TemporaryLogos\Sport_5.png" />
+    <Resource Include="Images\TemporaryLogos\Sport_6.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
