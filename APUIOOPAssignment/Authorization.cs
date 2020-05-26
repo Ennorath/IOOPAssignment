@@ -13,6 +13,25 @@ namespace APUIOOPAssignment
     {
         private const string connectionString = @"SERVER=31.31.198.66;DATABASE=u0994893_ioopproject;USER ID=u0994893_ioop;PASSWORD=SanatovD;";
 
+        public static string takeNewsRows()
+        {
+            using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+            {
+                string rowsQuery = $"SELECT count(*) FROM News";
+                MySqlCommand cmd1 = new MySqlCommand(rowsQuery, MySqlConn);
+                MySqlConn.Open();
+                var queryResult1 = cmd1.ExecuteScalar();
+                string queryResultStr;
+                if (queryResult1 != null)
+                    queryResultStr = Convert.ToString(queryResult1);
+                else
+                    queryResultStr = "";
+                MySqlConn.Close();
+                MessageBox.Show(queryResultStr);
+                return queryResultStr;
+            }
+        }
+
         public static bool Login(string username, string password) {
             if (!(username == null && password == null))
             {
