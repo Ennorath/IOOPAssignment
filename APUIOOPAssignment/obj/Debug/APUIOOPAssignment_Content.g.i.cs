@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("add%20new%20club.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bg%20up.jpg")]
 
 

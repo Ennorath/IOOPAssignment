@@ -107,3 +107,9 @@ C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Deb
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\News List Admin.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member.baml
+C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Add Club.g.cs
+C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club List Admin.g.cs
+C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member.g.cs
+C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Add Club.baml
+C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club List Admin.baml
+C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member.baml

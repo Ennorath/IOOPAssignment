@@ -276,5 +276,14 @@
   <ItemGroup>
     <Resource Include="Add new club.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="No Image News.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="edit News UP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BG up.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
