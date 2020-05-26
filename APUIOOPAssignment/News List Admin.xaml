@@ -5,12 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
-        Title="News_List_Admin" Height="450" Width="800">
-    <Grid>
-        <Image HorizontalAlignment="Left" Height="85" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794" Source="BG up.jpg" />
-        <Image HorizontalAlignment="Left" Height="79" Margin="0,84,-0.4,0" VerticalAlignment="Top" Width="794" Source="edit News UP.jpg"/>
-        <Image x:Name="NewNewsImg" HorizontalAlignment="Left" Height="234" Margin="53,183,0,0" VerticalAlignment="Top" Width="376" Source="No Image News.jpg"/>
-        <Button Content="+ Add News" HorizontalAlignment="Left" Margin="536,285,0,0" VerticalAlignment="Top" Width="97" Height="34" Click="Button_Click"/>
+        Title="News_List_Admin" Height="602" Width="792">
+    <ScrollViewer>
+        <Grid Width="Auto" >
+            <Image HorizontalAlignment="Left" Height="85" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794" Source="BG up.jpg" />
+            <Image HorizontalAlignment="Left" Height="79" Margin="0,84,-0.4,0" VerticalAlignment="Top" Width="794" Source="edit News UP.jpg"/>
+            <Image HorizontalAlignment="Left" Height="100" Margin="724,252,-54,0" VerticalAlignment="Top" Width="100"/>
+            <Image HorizontalAlignment="Left" Height="100" Margin="667,252,0,0" VerticalAlignment="Top" Width="100"/>
+            <Image HorizontalAlignment="Left" Height="409" Margin="2,164,-2.2,-1" VerticalAlignment="Top" Width="769" Source="red BG.jpg" Stretch="UniformToFill"/>
+            <Image HorizontalAlignment="Left" Height="410" Margin="91,163,0,-1" VerticalAlignment="Top" Width="594" Source="White bg.jpg" Stretch="UniformToFill"/>
+            <Button Content="+ Add News" HorizontalAlignment="Left" Margin="113,512,0,0" VerticalAlignment="Top" Width="97" Height="34" Click="Button_Click"/>
+            <GroupBox x:Name="groupbox" Header="" HorizontalAlignment="Left" Height="258" Margin="113,198,0,0" VerticalAlignment="Top" Width="549">
+                <Image x:Name="NewNewsImg" HorizontalAlignment="Left" Height="212" Margin="48,0,0,0" VerticalAlignment="Top" Width="341" Source="No Image News.jpg"/>
+            </GroupBox>
+            <Button x:Name="btnEdit" Content="Edit News" HorizontalAlignment="Left" Margin="544,271,0,0" VerticalAlignment="Top" Width="93" Height="30" Click="btnEdit_Click"/>
+            <Button x:Name="btnDelete" Content="Delete News" HorizontalAlignment="Left" Margin="544,357,0,0" VerticalAlignment="Top" Width="93" Height="30"/>
 
-    </Grid>
+        </Grid>
+    </ScrollViewer>
 </Window>

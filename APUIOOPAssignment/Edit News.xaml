@@ -5,42 +5,99 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
-        Title="Edit_News" Height="789.6" Width="800">
+        Title="Edit_News" Height="925.2" Width="792">
     <ScrollViewer Margin="0,0,3.6,0">
-        <Grid Height="880">
-            <Image x:Name="ImageNewsNew" HorizontalAlignment="Left" Height="159" Margin="278,103,0,0" VerticalAlignment="Top" Width="259" Source="No Image News.jpg"/>
-            <TextBox x:Name="txtHeadline" HorizontalAlignment="Left" Height="19" Margin="278,300,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="325"/>
-            <ComboBox x:Name="cmbType" HorizontalAlignment="Left" Margin="278,350,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbType_SelectionChanged">
+        <Grid Height="880" Width="756">
+            <Image HorizontalAlignment="Left" Height="94" Margin="-2,-10,-6,0" VerticalAlignment="Top" Width="764" Source="BG up.jpg"/>
+            <Image HorizontalAlignment="Left" Height="76" Margin="0,70,-6,0" VerticalAlignment="Top" Width="762" Source="edit News UP.jpg"/>
+            <Image HorizontalAlignment="Left" Margin="0,146,-6,-10" Width="762" Source="red BG.jpg" Stretch="UniformToFill"/>
+            <Image HorizontalAlignment="Left" Height="743" Margin="99,146,0,-9" VerticalAlignment="Top" Width="566" RenderTransformOrigin="0.5,0.5" OpacityMask="#FFD42D2D" Source="White bg.jpg" Stretch="UniformToFill">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0.744"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="1.987"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <TextBox x:Name="txtHeadline" HorizontalAlignment="Left" Height="19" Margin="278,475,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325"/>
+            <ComboBox x:Name="cmbType" HorizontalAlignment="Left" Margin="278,527,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbType_SelectionChanged">
                 <ComboBoxItem>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock>Sports</TextBlock>
+                        <TextBlock><Run Text="Sports"/></TextBlock>
                     </StackPanel>
                 </ComboBoxItem>
                 <ComboBoxItem>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock>Hobbies</TextBlock>
+                        <TextBlock><Run Text="Hobbies"/></TextBlock>
                     </StackPanel>
                 </ComboBoxItem>
                 <ComboBoxItem>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock>Societies</TextBlock>
+                        <TextBlock><Run Text="Societies"/></TextBlock>
                     </StackPanel>
                 </ComboBoxItem>
                 <ComboBoxItem>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock>General Interest</TextBlock>
+                        <TextBlock><Run Text="General Interest"/></TextBlock>
                     </StackPanel>
                 </ComboBoxItem>
             </ComboBox>
-            <RichTextBox x:Name="txtDetailNews" HorizontalAlignment="Left" Height="145" Margin="278,610,0,0" VerticalAlignment="Top" Width="290">
+            <RichTextBox x:Name="txtDetailNews" HorizontalAlignment="Left" Height="145" Margin="278,632,0,0" VerticalAlignment="Top" Width="290">
                 <FlowDocument>
                     <Paragraph>
-                        <Run Text="RichTextBox"/>
+                        <Run Text=""/>
                     </Paragraph>
                 </FlowDocument>
             </RichTextBox>
-            <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Height="46" Margin="559,815,0,-80" VerticalAlignment="Top" Width="131" Click="btnSave_Click"/>
-            <DatePicker x:Name="DateNews" HorizontalAlignment="Left" Margin="278,401,0,0" VerticalAlignment="Top" SelectedDateChanged="DateNews_SelectedDateChanged"/>
+            <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Height="30" Margin="346,816,0,0" VerticalAlignment="Top" Width="112" Click="btnSave_Click"/>
+            <DatePicker x:Name="DateNews" HorizontalAlignment="Left" Margin="278,579,0,0" VerticalAlignment="Top" SelectedDateChanged="DateNews_SelectedDateChanged"/>
+            <Button x:Name="btnAddImageNews" Content="Add Image" HorizontalAlignment="Left" Margin="383,421,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btnAddImageNews_Click"/>
+            <TextBox x:Name="textbox1" HorizontalAlignment="Left" Height="17" Margin="282,370,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321"/>
+            <Image x:Name="ImageNewsNew" HorizontalAlignment="Left" Height="159" Margin="278,190,0,0" VerticalAlignment="Top" Width="259" Source="No Image News.jpg"/>
+            <Label Content="Images" HorizontalAlignment="Left" Margin="175,261,0,0" VerticalAlignment="Top"/>
+            <Label Content="Image address" HorizontalAlignment="Left" Margin="153,361,0,0" VerticalAlignment="Top"/>
+            <Label Content="Headline" HorizontalAlignment="Left" Margin="171,472,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-1.148"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Label Content="Club Type" HorizontalAlignment="Left" Margin="168,525,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-1.148"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Label Content="Date" HorizontalAlignment="Left" Margin="182,580,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-1.148"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Label Content="Details" HorizontalAlignment="Left" Margin="179,629,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-1.148"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
 
         </Grid>
     </ScrollViewer>

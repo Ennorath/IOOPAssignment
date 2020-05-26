@@ -119,8 +119,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Add Club.xaml.cs">
+      <DependentUpon>Add Club.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Admin Page.xaml.cs">
       <DependentUpon>Admin Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Club List Admin.xaml.cs">
+      <DependentUpon>Club List Admin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Edit News.xaml.cs">
       <DependentUpon>Edit News.xaml</DependentUpon>
@@ -132,7 +138,15 @@
     <Compile Include="RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="Add Club.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Admin Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Club List Admin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -247,6 +261,27 @@
   <ItemGroup>
     <Resource Include="Images\Back button clicked.png" />
     <Resource Include="Images\Back button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="White bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="edit Club UP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="No Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BG down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="btn club.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Add News.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Add new club.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

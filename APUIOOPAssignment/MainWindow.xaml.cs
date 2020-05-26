@@ -29,7 +29,7 @@ namespace APUIOOPAssignment
 
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
-            Edit_News f2 = new Edit_News();
+            News_List_Admin f2 = new News_List_Admin();
             f2.Show();
             this.Close();
 

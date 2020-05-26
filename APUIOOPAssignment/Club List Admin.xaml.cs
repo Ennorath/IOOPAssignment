@@ -15,29 +15,25 @@ using System.Windows.Shapes;
 namespace APUIOOPAssignment
 {
     /// <summary>
-    /// Interaction logic for Admin_Page.xaml
+    /// Interaction logic for Club_List_Admin.xaml
     /// </summary>
-    public partial class Admin_Page : Window
+    public partial class Club_List_Admin : Window
     {
-        public Admin_Page()
+        public Club_List_Admin()
         {
             InitializeComponent();
-        }
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            News_List_Admin sw = new News_List_Admin();
-            sw.Show();
-            this.Close();
-        }
-        private void Button_MouseHover(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Club_List_Admin cl = new Club_List_Admin();
-            cl.Show();
+            Add_Club sw = new Add_Club();
+            sw.Show();
+            this.Close();
+        }
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Admin_Page hm = new Admin_Page();
+            hm.Show();
             this.Close();
         }
     }
