@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Security.Cryptography;
 using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Relational;
+using System.Data;
+using System.Data.SqlClient;
+using System.Windows.Media.Imaging;
 
 namespace APUIOOPAssignment
 {
@@ -13,7 +17,7 @@ namespace APUIOOPAssignment
     {
         private const string connectionString = @"SERVER=31.31.198.66;DATABASE=u0994893_ioopproject;USER ID=u0994893_ioop;PASSWORD=SanatovD;";
 
-        public static bool Register(string Headline, string Type, string Date, string Details)
+        public static bool AddNews(string Headline, string Type, string Date, string Details, string Image)
         {
             try
             {
@@ -21,7 +25,7 @@ namespace APUIOOPAssignment
                 {
                     using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
                     {
-                        string CreatingNews = $"INSERT into News (Headline, Type, Date, Details) VALUES ('{Headline}','{Type}','{Date}','{Details}')";
+                        string CreatingNews = $"INSERT into News (Headline, Type, Date, Details, Images) VALUES ('{Headline}','{Type}','{Date}','{Details}','{Image}')";
                         MySqlCommand cmd = new MySqlCommand(CreatingNews, MySqlConn);
                         MySqlConn.Open();
                         cmd.ExecuteNonQuery();
@@ -42,5 +46,6 @@ namespace APUIOOPAssignment
             }
 
         }
+        
     }
 }

@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/back%20button%20clicked.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/back%20button.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("add%20new%20club.png")]
 
 
