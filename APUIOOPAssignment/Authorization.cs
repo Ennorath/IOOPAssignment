@@ -32,40 +32,47 @@ namespace APUIOOPAssignment
             }
         }
 
-        public static bool Login(string username, string password) {
+        public static string Login(string username, string password) {
             if (!(username == null && password == null))
             {
                 try
                 {
                     using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
                     {
-                        string receivedPass;
-                        string selectPass = $"SELECT password FROM Members WHERE TP = @username";
-                        MySqlCommand cmd = new MySqlCommand(selectPass, MySqlConn);
+                        string receivedPass = "";
+                        string role = "";
+                        
+                        string query = $"SELECT password, role FROM Members WHERE TP = @username";
+                        MySqlCommand cmd = new MySqlCommand(query, MySqlConn);
                         cmd.Parameters.AddWithValue("@username", username);
                         MySqlConn.Open();
-                        var queryResult = cmd.ExecuteScalar();
-                        if (queryResult != null)
-                            receivedPass = Convert.ToString(queryResult);
-                        else
-                            receivedPass = "";
+                        MySqlDataReader sqlreader = cmd.ExecuteReader();
+                        while (sqlreader.Read())
+                        {
+                            receivedPass = sqlreader[0].ToString();
+                            role = sqlreader[1].ToString();
+                        }
+                        sqlreader.Close();
                         MySqlConn.Close();
+
                         if (MD5Hash(password) == receivedPass)
                         {
-                            return true;
+                            return role;
                         }
                         else {
-                            return false;
+                            MessageBox.Show("Incorrect data");
+                            return "false";
                         }
                     }
                 }
                 catch (Exception e){
                     MessageBox.Show("Error: " + e);
-                    return false;
+                    return "false";
                 }
             }
             else {
-                return false;
+                MessageBox.Show("Empty login or pass field");
+                return "false";
             }
         }
 
