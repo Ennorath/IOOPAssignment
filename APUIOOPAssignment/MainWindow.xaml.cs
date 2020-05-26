@@ -29,21 +29,28 @@ namespace APUIOOPAssignment
 
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
-            News_List_Admin f2 = new News_List_Admin();
-            f2.Show();
-            this.Close();
-
-            string Adminstatus;
             string username = LoginUsernameBox.Text;
             string password = LoginPasswordBox.Text;
-
-            if (Authorization.Login(username, password) == true)
+            string loginInfo = Authorization.Login(username, password);
+            if (loginInfo == "0")
             {
-                MessageBox.Show("Hooray authorized");
+                Member member = new Member();
+                member.Show();
+                this.Close();
             }
-            else {
-                MessageBox.Show("Incorrect creditionals");
+            else if (loginInfo == "1")
+            {
+                //Edit_News representative = new Edit_News();
+                //representative.Show();
+                //this.Close();
             }
+            else if (loginInfo == "2")
+            {
+                Edit_News admin = new Edit_News();
+                admin.Show();
+                this.Close();
+            }
+            else { }
         }
 
         private void RegisterBtn_Click(object sender, RoutedEventArgs e)

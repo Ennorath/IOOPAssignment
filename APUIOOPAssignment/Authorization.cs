@@ -13,36 +13,6 @@ namespace APUIOOPAssignment
     {
         private const string connectionString = @"SERVER=31.31.198.66;DATABASE=u0994893_ioopproject;USER ID=u0994893_ioop;PASSWORD=SanatovD;";
 
-        /*public static string LoadNews(string HeadlinePass)
-        {
-            using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
-                {
-                    string selectPass = $"SELECT Images, Type, Date, Details FROM Members WHERE Headline = @Headline";
-                    MySqlCommand cmd = new MySqlCommand(selectPass, MySqlConn);
-                    cmd.Parameters.AddWithValue("@Headline", HeadlinePass);
-                    MySqlDataReader da = cmd.ExecuteReader();
-                    while (da.Read())
-                    {
-                        //Image
-                        string ImageLocation = da.GetValue(0).ToString();
-
-
-                        //Type
-                        string ClubTypeOld = da.GetValue(1).ToString();
-
-                        //DatePicker
-                        string idate = da.GetValue(2).ToString();
-
-
-                        //Details
-                        string DetailsOld = da.GetValue(3).ToString();
-                    }
-                    da.Close();
-
-
-                }
-            }*/
-
         public static string takeNewsRows()
         {
             using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
@@ -61,41 +31,48 @@ namespace APUIOOPAssignment
                 return queryResultStr;
             }
         }
-        
-        public static bool Login(string username, string password) {
+
+        public static string Login(string username, string password) {
             if (!(username == null && password == null))
             {
                 try
                 {
                     using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
                     {
-                        string receivedPass;
-                        string selectPass = $"SELECT password FROM Members WHERE TP = @username";
-                        MySqlCommand cmd = new MySqlCommand(selectPass, MySqlConn);
+                        string receivedPass = "";
+                        string role = "";
+                        
+                        string query = $"SELECT password, role FROM Members WHERE TP = @username";
+                        MySqlCommand cmd = new MySqlCommand(query, MySqlConn);
                         cmd.Parameters.AddWithValue("@username", username);
                         MySqlConn.Open();
-                        var queryResult = cmd.ExecuteScalar();
-                        if (queryResult != null)
-                            receivedPass = Convert.ToString(queryResult);
-                        else
-                            receivedPass = "";
+                        MySqlDataReader sqlreader = cmd.ExecuteReader();
+                        while (sqlreader.Read())
+                        {
+                            receivedPass = sqlreader[0].ToString();
+                            role = sqlreader[1].ToString();
+                        }
+                        sqlreader.Close();
                         MySqlConn.Close();
+
                         if (MD5Hash(password) == receivedPass)
                         {
-                            return true;
+                            return role;
                         }
                         else {
-                            return false;
+                            MessageBox.Show("Incorrect data");
+                            return "false";
                         }
                     }
                 }
                 catch (Exception e){
                     MessageBox.Show("Error: " + e);
-                    return false;
+                    return "false";
                 }
             }
             else {
-                return false;
+                MessageBox.Show("Empty login or pass field");
+                return "false";
             }
         }
 
@@ -136,35 +113,6 @@ namespace APUIOOPAssignment
                 hash.Append(bytes[i].ToString("x2"));
             }
             return hash.ToString();
-        }
-        public static bool AddClub(string Image, string ClubName, string Type, string Date, string President, string Vice, string Secretary, string Details)
-        {
-            try
-            {
-                if (!(Image == null || ClubName == null || Type == null || Date == null || President == null || Vice == null || Secretary == null || Details == null))
-                {
-                    using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
-                    {
-                        string CreatingNews = $"INSERT into News (Image, ClubName, Type, Date, President, Vice, Secretary, Details) VALUES ('{Image}','{Type}','{Date}','{President}','{Vice},'{Secretary}','{Details}')";
-                        MySqlCommand cmd = new MySqlCommand(CreatingNews, MySqlConn);
-                        MySqlConn.Open();
-                        cmd.ExecuteNonQuery();
-                        MySqlConn.Close();
-                        MessageBox.Show("News Successfully created");
-                        return true;
-                    }
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show("Error: " + e);
-                return false;
-            }
-
         }
     }
 }
