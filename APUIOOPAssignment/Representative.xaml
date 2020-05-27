@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
+<<<<<<< HEAD
         Title="Representative" Height="1092.6" Width="791.6">
     <ScrollViewer>
         <Grid Margin="0,0,-0.4,-675">
@@ -85,4 +86,36 @@
             </Button>
         </Grid>
     </ScrollViewer>
+=======
+        Title="Representative" Height="520" Width="960">
+    <Grid>
+
+        <Image Stretch="UniformToFill" Source="/Images/Bg Admin Menu.jpg"/>
+
+
+        <Button Margin="122,216,588,140" Click="Button_Click_1" RenderTransformOrigin="0.515,-0.11">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/weeklyUpdates.png"/>
+            </Button.Background>
+            <StackPanel>
+                <Label Content="Add/Edit Weekly &#xD;&#xA;updates" Height="78" FontFamily="Garamond" Width="211" FontSize="24" FontWeight="Bold"/>
+            </StackPanel>
+        </Button>
+        <Button Margin="556,216,153,140" Background="#33d3b7">
+            <StackPanel>
+                <Image Source="/Images/btn club.png" Height="114" Width="214" />
+
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="298,371,0,0" VerticalAlignment="Top" Width="323" Height="80">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/ViewAsMember.png"/>
+            </Button.Background>
+            <Label Content="View As Members " Width="274" FontSize="22" Height="44" FontWeight="Bold"/>
+        </Button>
+
+
+    </Grid>
+
+>>>>>>> daa5fc7443cc7202311ffac08ca08116238683e3
 </Window>

@@ -7,7 +7,10 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+<<<<<<< HEAD
 using System.Windows.Forms;
+=======
+>>>>>>> daa5fc7443cc7202311ffac08ca08116238683e3
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -20,12 +23,16 @@ namespace APUIOOPAssignment
     /// </summary>
     public partial class Representative : Window
     {
+<<<<<<< HEAD
         int count = 0;
+=======
+>>>>>>> daa5fc7443cc7202311ffac08ca08116238683e3
         public Representative()
         {
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void button_OperatesON()
         {
 
@@ -47,6 +54,11 @@ namespace APUIOOPAssignment
                     count = 1;
                     button_OperatesON();
                 }
+=======
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+>>>>>>> daa5fc7443cc7202311ffac08ca08116238683e3
         }
     }
 }
