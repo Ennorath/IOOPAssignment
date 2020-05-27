@@ -141,6 +141,9 @@
     <Compile Include="RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Representative.xaml.cs">
+      <DependentUpon>Representative.xaml</DependentUpon>
+    </Compile>
     <Page Include="Add Club.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -179,6 +182,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RegisterWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Representative.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -268,6 +275,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="red BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\WeeklyUpdates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ViewAsMember.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Bg Admin Menu.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
