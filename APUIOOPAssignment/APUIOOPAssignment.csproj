@@ -252,5 +252,37 @@
   <ItemGroup>
     <Resource Include="BG up.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\TemporaryLogos\Sport_1.png" />
+    <Resource Include="Images\TemporaryLogos\Sport_2.png" />
+    <Resource Include="Images\TemporaryLogos\Sport_3.png" />
+    <Resource Include="Images\TemporaryLogos\Sport_4.png" />
+    <Resource Include="Images\TemporaryLogos\Sport_5.png" />
+    <Resource Include="Images\TemporaryLogos\Sport_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Add new club.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Bg Admin Menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BG down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Biomass.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\edit Club UP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Member_Clubs_back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\No Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\White bg.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
