@@ -40,9 +40,9 @@ namespace APUIOOPAssignment
             }
             else if (loginInfo == "1")
             {
-                //Edit_News representative = new Edit_News();
-                //representative.Show();
-                //this.Close();
+                Representative representative = new Representative();
+                representative.Show();
+                this.Close();
             }
             else if (loginInfo == "2")
             {
