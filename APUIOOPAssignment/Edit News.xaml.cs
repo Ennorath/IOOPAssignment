@@ -28,24 +28,36 @@ namespace APUIOOPAssignment
         string imgLocation = "";
         public Edit_News()
         {
-            /*txtHeadline.Text = "Sports";
-            string ImageLocation, ClubTypeOld, idate, DetailsOld = Authorization.LoadNews(txtHeadline.Text);
+            string Headline = "sada";
 
-            //Image
+            IList<String> NewsInfo = Authorization.LoadNews(Headline);
+            /*IList<string> Data = Authorization.LoadNews(Headline);*/
+
+            /*string ImageLocation = Data[0];
+            string ClubTypeOld = Data[1];*/
+
+            /*System.Windows.Forms.MessageBox.Show(ImageLocation, ClubTypeOld);*/
+
+            // Image
+            /*string ImageLocation = NewsInfo[0];
+
             BitmapImage bitmap = new BitmapImage();
             bitmap.BeginInit();
             bitmap.UriSource = new Uri(ImageLocation);
             bitmap.EndInit();
-            ImageNewsNew.Source = bitmap;
+            ImageNewsNew.Source = bitmap;*/
 
             //Club type
+            /*string ClubTypeOld = NewsInfo[1];
             cmbType.Text = ClubTypeOld;
 
             //Date
+            string idate = NewsInfo[2];
             DateTime dt = Convert.ToDateTime(idate);
             DateNews.SelectedDate = dt;
 
             //Details
+            string Details = NewsInfo[3];
             (txtDetailNews.Document.ContentStart, txtDetailNews.Document.ContentEnd).Text = Details;*/
 
             InitializeComponent();
@@ -122,6 +134,13 @@ namespace APUIOOPAssignment
                 ImageNewsNew.Source = bitmap;
 
             }
+        }
+
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
+        {
+            Club_List_Admin cl = new Club_List_Admin();
+            cl.Show();
+            this.Close();
         }
     }
 }

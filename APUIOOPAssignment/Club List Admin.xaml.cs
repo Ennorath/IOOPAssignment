@@ -30,7 +30,7 @@ namespace APUIOOPAssignment
             sw.Show();
             this.Close();
         }
-        private void btnBack_Click(object sender, RoutedEventArgs e)
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
             Admin_Page hm = new Admin_Page();
             hm.Show();

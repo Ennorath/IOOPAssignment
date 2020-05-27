@@ -23,11 +23,11 @@
             </Image>
             <Image HorizontalAlignment="Left" Height="135" Margin="155,191,0,0" VerticalAlignment="Top" Width="135" Source="No Image.jpg"/>
             <Image HorizontalAlignment="Left" Height="135" Margin="351,191,0,0" VerticalAlignment="Top" Width="135" Source="Add new club.png"/>
-            <Button Content="Edit" HorizontalAlignment="Left" Margin="155,344,0,0" VerticalAlignment="Top" Width="55" Height="23" Click="Button_Click"/>
-            <Button Content="Delete" HorizontalAlignment="Left" Margin="235,344,0,0" VerticalAlignment="Top" Width="55" Height="23" Click="Button_Click"/>
-            <Button x:Name="btnBack" Margin="29,89,654.2,753" Background="#c0c0c0" Click="Button_Click">
+            <Button x:Name="btnEditNews" Content="Edit" FontFamily="Berlin Sans FB" HorizontalAlignment="Left" Margin="155,344,0,0" VerticalAlignment="Top" Width="55" Height="23" Click="Button_Click"/>
+            <Button Content="Delete" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Margin="235,344,0,0" VerticalAlignment="Top" Width="55" Height="23" Click="Button_Click"/>
+            <Button x:Name="btnBack" Margin="29,89,653.8,752.8" Background="#c0c0c0" Click="ButtonBack_Click">
                 <StackPanel>
-                    <Image Source="/Images/Back button.png" Height="39" Width="49" />
+                    <Image Source="Images/Back button.png" Height="33" Width="41" />
 
                 </StackPanel>
             </Button>

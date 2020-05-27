@@ -34,6 +34,14 @@ namespace APUIOOPAssignment
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            //string HeadlinePass = "Sports";
+            Edit_News sw = new Edit_News();
+            sw.Show();
+            this.Close();
+        }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
             string NumOfRows = Authorization.takeNewsRows();
             int NewHeight = int.Parse(NumOfRows);
 
@@ -50,14 +58,11 @@ namespace APUIOOPAssignment
                 this.Height += 200;
                 NewHeight--;
             } while (NewHeight > 0);*/
-
         }
 
-
-        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
-            //string HeadlinePass = "Sports";
-            Edit_News sw = new Edit_News();
+            Admin_Page sw = new Admin_Page();
             sw.Show();
             this.Close();
         }

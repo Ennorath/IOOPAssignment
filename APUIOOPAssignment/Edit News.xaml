@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
-        Title="Edit_News" Height="488.4" Width="792">
-    <ScrollViewer Margin="0,0,3.6,0">
+        Title="Edit_News" Height="602.4" Width="792">
+    <ScrollViewer Margin="0,0,3.6,-5.2">
         <Grid Height="880" Width="756">
             <Image HorizontalAlignment="Left" Height="94" Margin="-2,-10,-6,0" VerticalAlignment="Top" Width="764" Source="BG up.jpg"/>
             <Image HorizontalAlignment="Left" Height="76" Margin="0,70,-6,0" VerticalAlignment="Top" Width="762" Source="edit News UP.jpg"/>
@@ -21,8 +21,8 @@
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>
-            <TextBox x:Name="txtHeadline" HorizontalAlignment="Left" Height="19" Margin="278,475,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325"/>
-            <ComboBox x:Name="cmbType" HorizontalAlignment="Left" Margin="278,527,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbType_SelectionChanged">
+            <TextBox x:Name="txtHeadline" HorizontalAlignment="Left" Height="19" Margin="278,475,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" FontFamily="Berlin Sans FB"/>
+            <ComboBox x:Name="cmbType" HorizontalAlignment="Left" Margin="278,527,0,0" VerticalAlignment="Top" Width="120" FontFamily="Berlin Sans FB" SelectionChanged="cmbType_SelectionChanged">
                 <ComboBoxItem>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock><Run Text="Sports"/></TextBlock>
@@ -44,21 +44,21 @@
                     </StackPanel>
                 </ComboBoxItem>
             </ComboBox>
-            <RichTextBox x:Name="txtDetailNews" HorizontalAlignment="Left" Height="145" Margin="278,632,0,0" VerticalAlignment="Top" Width="290">
+            <RichTextBox x:Name="txtDetailNews" HorizontalAlignment="Left" Height="145" Margin="278,632,0,0" VerticalAlignment="Top" Width="290" FontFamily="Berlin Sans FB">
                 <FlowDocument>
                     <Paragraph>
                         <Run Text=""/>
                     </Paragraph>
                 </FlowDocument>
             </RichTextBox>
-            <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Height="30" Margin="346,816,0,0" VerticalAlignment="Top" Width="112" Click="btnSave_Click"/>
+            <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Height="30" Margin="346,816,0,0" VerticalAlignment="Top" Width="112" Click="btnSave_Click" FontFamily="Berlin Sans FB"/>
             <DatePicker x:Name="DateNews" HorizontalAlignment="Left" Margin="278,579,0,0" VerticalAlignment="Top" SelectedDateChanged="DateNews_SelectedDateChanged"/>
-            <Button x:Name="btnAddImageNews" Content="Add Image" HorizontalAlignment="Left" Margin="383,361,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btnAddImageNews_Click"/>
-            <TextBox x:Name="textbox1" HorizontalAlignment="Left" Height="17" Margin="278,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321"/>
+            <Button x:Name="btnAddImageNews" Content="Add Image" HorizontalAlignment="Left" Margin="383,361,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btnAddImageNews_Click" FontFamily="Berlin Sans FB"/>
+            <TextBox x:Name="textbox1" HorizontalAlignment="Left" Height="17" Margin="278,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321" FontFamily="Berlin Sans FB"/>
             <Image x:Name="ImageNewsNew" HorizontalAlignment="Left" Height="159" Margin="278,190,0,0" VerticalAlignment="Top" Width="259" Source="No Image News.jpg"/>
-            <Label Content="Images" HorizontalAlignment="Left" Margin="175,261,0,0" VerticalAlignment="Top"/>
-            <Label Content="Image address" HorizontalAlignment="Left" Margin="153,392,0,0" VerticalAlignment="Top"/>
-            <Label Content="Headline" HorizontalAlignment="Left" Margin="171,472,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <Label Content="Images" HorizontalAlignment="Left" Margin="175,261,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB"/>
+            <Label Content="Image address" HorizontalAlignment="Left" Margin="153,392,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB"/>
+            <Label Content="Headline" HorizontalAlignment="Left" Margin="171,472,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" RenderTransformOrigin="0.5,0.5">
                 <Label.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -68,7 +68,7 @@
                     </TransformGroup>
                 </Label.RenderTransform>
             </Label>
-            <Label Content="Club Type" HorizontalAlignment="Left" Margin="168,525,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <Label Content="Club Type" HorizontalAlignment="Left" Margin="168,525,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" RenderTransformOrigin="0.5,0.5">
                 <Label.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -98,6 +98,12 @@
                     </TransformGroup>
                 </Label.RenderTransform>
             </Label>
+            <Button x:Name="btnBack" Margin="24,89,673,749" Background="#c0c0c0" Click="ButtonBack_Click">
+                <StackPanel>
+                    <Image Source="Images/Back button.png" Height="33" Width="41" />
+
+                </StackPanel>
+            </Button>
 
         </Grid>
     </ScrollViewer>

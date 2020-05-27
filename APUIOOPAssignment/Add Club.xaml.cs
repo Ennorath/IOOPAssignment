@@ -99,5 +99,12 @@ namespace APUIOOPAssignment
             string Details = new TextRange(txtDetails.Document.ContentStart, txtDetails.Document.ContentEnd).Text;
             Authorization.AddClub(Image, ClubName, Type, Date, President, Vice, Secretary, Details);
         }
+
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
+        {
+            Club_List_Admin cl = new Club_List_Admin();
+            cl.Show();
+            this.Close();
+        }
     }
 }
