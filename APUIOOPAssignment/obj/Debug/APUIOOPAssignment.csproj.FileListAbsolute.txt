@@ -168,3 +168,9 @@ C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIO
 C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csproj.CopyComplete
 C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.exe
 C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.pdb
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Add Club.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club List Admin.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Representative.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Add Club.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club List Admin.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Representative.baml
