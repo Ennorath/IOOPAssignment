@@ -46,7 +46,7 @@ namespace APUIOOPAssignment
             }
             else if (loginInfo == "2")
             {
-                Edit_News admin = new Edit_News();
+                Admin_Page admin = new Admin_Page();
                 admin.Show();
                 this.Close();
             }

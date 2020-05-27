@@ -6,18 +6,54 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Security.Cryptography;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace APUIOOPAssignment
 {
     class Authorization
     {
         private const string connectionString = @"SERVER=31.31.198.66;DATABASE=u0994893_ioopproject;USER ID=u0994893_ioop;PASSWORD=SanatovD;";
+        public static IList<String> LoadNews(string HeadlinePass)
+        {
+            using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+            {
+                MySqlConn.Open();
+                List<String> NewsInfo = new List<string>();
+                string selectPass = $"SELECT Images, Type, Date, Details FROM News List WHERE Headline = @Headline";
+                MySqlCommand cmd = new MySqlCommand(selectPass, MySqlConn);
+                cmd.Parameters.AddWithValue("@Headline", HeadlinePass);
+                using (MySqlDataReader da = cmd.ExecuteReader())
+                {
+                    while (da.Read())
+                    {
+                        //Image
+                        string ImageLocation = da.GetValue(0).ToString();
+                        NewsInfo.Add(ImageLocation);
 
+                        //Type
+                        string ClubTypeOld = da.GetValue(1).ToString();
+                        NewsInfo.Add(ClubTypeOld);
+
+                        //DatePicker
+                        string idate = da.GetValue(2).ToString();
+                        NewsInfo.Add(idate);
+
+                        //Details
+                        string DetailsOld = da.GetValue(3).ToString();
+                        NewsInfo.Add(DetailsOld);
+                    }
+                }
+                MySqlConn.Close();
+                return NewsInfo;
+
+
+            }
+        }
         public static string takeNewsRows()
         {
             using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
             {
-                string rowsQuery = $"SELECT count(*) FROM News";
+                string rowsQuery = $"SELECT count(*) FROM News List";
                 MySqlCommand cmd1 = new MySqlCommand(rowsQuery, MySqlConn);
                 MySqlConn.Open();
                 var queryResult1 = cmd1.ExecuteScalar();
