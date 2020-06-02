@@ -98,7 +98,7 @@
                     </TransformGroup>
                 </Label.RenderTransform>
             </Label>
-            <Button x:Name="btnBack" Margin="24,89,673,749" Background="#c0c0c0" Click="ButtonBack_Click">
+            <Button x:Name="btnBack" Margin="24,89,673,749" Background="#c0c0c0" Click="ButtonBack_Click" BorderThickness="0">
                 <StackPanel>
                     <Image Source="Images/Back button.png" Height="33" Width="41" />
 

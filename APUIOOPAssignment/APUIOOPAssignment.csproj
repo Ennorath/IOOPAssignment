@@ -131,6 +131,12 @@
     <Compile Include="Edit News.xaml.cs">
       <DependentUpon>Edit News.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Images\News.xaml.cs">
+      <DependentUpon>News.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Member Home.xaml.cs">
+      <DependentUpon>Member Home.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Member.xaml.cs">
       <DependentUpon>Member.xaml</DependentUpon>
     </Compile>
@@ -143,6 +149,12 @@
     </Compile>
     <Compile Include="Representative.xaml.cs">
       <DependentUpon>Representative.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sports_Hobbies_Details.xaml.cs">
+      <DependentUpon>Sports_Hobbies_Details.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Weekly Updates.xaml.cs">
+      <DependentUpon>Weekly Updates.xaml</DependentUpon>
     </Compile>
     <Page Include="Add Club.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -160,6 +172,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Images\News.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -173,6 +189,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Member Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Member.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -186,6 +206,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Representative.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sports_Hobbies_Details.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Weekly Updates.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -309,6 +337,100 @@
   <ItemGroup>
     <Resource Include="Images\button OFF.png" />
     <Resource Include="Images\button ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="News and Hobbies UP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg Grey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bg Grey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sport_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sport_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sport_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sport_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sport_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sport_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Club details UP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Club details UP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bg black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\No Image club des.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="No Image club des.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Visit club.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Visit club.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Visit News.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Visit News.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\News.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="News.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\back arrow.png" />
+    <Resource Include="Images\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="back arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Weekly Updates UP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Weekly Updates UP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg Grey light.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bg Grey light.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\More news.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="More news.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

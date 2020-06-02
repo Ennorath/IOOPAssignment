@@ -12,21 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace APUIOOPAssignment
+namespace APUIOOPAssignment.Images
 {
     /// <summary>
-    /// Interaction logic for Member.xaml
+    /// Interaction logic for News.xaml
     /// </summary>
-    public partial class Member : Window
+    public partial class News : Window
     {
-        public Member()
+        public News()
         {
             InitializeComponent();
-        }
-
-        private void btnSearch_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

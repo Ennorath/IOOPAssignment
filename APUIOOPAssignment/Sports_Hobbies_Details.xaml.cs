@@ -15,16 +15,21 @@ using System.Windows.Shapes;
 namespace APUIOOPAssignment
 {
     /// <summary>
-    /// Interaction logic for Member.xaml
+    /// Interaction logic for Sports_Hobbies_Details.xaml
     /// </summary>
-    public partial class Member : Window
+    public partial class Sports_Hobbies_Details : Window
     {
-        public Member()
+        public Sports_Hobbies_Details()
         {
             InitializeComponent();
         }
 
-        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
         {
 
         }

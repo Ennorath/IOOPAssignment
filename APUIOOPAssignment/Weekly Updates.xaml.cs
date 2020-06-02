@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace APUIOOPAssignment
 {
     /// <summary>
-    /// Interaction logic for Member.xaml
+    /// Interaction logic for Weekly_Updates.xaml
     /// </summary>
-    public partial class Member : Window
+    public partial class Weekly_Updates : Window
     {
-        public Member()
+        public Weekly_Updates()
         {
             InitializeComponent();
-        }
-
-        private void btnSearch_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

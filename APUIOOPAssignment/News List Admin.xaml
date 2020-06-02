@@ -17,7 +17,7 @@
         <Button x:Name="btnBack" Margin="29,89,653.8,752.8" Background="#c0c0c0" Click="Button_Click">
             <StackPanel/>
         </Button>
-        <Button x:Name="btnBack1" Margin="29,104,705.6,366" Background="#c0c0c0" Click="ButtonBack_Click">
+        <Button x:Name="btnBack1" Margin="29,104,705.6,366" Background="#c0c0c0" Click="ButtonBack_Click" BorderThickness="0">
             <StackPanel>
                 <Image Source="Images/Back button.png" Height="33" Width="41" />
 
