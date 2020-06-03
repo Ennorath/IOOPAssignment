@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
-        Title="Add_Club" Height="498.3" Width="786">
+        Title="Add_Club" Height="1062.93" Width="786">
     <ScrollViewer Margin="0,0,3.2,-4.4">
         <Grid HorizontalAlignment="Left" Height="1176" VerticalAlignment="Top" Width="764">
             <Image HorizontalAlignment="Left" Height="861" Margin="0,157,0,0" VerticalAlignment="Top" Width="763" Source="red BG.jpg" Stretch="UniformToFill"/>
@@ -35,7 +35,7 @@
                 </ComboBoxItem>
             </ComboBox>
             <DatePicker x:Name="DateRegistered" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Margin="309,562,0,-75" VerticalAlignment="Top" SelectedDateChanged="DateClub_SelectedDateChanged" Height="23" Width="102"/>
-            <TextBox x:Name="txtPresident" HorizontalAlignment="Left" Height="21" Margin="309,615,0,-126" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="305"/>
+            <TextBox x:Name="txtPresident" HorizontalAlignment="Left" Height="21" Margin="309,615,0,-126" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
             <TextBox x:Name="txtVicePresident" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="21" Margin="309,661,0,-172" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
             <TextBox x:Name="txtSecretary" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="21" Margin="309,712,0,-223" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
             <RichTextBox x:Name="txtDetails" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="136" Margin="309,764,0,-390" VerticalAlignment="Top" Width="305">

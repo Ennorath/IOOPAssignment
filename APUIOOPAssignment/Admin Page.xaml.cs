@@ -41,10 +41,24 @@ namespace APUIOOPAssignment
             //this.Close();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void btnClub_Click(object sender, RoutedEventArgs e)
         {
             Club_List_Admin cl = new Club_List_Admin();
             cl.Show();
+            this.Close();
+        }
+
+        private void btnViewMember_Click(object sender, RoutedEventArgs e)
+        {
+            Member_Home mh = new Member_Home();
+            mh.Show();
+            this.Close();
+        }
+
+        private void btnEditRepresentative_Click(object sender, RoutedEventArgs e)
+        {
+            Edit_Representative er = new Edit_Representative();
+            er.Show();
             this.Close();
         }
     }

@@ -120,8 +120,6 @@
                 </ScrollViewer>
             </TabItem>
         </TabControl>
-        <Image HorizontalAlignment="Left" Margin="0,567,0,-19.8" Width="514" Source="BG down.jpg"/>
-        <Label Content="Details" HorizontalAlignment="Left" Margin="159,764,0,-129.8" VerticalAlignment="Top" Height="26" Width="46"/>
         <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="20" Margin="226,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" FontFamily="Berlin Sans FB" FontSize="18"/>
         <Button x:Name="btnSearch" HorizontalAlignment="Left" Margin="460,70,0,0" VerticalAlignment="Top" Width="39" Height="20" Background="#289cff" Click="btnSearch_Click">
             <StackPanel>
@@ -129,7 +127,7 @@
 
             </StackPanel>
         </Button>
-        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="315,122,0,0" VerticalAlignment="Top" Width="76" Height="25" FontFamily="Berlin Sans FB" Background="#FFF15B5B" Style="{DynamicResource ButtonStyle1}" Click="btnBack_Click" Foreground="White"/>
         <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" Margin="413,122,0,0" VerticalAlignment="Top" Width="74" Height="25" FontFamily="Berlin Sans FB" Background="#FFF15B5B" Style="{DynamicResource ButtonStyle1}" Click="btnHome_Click" Foreground="White"/>
+        <Image HorizontalAlignment="Left" Height="114" Margin="-3,566,0,-19.8" VerticalAlignment="Top" Width="517" Source="BG down.jpg"/>
     </Grid>
 </Window>

@@ -28,5 +28,12 @@ namespace APUIOOPAssignment
         {
 
         }
+
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+            Member_Home MH = new Member_Home();
+            MH.Show();
+            this.Close();
+        }
     }
 }

@@ -24,5 +24,19 @@ namespace APUIOOPAssignment
             InitializeComponent();
         }
 
+        private void btnClub_Click(object sender, RoutedEventArgs e)
+        {
+            Member member = new Member();
+            member.Show();
+            this.Close();
+        }
+
+        private void btnNews_Click(object sender, RoutedEventArgs e)
+        {
+            NewsListMember nl = new NewsListMember();
+            nl.Show();
+            this.Close();
+
+        }
     }
 }

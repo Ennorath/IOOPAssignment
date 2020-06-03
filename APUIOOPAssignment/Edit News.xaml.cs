@@ -138,7 +138,7 @@ namespace APUIOOPAssignment
 
         private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
-            Club_List_Admin cl = new Club_List_Admin();
+            News_List_Admin cl = new News_List_Admin();
             cl.Show();
             this.Close();
         }

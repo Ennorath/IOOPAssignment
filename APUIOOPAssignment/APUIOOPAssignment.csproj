@@ -128,8 +128,20 @@
     <Compile Include="Club List Admin.xaml.cs">
       <DependentUpon>Club List Admin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ClubListRepresentative.xaml.cs">
+      <DependentUpon>ClubListRepresentative.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Create Weekly Updates.xaml.cs">
+      <DependentUpon>Create Weekly Updates.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Club Representative.xaml.cs">
+      <DependentUpon>Edit Club Representative.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Edit News.xaml.cs">
       <DependentUpon>Edit News.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Representative.xaml.cs">
+      <DependentUpon>Edit Representative.xaml</DependentUpon>
     </Compile>
     <Compile Include="Images\News.xaml.cs">
       <DependentUpon>News.xaml</DependentUpon>
@@ -140,10 +152,16 @@
     <Compile Include="Member.xaml.cs">
       <DependentUpon>Member.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Members and Representative.xaml.cs">
+      <DependentUpon>Members and Representative.xaml</DependentUpon>
+    </Compile>
     <Compile Include="News List Admin.xaml.cs">
       <DependentUpon>News List Admin.xaml</DependentUpon>
     </Compile>
     <Compile Include="News.cs" />
+    <Compile Include="NewsListMember.xaml.cs">
+      <DependentUpon>NewsListMember.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>
@@ -152,6 +170,9 @@
     </Compile>
     <Compile Include="Sports_Hobbies_Details.xaml.cs">
       <DependentUpon>Sports_Hobbies_Details.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Weekly Updates Representative.xaml.cs">
+      <DependentUpon>Weekly Updates Representative.xaml</DependentUpon>
     </Compile>
     <Compile Include="Weekly Updates.xaml.cs">
       <DependentUpon>Weekly Updates.xaml</DependentUpon>
@@ -168,7 +189,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="ClubListRepresentative.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Create Weekly Updates.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edit Club Representative.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Edit News.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edit Representative.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -197,7 +234,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Members and Representative.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="News List Admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewsListMember.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -210,6 +255,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Sports_Hobbies_Details.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Weekly Updates Representative.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -431,6 +480,75 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="More news.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Weekly updates UP BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Weekly updates UP BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Admin BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Admin BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Club BG UP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Club BG UP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\What BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="What BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Weekly Updates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\view as member.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Edit Representative.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Club representative BG UP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Club representative BG UP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Back button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\configure status.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="configure status.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg blue light.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bg blue light.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Next list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Next list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="button OFF.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

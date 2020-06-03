@@ -9,20 +9,20 @@
     <Grid Margin="0,0,0.2,28.2">
         <Image HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="514" Source="BG up.jpg"/>
         <Image HorizontalAlignment="Left" Height="291" Margin="0,54,0,0" VerticalAlignment="Top" Width="511" Source="red BG.jpg" Stretch="UniformToFill"/>
-        <Button x:Name="btnNews" HorizontalAlignment="Left" Margin="352,97,0,0" VerticalAlignment="Top" Width="139" Height="94">
+        <Button x:Name="btnNews" HorizontalAlignment="Left" Margin="352,97,0,0" VerticalAlignment="Top" Width="139" Height="94" Click="btnNews_Click">
             <StackPanel>
                 <Image Source="Visit News.jpg" Height="86" Width="130"/>
 
             </StackPanel>
         </Button>
-        <Button x:Name="btnClub" HorizontalAlignment="Left" Margin="352,197,0,0" VerticalAlignment="Top" Width="139" Height="94">
+        <Button x:Name="btnClub" HorizontalAlignment="Left" Margin="352,197,0,0" VerticalAlignment="Top" Width="139" Height="94" Click="btnClub_Click">
             <StackPanel>
                 <Image Source="Visit club.jpg" Height="88" Width="130" RenderTransformOrigin="0.523,0.191"/>
 
             </StackPanel>
         </Button>
         <Image HorizontalAlignment="Left" Height="195" Margin="25,96,0,0" VerticalAlignment="Top" Width="317" Source="No Image News.jpg"/>
-        <Label Content="Weekly Updates" HorizontalAlignment="Left" Margin="32,66,0,0" VerticalAlignment="Top" Width="137" FontFamily="Berlin Sans FB" FontSize="18" Foreground="White"/>
+        <Label Content="Hightlights:" HorizontalAlignment="Left" Margin="32,66,0,0" VerticalAlignment="Top" Width="137" FontFamily="Berlin Sans FB" FontSize="18" Foreground="White"/>
         <TabControl HorizontalAlignment="Left" Height="232" Margin="0,322,0,0" VerticalAlignment="Top" Width="511">
             <TabItem Header="All" Margin="86,-4,-101.2,0" FontFamily="Berlin Sans FB">
                 <Grid Background="#146b84">
@@ -38,13 +38,13 @@
                     <Label x:Name="lblDate2" Content="01/05/2020" HorizontalAlignment="Left" Margin="187,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
                     <Label x:Name="lblHeadline3" Content="Headline 3" HorizontalAlignment="Left" Margin="342,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11"/>
                     <Label x:Name="lblDate3" Content="01/05/2020" HorizontalAlignment="Left" Margin="342,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
-                    <Button x:Name="btnBackNews" HorizontalAlignment="Left" Margin="3,83,0,0" VerticalAlignment="Top" Width="21" Height="34" Background="#146b84" BorderThickness="0" Click="Button_Click">
+                    <Button x:Name="btnBackNews" HorizontalAlignment="Left" Margin="3,83,0,0" VerticalAlignment="Top" Width="21" Height="34" Background="#146b84" BorderThickness="0">
                         <StackPanel>
                             <Image Source="back arrow.png" Height="28" Width="16"/>
 
                         </StackPanel>
                     </Button>
-                    <Button x:Name="btnNextNews" HorizontalAlignment="Left" Margin="481,83,0,0" VerticalAlignment="Top" Width="21" Height="34" Background="#146b84" BorderThickness="0" Click="Button_Click">
+                    <Button x:Name="btnNextNews" HorizontalAlignment="Left" Margin="481,83,0,0" VerticalAlignment="Top" Width="21" Height="34" Background="#146b84" BorderThickness="0">
                         <StackPanel>
                             <Image Source="next.png" Height="28" Width="16"/>
 
@@ -112,7 +112,7 @@
             </TabItem>
         </TabControl>
         <Image HorizontalAlignment="Left" Height="23" Margin="19,322,0,0" VerticalAlignment="Top" Width="85" Source="News.jpg"/>
-        <Image HorizontalAlignment="Left" Margin="0,552,-3,-28.4" Width="514" Source="BG down.jpg"/>
+        <Image HorizontalAlignment="Left" Height="115" Margin="0,554,0,-32.4" VerticalAlignment="Top" Width="511" Source="BG down.jpg"/>
 
     </Grid>
 </Window>
