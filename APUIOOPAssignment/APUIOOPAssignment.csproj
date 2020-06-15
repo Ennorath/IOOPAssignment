@@ -143,9 +143,6 @@
     <Compile Include="Edit Representative.xaml.cs">
       <DependentUpon>Edit Representative.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Images\News.xaml.cs">
-      <DependentUpon>News.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Member Home.xaml.cs">
       <DependentUpon>Member Home.xaml</DependentUpon>
     </Compile>
@@ -159,6 +156,9 @@
       <DependentUpon>News List Admin.xaml</DependentUpon>
     </Compile>
     <Compile Include="News.cs" />
+    <Compile Include="News.xaml.cs">
+      <DependentUpon>News.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NewsListMember.xaml.cs">
       <DependentUpon>NewsListMember.xaml</DependentUpon>
     </Compile>
@@ -209,10 +209,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Images\News.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -241,6 +237,10 @@
     <Page Include="News List Admin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="News.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="NewsListMember.xaml">
       <SubType>Designer</SubType>
@@ -286,6 +286,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <None Include="bin\Debug\APUIOOPAssignment.exe.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -294,9 +295,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\APULogo.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -311,244 +309,183 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\RegisterPic.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Add News.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Add News clicked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\btn club.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\BG up.jpg" />
+    <Resource Include="Images\No Image News.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\edit News UP.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\No Image News.jpg" />
+    <Resource Include="Images\BG up.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\red BG.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Back button clicked.png" />
-    <Resource Include="Images\Back button.png" />
+    <Resource Include="Images\White bg.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Login_Background.jpg" />
+    <Resource Include="Images\Bg Admin Menu.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="No Image News.jpg" />
+    <Resource Include="Images\No Image.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="edit News UP.jpg" />
+    <Resource Include="Images\Add new club.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="BG up.jpg" />
+    <Resource Include="Images\edit Club UP.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="red BG.jpg" />
+    <Resource Include="Images\BG down.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="White bg.jpg" />
+    <Resource Include="Images\Representative Up.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Bg Admin Menu.jpg" />
+    <Resource Include="Images\Blue BG.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="No Image.jpg" />
+    <Resource Include="Images\bg white representative.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Add new club.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="edit Club UP.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="BG down.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Representative Up.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Blue BG.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\search.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="bg white representative.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\button OFF.png" />
-    <Resource Include="Images\button ON.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="News and Hobbies UP.jpg" />
+    <Resource Include="Images\News and Hobbies UP.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\bg Grey.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="bg Grey.jpg" />
+    <Resource Include="Images\Sport_1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Sport_1.png" />
+    <Resource Include="Images\Sport_2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Sport_2.png" />
+    <Resource Include="Images\Sport_3.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Sport_3.png" />
+    <Resource Include="Images\Sport_4.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Sport_4.png" />
+    <Resource Include="Images\Sport_5.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Sport_5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Sport_6.png" />
+    <Resource Include="Images\Sport_6.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Club details UP.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Club details UP.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\bg black.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="bg black.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\No Image club des.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="No Image club des.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="search.png" />
+    <Resource Include="Images\search.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Visit club.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Visit club.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\Visit News.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Visit News.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\News.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="News.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\back arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Images\next.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="back arrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="next.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Weekly Updates UP.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Weekly Updates UP.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\bg Grey light.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="bg Grey light.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\More news.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="More news.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\Weekly updates UP BG.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Weekly updates UP BG.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Admin BG.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Admin BG.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\Club BG UP.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Club BG UP.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\What BG.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="What BG.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Weekly Updates.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\view as member.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Edit Representative.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\Club representative BG UP.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Club representative BG UP.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Back button.png" />
+    <Resource Include="Images\Back button.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\configure status.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="configure status.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\bg blue light.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="bg blue light.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Next list.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Next list.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\Previous.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Previous.png" />
+    <Resource Include="Images\button OFF.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="button OFF.png" />
+    <Content Include="bin\Debug\APUIOOPAssignment.exe" />
+    <Content Include="bin\Debug\APUIOOPAssignment.pdb" />
+    <Content Include="bin\Debug\BouncyCastle.Crypto.dll" />
+    <Content Include="bin\Debug\Google.Protobuf.dll" />
+    <Resource Include="Images\68113909-stone-grunge-abstract-wall-stone-background-texture-cracked-texture-used-design-for-background.jpg" />
+    <Resource Include="Images\Add News clicked.png" />
+    <Resource Include="Images\Add News.png" />
+    <Resource Include="Images\APULogo.png" />
+    <Resource Include="Images\Back button clicked.png" />
+    <Resource Include="Images\bg yellow representative.png" />
+    <Resource Include="Images\Biomass.jpg" />
+    <Resource Include="Images\btn club.png" />
+    <Resource Include="Images\button ON.png" />
+    <Resource Include="Images\Edit Representative.png" />
+    <Resource Include="Images\Login_Background.jpg" />
+    <Resource Include="Images\Member_Clubs_back.jpg" />
+    <Resource Include="Images\RegisterPic.jpg" />
+    <Resource Include="Images\view as member.png" />
+    <Resource Include="Images\ViewAsMember.png" />
+    <Resource Include="Images\Weekly Updates.png" />
+    <Resource Include="Images\WeeklyUpdates.png" />
+    <Resource Include="bin\Debug\Google.Protobuf.xml" />
+    <Content Include="bin\Debug\K4os.Compression.LZ4.dll" />
+    <Content Include="bin\Debug\K4os.Compression.LZ4.Streams.dll" />
+    <Resource Include="bin\Debug\K4os.Compression.LZ4.Streams.xml" />
+    <Resource Include="bin\Debug\K4os.Compression.LZ4.xml" />
+    <Content Include="bin\Debug\K4os.Hash.xxHash.dll" />
+    <Resource Include="bin\Debug\K4os.Hash.xxHash.xml" />
+    <Content Include="bin\Debug\MySql.Data.dll" />
+    <Resource Include="bin\Debug\MySql.Data.xml" />
+    <Content Include="bin\Debug\Renci.SshNet.dll" />
+    <Resource Include="bin\Debug\Renci.SshNet.xml" />
+    <Content Include="bin\Debug\System.Buffers.dll" />
+    <Resource Include="bin\Debug\System.Buffers.xml" />
+    <Content Include="bin\Debug\System.Memory.dll" />
+    <Resource Include="bin\Debug\System.Memory.xml" />
+    <Content Include="bin\Debug\System.Numerics.Vectors.dll" />
+    <Resource Include="bin\Debug\System.Numerics.Vectors.xml" />
+    <Content Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Resource Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="bin\Debug\Ubiety.Dns.Core.dll" />
+    <Content Include="bin\Debug\Zstandard.Net.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

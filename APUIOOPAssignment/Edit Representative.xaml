@@ -7,18 +7,18 @@
         mc:Ignorable="d"
         Title="Edit_Representative" Height="555.6" Width="800">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="191" Margin="0,158,-0.4,0" VerticalAlignment="Top" Width="794" Source="red BG.jpg" Stretch="UniformToFill"/>
-        <Image HorizontalAlignment="Left" Height="191" Margin="93,158,0,0" VerticalAlignment="Top" Width="617" Source="White bg.jpg" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="191" Margin="0,158,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\red BG.jpg" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="191" Margin="93,158,0,0" VerticalAlignment="Top" Width="617" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
 
-        <Image HorizontalAlignment="Left" Height="84" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0" Source="BG up.jpg"/>
+        <Image HorizontalAlignment="Left" Height="84" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0" Source="Images\BG up.jpg"/>
         <ComboBox x:Name="cmbClubList" HorizontalAlignment="Left" Margin="428,210,0,0" VerticalAlignment="Top" Width="142" Height="26"/>
         <Label Content="Select Club you want to configure:" HorizontalAlignment="Left" Margin="137,207,0,0" VerticalAlignment="Top" Height="35" Width="264" FontFamily="Berlin Sans FB" FontSize="18"/>
         <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Margin="364,288,0,0" VerticalAlignment="Top" Width="126" Height="35" FontFamily="Berlin Sans FB" FontSize="14" Click="btnNext_Click"/>
-        <Image HorizontalAlignment="Left" Height="74" Margin="0,84,-0.4,0" VerticalAlignment="Top" Width="794" Source="Club representative BG UP.jpg"/>
-        <Image HorizontalAlignment="Left" Height="174" Margin="0,354,-0.4,0" VerticalAlignment="Top" Width="794" Source="BG down.jpg"/>
+        <Image HorizontalAlignment="Left" Height="74" Margin="0,84,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\Club representative BG UP.jpg"/>
+        <Image HorizontalAlignment="Left" Height="174" Margin="0,354,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\BG down.jpg"/>
         <Button HorizontalAlignment="Left" Margin="27,105,0,0" VerticalAlignment="Top" Width="75" Height="38" Background="#c0c0c0" BorderThickness="0" Click="Button_Click">
             <StackPanel>
-                <Image Source="Back button.png" Height="36" Width="50"/>
+                <Image Source="Images\Back button.png" Height="36" Width="50"/>
 
             </StackPanel>
         </Button>

@@ -1,33 +1,6 @@
-C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\bin\Debug\APUIOOPAssignment.exe.config
-C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\bin\Debug\APUIOOPAssignment.exe
-C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\bin\Debug\APUIOOPAssignment.pdb
-C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csprojAssemblyReference.cache
-C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\MainWindow.g.cs
-C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\App.g.cs
-C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment_MarkupCompile.cache
-C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment_MarkupCompile.lref
-C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\MainWindow.baml
-C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.g.resources
-C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.Properties.Resources.resources
-C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csproj.GenerateResource.cache
-C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.exe
-C:\Users\Ennorath\source\repos\APUIOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.pdb
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\APUIOOPAssignment.exe.config
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\APUIOOPAssignment.exe
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\APUIOOPAssignment.pdb
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\Google.Protobuf.dll
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Compression.LZ4.dll
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Compression.LZ4.Streams.dll
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Hash.xxHash.dll
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\MySql.Data.dll
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\Renci.SshNet.dll
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Buffers.dll
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Memory.dll
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\Ubiety.Dns.Core.dll
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\Zstandard.Net.dll
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\Google.Protobuf.xml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Compression.LZ4.xml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Compression.LZ4.Streams.xml
@@ -38,163 +11,54 @@ C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Deb
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Memory.xml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csprojAssemblyReference.cache
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Add Club.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Admin Page.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club List Admin.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\ClubListRepresentative.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Create Weekly Updates.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit Club Representative.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit News.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit Representative.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\MainWindow.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member Home.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Members and Representative.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\News List Admin.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\NewsListMember.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\RegisterWindow.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Representative.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Sports_Hobbies_Details.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Weekly Updates Representative.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Weekly Updates.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\App.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment_Content.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment_MarkupCompile.cache
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment_MarkupCompile.lref
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Add Club.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Admin Page.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club List Admin.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\ClubListRepresentative.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Create Weekly Updates.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit Club Representative.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit News.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit Representative.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\MainWindow.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member Home.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Members and Representative.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\News List Admin.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\NewsListMember.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\RegisterWindow.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Representative.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Sports_Hobbies_Details.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Weekly Updates Representative.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Weekly Updates.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.g.resources
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.Properties.Resources.resources
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csproj.GenerateResource.cache
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csproj.CopyComplete
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.exe
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.pdb
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\MainWindow.g.cs
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\MainWindow.baml
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\RegisterWindow.g.cs
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\RegisterWindow.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\APUIOOPAssignment.exe.config
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\APUIOOPAssignment.exe
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\APUIOOPAssignment.pdb
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\Google.Protobuf.dll
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Compression.LZ4.dll
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Compression.LZ4.Streams.dll
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Hash.xxHash.dll
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\MySql.Data.dll
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\Renci.SshNet.dll
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Buffers.dll
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Memory.dll
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\Ubiety.Dns.Core.dll
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\Zstandard.Net.dll
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\Google.Protobuf.xml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Compression.LZ4.xml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Compression.LZ4.Streams.xml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Hash.xxHash.xml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\MySql.Data.xml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\Renci.SshNet.xml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Buffers.xml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Memory.xml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csprojAssemblyReference.cache
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\MainWindow.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\RegisterWindow.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\App.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment_MarkupCompile.cache
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment_MarkupCompile.lref
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\MainWindow.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\RegisterWindow.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.g.resources
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.Properties.Resources.resources
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csproj.GenerateResource.cache
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csproj.CoreCompileInputs.cache
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csproj.CopyComplete
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.exe
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.pdb
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Admin Page.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Admin Page.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\News List Admin.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\News List Admin.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit News.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit News.baml
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Admin Page.g.cs
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit News.g.cs
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\News List Admin.g.cs
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Admin Page.baml
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit News.baml
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\News List Admin.baml
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member.g.cs
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Add Club.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club List Admin.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Add Club.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club List Admin.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member.baml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\APUIOOPAssignment.exe.config
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\APUIOOPAssignment.exe
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\APUIOOPAssignment.pdb
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\Google.Protobuf.dll
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Compression.LZ4.dll
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Compression.LZ4.Streams.dll
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Hash.xxHash.dll
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\MySql.Data.dll
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\Renci.SshNet.dll
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Buffers.dll
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Memory.dll
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\Ubiety.Dns.Core.dll
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\Zstandard.Net.dll
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\Google.Protobuf.xml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Compression.LZ4.xml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Compression.LZ4.Streams.xml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\K4os.Hash.xxHash.xml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\MySql.Data.xml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\Renci.SshNet.xml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Buffers.xml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Memory.xml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csprojAssemblyReference.cache
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\Add Club.g.cs
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\Admin Page.g.cs
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club List Admin.g.cs
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit News.g.cs
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\MainWindow.g.cs
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member.g.cs
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\News List Admin.g.cs
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\RegisterWindow.g.cs
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\Representative.g.cs
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\App.g.cs
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment_MarkupCompile.cache
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment_MarkupCompile.lref
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\Add Club.baml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\Admin Page.baml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club List Admin.baml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit News.baml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\MainWindow.baml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member.baml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\News List Admin.baml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\RegisterWindow.baml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\Representative.baml
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.g.resources
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.Properties.Resources.resources
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csproj.GenerateResource.cache
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csproj.CoreCompileInputs.cache
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csproj.CopyComplete
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.exe
-C:\Users\munee\Documents\GitHub\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.pdb
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Add Club.g.cs
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club List Admin.g.cs
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Representative.g.cs
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Add Club.baml
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club List Admin.baml
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Representative.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Images\News.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member Home.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Sports_Hobbies_Details.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Weekly Updates.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Create Weekly Updates.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Representative.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Create Weekly Updates.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Images\News.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member Home.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Sports_Hobbies_Details.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Weekly Updates.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Representative.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\ClubListRepresentative.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Weekly Updates Representative.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\ClubListRepresentative.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Weekly Updates Representative.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit Club Representative.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit Club Representative.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\NewsListMember.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\NewsListMember.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit Representative.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Members and Representative.g.cs
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit Representative.baml
-C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Members and Representative.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csprojAssemblyReference.cache
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\News.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\News.baml
