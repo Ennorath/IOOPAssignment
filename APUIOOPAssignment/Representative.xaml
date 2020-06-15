@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="Representative" Height="813.6" Width="800">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="456" Margin="0,158,-0.4,0" VerticalAlignment="Top" Width="794" Source="red BG.jpg" Stretch="UniformToFill"/>
-        <Image HorizontalAlignment="Left" Height="84" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0" Source="BG up.jpg"/>
-        <Image HorizontalAlignment="Left" Height="74" Margin="0,84,-0.4,0" VerticalAlignment="Top" Width="794" Source="What BG.jpg"/>
-        <Image HorizontalAlignment="Left" Height="174" Margin="0,614,-0.4,0" VerticalAlignment="Top" Width="794" Source="BG down.jpg"/>
+        <Image HorizontalAlignment="Left" Height="456" Margin="0,158,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\red BG.jpg" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="84" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0" Source="Images\BG up.jpg"/>
+        <Image HorizontalAlignment="Left" Height="74" Margin="0,84,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\What BG.jpg"/>
+        <Image HorizontalAlignment="Left" Height="174" Margin="0,614,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\BG down.jpg"/>
         <Button x:Name="btnWeekly" Margin="50,211,436.6,340" Click="btnWeekly_Click" Background="#d349e7">
             <StackPanel>
                 <Image Source="Images/Weekly Updates.png" Width="257" Height="164" />

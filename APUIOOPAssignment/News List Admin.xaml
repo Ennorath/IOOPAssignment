@@ -9,9 +9,9 @@
     <Grid>
         <Image HorizontalAlignment="Left" Height="85" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\BG up.jpg" />
         <Image HorizontalAlignment="Left" Height="79" Margin="0,84,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\edit News UP.jpg"/>
-        <Image HorizontalAlignment="Left" Height="349" Margin="0,163,-0.4,0" VerticalAlignment="Top" Width="794" Source="red BG.jpg" Stretch="UniformToFill"/>
-        <Image HorizontalAlignment="Left" Height="349" Margin="102,163,0,0" VerticalAlignment="Top" Width="594" Source="White bg.jpg" Stretch="UniformToFill"/>
-        <Image x:Name="NewNewsImg" HorizontalAlignment="Left" Height="234" Margin="139,204,0,0" VerticalAlignment="Top" Width="376" Source="No Image News.jpg"/>
+        <Image HorizontalAlignment="Left" Height="349" Margin="0,163,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\red BG.jpg" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="349" Margin="102,163,0,0" VerticalAlignment="Top" Width="594" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
+        <Image x:Name="NewNewsImg" HorizontalAlignment="Left" Height="234" Margin="139,204,0,0" VerticalAlignment="Top" Width="376" Source="Images\No Image News.jpg"/>
         <Button x:Name="btnEdit" FontFamily="Berlin Sans FB" Content="Edit News" HorizontalAlignment="Left" Margin="557,303,0,0" VerticalAlignment="Top" Width="97" Height="34" Click="Button_Click"/>
         <Button x:Name="btnAdd" FontFamily="Berlin Sans FB" Content="+ Add News" HorizontalAlignment="Left" Margin="572,459,0,0" VerticalAlignment="Top" Width="82" Height="30" Click="btnAdd_Click"/>
         <Button x:Name="btnBack" Margin="29,89,653.8,752.8" Background="#c0c0c0" Click="Button_Click">

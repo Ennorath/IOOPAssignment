@@ -8,13 +8,13 @@
         Title="Edit_Club_Representative" Height="1214.8" Width="800">
     <Grid>
 
-        <Image HorizontalAlignment="Left" Height="858" Margin="0,157,0,0" VerticalAlignment="Top" Width="774" Source="red BG.jpg" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="858" Margin="0,157,0,0" VerticalAlignment="Top" Width="774" Source="Images\red BG.jpg" Stretch="UniformToFill"/>
 
-        <Image HorizontalAlignment="Left" Height="858" Margin="81,157,0,0" VerticalAlignment="Top" Width="618" Source="White bg.jpg" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="858" Margin="81,157,0,0" VerticalAlignment="Top" Width="618" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
 
-        <Image HorizontalAlignment="Left" Height="84" VerticalAlignment="Top" Width="774" Source="BG up.jpg"/>
-        <Image HorizontalAlignment="Left" Height="77" Margin="0,82,0,0" VerticalAlignment="Top" Width="774" Source="Club BG UP.jpg" Stretch="UniformToFill"/>
-        <Image x:Name="LogoClub" HorizontalAlignment="Left" Height="173" Margin="309,181,0,0" VerticalAlignment="Top" Width="173" Source="No Image.jpg"/>
+        <Image HorizontalAlignment="Left" Height="84" VerticalAlignment="Top" Width="774" Source="Images\BG up.jpg"/>
+        <Image HorizontalAlignment="Left" Height="77" Margin="0,82,0,0" VerticalAlignment="Top" Width="774" Source="Images\Club BG UP.jpg" Stretch="UniformToFill"/>
+        <Image x:Name="LogoClub" HorizontalAlignment="Left" Height="173" Margin="309,181,0,0" VerticalAlignment="Top" Width="173" Source="Images\No Image.jpg"/>
         <TextBox x:Name="txtPresident" HorizontalAlignment="Left" Height="21" Margin="309,615,0,-216" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
         <TextBox x:Name="txtVicePresident" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="21" Margin="309,661,0,-262" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
         <TextBox x:Name="txtSecretary" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="21" Margin="309,712,0,-313" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
@@ -36,7 +36,7 @@
         <Label Content="Details" HorizontalAlignment="Left" Margin="159,764,0,-370" VerticalAlignment="Top" Height="26" Width="46" FontFamily="Berlin Sans FB"/>
         <Button x:Name="btnAddImage" Content="Add image" FontFamily="Berlin Sans FB" HorizontalAlignment="Left" Margin="354,412,0,-11" VerticalAlignment="Top" Width="75" Click="btnAddImage_Click" Height="19"/>
         <TextBox x:Name="TextBox1" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="23" Margin="309,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256"/>
-        <Image HorizontalAlignment="Left" Height="171" Margin="0,1015,0,0" VerticalAlignment="Top" Width="774" Source="BG down.jpg"/>
+        <Image HorizontalAlignment="Left" Height="171" Margin="0,1015,0,0" VerticalAlignment="Top" Width="774" Source="Images\BG down.jpg"/>
         <Label x:Name="lblClubName" Content="ClubName" HorizontalAlignment="Left" Margin="309,453,0,0" VerticalAlignment="Top" Width="256" FontFamily="Berlin Sans FB"/>
         <Label x:Name="lblType" Content="ClubType" HorizontalAlignment="Left" Margin="309,508,0,0" VerticalAlignment="Top" Width="256" FontFamily="Berlin Sans FB"/>
         <Label x:Name="lblDate" Content="DateRegister" HorizontalAlignment="Left" Margin="309,565,0,0" VerticalAlignment="Top" Width="256" FontFamily="Berlin Sans FB"/>

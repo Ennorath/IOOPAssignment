@@ -8,9 +8,9 @@
         Title="Add_Club" Height="1062.93" Width="786">
     <ScrollViewer Margin="0,0,3.2,-4.4">
         <Grid HorizontalAlignment="Left" Height="1176" VerticalAlignment="Top" Width="764">
-            <Image HorizontalAlignment="Left" Height="861" Margin="0,157,0,0" VerticalAlignment="Top" Width="763" Source="red BG.jpg" Stretch="UniformToFill"/>
-            <Image HorizontalAlignment="Left" Height="861" Margin="86,157,0,0" VerticalAlignment="Top" Width="596" Source="White bg.jpg" Stretch="UniformToFill"/>
-            <Image x:Name="LogoClub" HorizontalAlignment="Left" Height="173" Margin="309,181,0,0" VerticalAlignment="Top" Width="173" Source="No Image.jpg"/>
+            <Image HorizontalAlignment="Left" Height="861" Margin="0,157,0,0" VerticalAlignment="Top" Width="763" Source="Images\red BG.jpg" Stretch="UniformToFill"/>
+            <Image HorizontalAlignment="Left" Height="861" Margin="86,157,0,0" VerticalAlignment="Top" Width="596" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
+            <Image x:Name="LogoClub" HorizontalAlignment="Left" Height="173" Margin="309,181,0,0" VerticalAlignment="Top" Width="173" Source="Images\No Image.jpg"/>
             <TextBox x:Name="txtClubName" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="21" Margin="309,458,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
             <ComboBox x:Name="cmbType" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Margin="319,511,0,-23" VerticalAlignment="Top" Width="120" SelectionChanged="cmbType_SelectionChanged" Height="22">
                 <ComboBoxItem>
@@ -55,9 +55,9 @@
             <Label Content="Secretary" HorizontalAlignment="Left" Margin="152,707,0,-223" VerticalAlignment="Top" Height="26" Width="59"/>
             <Label Content="Details" HorizontalAlignment="Left" Margin="159,764,0,-280" VerticalAlignment="Top" Height="26" Width="46"/>
             <Button x:Name="btnAddImage" Content="Add image" FontFamily="Berlin Sans FB" HorizontalAlignment="Left" Margin="354,412,0,0" VerticalAlignment="Top" Width="75" Click="btnAddImage_Click" Height="19"/>
-            <Image HorizontalAlignment="Left" Height="81" VerticalAlignment="Top" Width="763" Source="BG up.jpg"/>
-            <Image HorizontalAlignment="Left" Height="76" Margin="0,81,0,0" VerticalAlignment="Top" Width="763" Source="edit Club UP.jpg"/>
-            <Image HorizontalAlignment="Left" Height="182" Margin="0,1018,0,-24" VerticalAlignment="Top" Width="763" Source="BG down.jpg"/>
+            <Image HorizontalAlignment="Left" Height="81" VerticalAlignment="Top" Width="763" Source="Images\BG up.jpg"/>
+            <Image HorizontalAlignment="Left" Height="76" Margin="0,81,0,0" VerticalAlignment="Top" Width="763" Source="Images\edit Club UP.jpg"/>
+            <Image HorizontalAlignment="Left" Height="182" Margin="0,1018,0,-24" VerticalAlignment="Top" Width="763" Source="Images\BG down.jpg"/>
             <TextBox x:Name="TextBox1" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="23" Margin="309,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256"/>
             <Button x:Name="btnBack" Margin="18,97,687,1038" Background="#c0c0c0" Click="ButtonBack_Click" BorderThickness="0">
                 <StackPanel>

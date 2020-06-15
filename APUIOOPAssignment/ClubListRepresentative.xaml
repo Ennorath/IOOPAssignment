@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="ClubListRepresentative" Height="641.118" Width="778.8">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="94" Margin="-2,2,0,0" VerticalAlignment="Top" Width="776" Source="BG up.jpg"/>
-        <Image HorizontalAlignment="Left" Margin="1,147,0,-0.4" Width="774" Source="red BG.jpg" Stretch="UniformToFill"/>
-        <Image HorizontalAlignment="Left" Height="304" Margin="97,147,0,0" VerticalAlignment="Top" Width="566" RenderTransformOrigin="0.5,0.5" OpacityMask="#FFD42D2D" Source="White bg.jpg" Stretch="UniformToFill">
+        <Image HorizontalAlignment="Left" Height="94" Margin="-2,2,0,0" VerticalAlignment="Top" Width="776" Source="Images\BG up.jpg"/>
+        <Image HorizontalAlignment="Left" Margin="1,147,0,-0.4" Width="774" Source="Images\red BG.jpg" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="304" Margin="97,147,0,0" VerticalAlignment="Top" Width="566" RenderTransformOrigin="0.5,0.5" OpacityMask="#FFD42D2D" Source="Images\White bg.jpg" Stretch="UniformToFill">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -20,10 +20,10 @@
             </Image.RenderTransform>
         </Image>
         <Label Content="You are currently, representative of this Club" HorizontalAlignment="Left" Margin="159,178,0,0" VerticalAlignment="Top" Width="464" FontFamily="Berlin Sans FB" FontSize="24"/>
-        <Image x:Name="ImgLogoClub" HorizontalAlignment="Left" Height="135" Margin="330,241,0,0" VerticalAlignment="Top" Width="135" Source="No Image.jpg"/>
+        <Image x:Name="ImgLogoClub" HorizontalAlignment="Left" Height="135" Margin="330,241,0,0" VerticalAlignment="Top" Width="135" Source="Images\No Image.jpg"/>
         <Button x:Name="btnEditNews" Content="Edit" FontFamily="Berlin Sans FB" HorizontalAlignment="Left" Margin="350,399,0,0" VerticalAlignment="Top" Width="92" Height="23" Click="btnEditNews_Click"/>
-        <Image HorizontalAlignment="Left" Height="172" Margin="-2,450,0,0" VerticalAlignment="Top" Width="777" Source="BG down.jpg"/>
-        <Image HorizontalAlignment="Left" Height="77" Margin="0,82,0,0" VerticalAlignment="Top" Width="774" Source="Club BG UP.jpg" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="172" Margin="-2,450,0,0" VerticalAlignment="Top" Width="777" Source="Images\BG down.jpg"/>
+        <Image HorizontalAlignment="Left" Height="77" Margin="0,82,0,0" VerticalAlignment="Top" Width="774" Source="Images\Club BG UP.jpg" Stretch="UniformToFill"/>
         <Button x:Name="btnBack" Margin="25,96,682.8,469.2" Background="#c0c0c0" Click="ButtonBack_Click" BorderThickness="0">
             <StackPanel>
                 <Image Source="Images/Back button.png" Height="33" Width="43" />

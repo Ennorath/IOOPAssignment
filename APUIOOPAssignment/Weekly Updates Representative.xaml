@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="Weekly_Updates_Representative" Height="663.874" Width="652.372">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="81" VerticalAlignment="Top" Width="650" Source="BG up.jpg"/>
-        <Image HorizontalAlignment="Left" Height="62" Margin="0,68,0,0" VerticalAlignment="Top" Width="648" Source="Weekly updates UP BG.jpg"/>
-        <Image HorizontalAlignment="Left" Height="362" Margin="0,128,-4.4,0" VerticalAlignment="Top" Width="650" Source="red BG.jpg" Stretch="UniformToFill"/>
-        <Image HorizontalAlignment="Left" Height="361" Margin="83,129,0,0" VerticalAlignment="Top" Width="473" Source="White bg.jpg" Stretch="UniformToFill"/>
-        <Image HorizontalAlignment="Left" Height="171" Margin="109,171,0,0" VerticalAlignment="Top" Width="277" RenderTransformOrigin="0.492,0.476" Source="No Image News.jpg"/>
+        <Image HorizontalAlignment="Left" Height="81" VerticalAlignment="Top" Width="650" Source="Images\BG up.jpg"/>
+        <Image HorizontalAlignment="Left" Height="62" Margin="0,68,0,0" VerticalAlignment="Top" Width="648" Source="Images\Weekly updates UP BG.jpg"/>
+        <Image HorizontalAlignment="Left" Height="362" Margin="0,128,-4.4,0" VerticalAlignment="Top" Width="650" Source="Images\red BG.jpg" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="361" Margin="83,129,0,0" VerticalAlignment="Top" Width="473" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="171" Margin="109,171,0,0" VerticalAlignment="Top" Width="277" RenderTransformOrigin="0.492,0.476" Source="Images\No Image News.jpg"/>
         <Button x:Name="btnEdit" Content="Edit" HorizontalAlignment="Left" Margin="429,236,0,0" VerticalAlignment="Top" Width="75" Click="btnEdit_Click" FontFamily="Berlin Sans FB" FontSize="18" Height="34"/>
         <Button x:Name="btnAdd" Content="Add New" HorizontalAlignment="Left" Margin="109,374,0,0" VerticalAlignment="Top" Width="132" Height="30" FontFamily="Berlin Sans FB" FontSize="16"/>
         <Button x:Name="btnBack" Margin="25,81,561.6,512.4" Background="#c0c0c0" Click="ButtonBack_Click" BorderThickness="0">
@@ -20,7 +20,7 @@
 
             </StackPanel>
         </Button>
-        <Image HorizontalAlignment="Left" Height="144" Margin="0,490,-4.4,0" VerticalAlignment="Top" Width="650" Source="BG down.jpg"/>
+        <Image HorizontalAlignment="Left" Height="144" Margin="0,490,-4.4,0" VerticalAlignment="Top" Width="650" Source="Images\BG down.jpg"/>
 
     </Grid>
 </Window>
