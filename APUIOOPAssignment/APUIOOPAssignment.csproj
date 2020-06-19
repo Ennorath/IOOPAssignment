@@ -131,6 +131,7 @@
     <Compile Include="ClubListRepresentative.xaml.cs">
       <DependentUpon>ClubListRepresentative.xaml</DependentUpon>
     </Compile>
+    <Compile Include="convertImage.cs" />
     <Compile Include="Create Weekly Updates.xaml.cs">
       <DependentUpon>Create Weekly Updates.xaml</DependentUpon>
     </Compile>

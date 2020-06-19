@@ -21,14 +21,24 @@
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>
-            <Image HorizontalAlignment="Left" Height="135" Margin="155,191,0,0" VerticalAlignment="Top" Width="135" Source="Images\No Image.jpg"/>
-            <Image HorizontalAlignment="Left" Height="135" Margin="351,191,0,0" VerticalAlignment="Top" Width="135" Source="Images\Add new club.png"/>
-            <Button x:Name="btnEditNews" Content="Edit" FontFamily="Berlin Sans FB" HorizontalAlignment="Left" Margin="155,344,0,0" VerticalAlignment="Top" Width="55" Height="23" Click="Button_Click"/>
-            <Button Content="Delete" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Margin="235,344,0,0" VerticalAlignment="Top" Width="55" Height="23" Click="Button_Click"/>
+            <Button x:Name="AddNewClubBtn" Margin="-340,190,0,0" VerticalAlignment="Top" Width="140" Height="140" Click="AddNewClubBtn_Click">
+                <StackPanel>
+                    <Image Height="135" Width="135" Source="Images\Add new club.png"/>
+                </StackPanel>
+            </Button>
+
+
+            <Image HorizontalAlignment="Left" Height="135" Margin="317,194,0,0" VerticalAlignment="Top" Width="136" Source="Images\No Image.jpg"/>
+            <Button x:Name="editNewsBtn" Content="Edit" FontFamily="Berlin Sans FB" HorizontalAlignment="Left" Margin="317,347,0,0" VerticalAlignment="Top" Width="56" Height="23" Click="editNewsBtn_Click"/>
+            <Button x:Name="deleteNewsBtn" Content="Delete" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Margin="397,347,0,0" VerticalAlignment="Top" Width="56" Height="23" Click="deleteNewsBtn_Click"/>
+
+            <Image HorizontalAlignment="Left" Height="135" Margin="494,194,0,0" VerticalAlignment="Top" Width="136" Source="Images/No Image.jpg"/>
+            <Button x:Name="btnEditNews_Copy" Content="Edit" FontFamily="Berlin Sans FB" HorizontalAlignment="Left" Margin="494,347,0,0" VerticalAlignment="Top" Width="56" Height="23" Click="editNewsBtn_Click"/>
+            <Button Content="deleteNewsBtn" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Margin="574,347,0,0" VerticalAlignment="Top" Width="56" Height="23" Click="deleteNewsBtn_Click"/>
+
             <Button x:Name="btnBack" Margin="29,89,653.8,752.8" Background="#c0c0c0" Click="ButtonBack_Click" BorderThickness="0">
                 <StackPanel>
                     <Image Source="Images/Back button.png" Height="33" Width="41" />
-
                 </StackPanel>
             </Button>
 

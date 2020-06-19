@@ -11,8 +11,8 @@
             <Image HorizontalAlignment="Left" Height="861" Margin="0,157,0,0" VerticalAlignment="Top" Width="763" Source="Images\red BG.jpg" Stretch="UniformToFill"/>
             <Image HorizontalAlignment="Left" Height="861" Margin="86,157,0,0" VerticalAlignment="Top" Width="596" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
             <Image x:Name="LogoClub" HorizontalAlignment="Left" Height="173" Margin="309,181,0,0" VerticalAlignment="Top" Width="173" Source="Images\No Image.jpg"/>
-            <TextBox x:Name="txtClubName" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="21" Margin="309,458,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
-            <ComboBox x:Name="cmbType" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Margin="319,511,0,-23" VerticalAlignment="Top" Width="120" SelectionChanged="cmbType_SelectionChanged" Height="22">
+            <TextBox x:Name="clubNameText" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="21" Margin="309,458,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
+            <ComboBox x:Name="clubTypeCmb" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Margin="319,511,0,-23" VerticalAlignment="Top" Width="120" SelectionChanged="cmbType_SelectionChanged" Height="22">
                 <ComboBoxItem>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock><Run Text="Sports"/></TextBlock>
@@ -35,17 +35,17 @@
                 </ComboBoxItem>
             </ComboBox>
             <DatePicker x:Name="DateRegistered" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Margin="309,562,0,-75" VerticalAlignment="Top" SelectedDateChanged="DateClub_SelectedDateChanged" Height="23" Width="102"/>
-            <TextBox x:Name="txtPresident" HorizontalAlignment="Left" Height="21" Margin="309,615,0,-126" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
-            <TextBox x:Name="txtVicePresident" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="21" Margin="309,661,0,-172" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
-            <TextBox x:Name="txtSecretary" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="21" Margin="309,712,0,-223" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
-            <RichTextBox x:Name="txtDetails" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="136" Margin="309,764,0,-390" VerticalAlignment="Top" Width="305">
+            <TextBox x:Name="presidentText" HorizontalAlignment="Left" Height="21" Margin="309,615,0,-126" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
+            <TextBox x:Name="vicePresidentText" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="21" Margin="309,661,0,-172" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
+            <TextBox x:Name="secretaryText" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="21" Margin="309,712,0,-223" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
+            <RichTextBox x:Name="detailsText" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="136" Margin="309,764,0,-390" VerticalAlignment="Top" Width="305">
                 <FlowDocument>
                     <Paragraph>
                         <Run Text=""/>
                     </Paragraph>
                 </FlowDocument>
             </RichTextBox>
-            <Button Content="Save" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="35" Margin="494,944,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click" FontSize="18"/>
+            <Button Content="Save" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="35" Margin="494,944,0,0" VerticalAlignment="Top" Width="120" Click="saveClub" FontSize="18"/>
             <Label Content="Image" HorizontalAlignment="Left" Margin="168,257,0,0" VerticalAlignment="Top" Height="26" Width="43" FontFamily="Berlin Sans FB"/>
             <Label Content="Club Name" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Margin="159,453,0,0" VerticalAlignment="Top" Height="26" Width="69"/>
             <Label Content="Club Type" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Margin="159,508,0,-24" VerticalAlignment="Top" Height="26" Width="62"/>
@@ -58,7 +58,7 @@
             <Image HorizontalAlignment="Left" Height="81" VerticalAlignment="Top" Width="763" Source="Images\BG up.jpg"/>
             <Image HorizontalAlignment="Left" Height="76" Margin="0,81,0,0" VerticalAlignment="Top" Width="763" Source="Images\edit Club UP.jpg"/>
             <Image HorizontalAlignment="Left" Height="182" Margin="0,1018,0,-24" VerticalAlignment="Top" Width="763" Source="Images\BG down.jpg"/>
-            <TextBox x:Name="TextBox1" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="23" Margin="309,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256"/>
+            <TextBox x:Name="imagePathText" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Height="23" Margin="309,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256"/>
             <Button x:Name="btnBack" Margin="18,97,687,1038" Background="#c0c0c0" Click="ButtonBack_Click" BorderThickness="0">
                 <StackPanel>
                     <Image Source="Images/Back button.png" Height="33" Width="41" />

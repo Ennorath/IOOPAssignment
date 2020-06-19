@@ -7,6 +7,9 @@ using System.Windows;
 using System.Security.Cryptography;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.IO;
+using System.Drawing;
+using System.Windows.Media.Imaging;
 
 namespace APUIOOPAssignment
 {
@@ -150,7 +153,9 @@ namespace APUIOOPAssignment
             }
             return hash.ToString();
         }
-        public static bool AddClub(string Image, string ClubName, string Type, string Date, string President, string Vice, string Secretary, string Details)
+
+
+        public static bool AddClub(byte[] Image, string ClubName, string Type, string Date, string President, string Vice, string Secretary, string Details)
         {
             try
             {
@@ -158,9 +163,10 @@ namespace APUIOOPAssignment
                 {
                     using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
                     {
-                        string CreatingNews = $"INSERT into News (Image, ClubName, Type, Date, President, Vice, Secretary, Details) VALUES ('{Image}','{Type}','{Date}','{President}','{Vice},'{Secretary}','{Details}')";
+                        string CreatingNews = $"INSERT into Clubs (Image, ClubName, Type, Date, President, Vice, Secretary, Details) VALUES (@image,'{ClubName}','{Type}','{Date}','{President}','{Vice}','{Secretary}','{Details}')";
                         MySqlCommand cmd = new MySqlCommand(CreatingNews, MySqlConn);
                         MySqlConn.Open();
+                        cmd.Parameters.Add("@image", MySqlDbType.Blob).Value = Image;
                         cmd.ExecuteNonQuery();
                         MySqlConn.Close();
                         MessageBox.Show("News Successfully created");
@@ -179,5 +185,37 @@ namespace APUIOOPAssignment
             }
 
         }
+
+        public static byte[] clubImg(string clubID) {
+            UInt32 FileSize;
+            byte[] Data;
+            Bitmap outImage;
+            try
+            {
+                    MySqlConnection connection = new MySqlConnection(connectionString);       
+                    string query = "SELECT Image FROM Clubs WHERE clubID = @id";
+                    connection.Open();
+                DataSet ds = new DataSet();
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                    cmd.Parameters.AddWithValue("@id", clubID);
+
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+                    da.Fill(ds);
+                    connection.Close();
+                    Data = (byte[])ds.Tables[0].Rows[0][0];
+                    cmd.Dispose();
+                
+                return Data;
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+
+        }
+
     }
 }

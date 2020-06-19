@@ -24,17 +24,28 @@ namespace APUIOOPAssignment
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Add_Club sw = new Add_Club();
-            sw.Show();
-            this.Close();
-        }
         private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
             Admin_Page hm = new Admin_Page();
             hm.Show();
             this.Close();
+        }
+
+        private void AddNewClubBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Add_Club sw = new Add_Club();
+            sw.Show();
+            this.Close();
+        }
+
+        private void editNewsBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void deleteNewsBtn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

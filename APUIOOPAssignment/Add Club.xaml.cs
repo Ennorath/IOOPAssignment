@@ -53,10 +53,10 @@ namespace APUIOOPAssignment
 
             if (result == true)
             {
-                TextBox1.Text = dlg.FileName;
+                imagePathText.Text = dlg.FileName;
                 BitmapImage bitmap = new BitmapImage();
                 bitmap.BeginInit();
-                bitmap.UriSource = new Uri(TextBox1.Text);
+                bitmap.UriSource = new Uri(imagePathText.Text);
                 bitmap.EndInit();
                 LogoClub.Source = bitmap;
             }
@@ -64,40 +64,25 @@ namespace APUIOOPAssignment
 
         private void cmbType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (cmbType.SelectedIndex == 0)
+            if (clubTypeCmb.SelectedIndex == 0)
             {
                 ClubType = "Sports";
             }
             else
-            if (cmbType.SelectedIndex == 1)
+            if (clubTypeCmb.SelectedIndex == 1)
             {
                 ClubType = "Hobbies";
             }
             else
-            if (cmbType.SelectedIndex == 2)
+            if (clubTypeCmb.SelectedIndex == 2)
             {
                 ClubType = "Societies";
             }
             else
-            if (cmbType.SelectedIndex == 3)
+            if (clubTypeCmb.SelectedIndex == 3)
             {
                 ClubType = "General Interest";
             }
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            File.Copy(TextBox1.Text, System.IO.Path.Combine(@"C:\Users\Yosua Daniel\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\Images\", System.IO.Path.GetFileName(TextBox1.Text)), true);
-
-            string Image = TextBox1.Text;
-            string ClubName = txtClubName.Text;
-            string Type = ClubType;
-            string Date = Title;
-            string President = txtPresident.Text;
-            string Vice = txtVicePresident.Text;
-            string Secretary = txtSecretary.Text;
-            string Details = new TextRange(txtDetails.Document.ContentStart, txtDetails.Document.ContentEnd).Text;
-            Authorization.AddClub(Image, ClubName, Type, Date, President, Vice, Secretary, Details);
         }
 
         private void ButtonBack_Click(object sender, RoutedEventArgs e)
@@ -105,6 +90,25 @@ namespace APUIOOPAssignment
             Club_List_Admin cl = new Club_List_Admin();
             cl.Show();
             this.Close();
+        }
+
+        private void saveClub(object sender, RoutedEventArgs e)
+        {
+            byte[] data = Authorization.clubImg("10");
+            LogoClub.Source = convertImage.toPicture(data);
+
+            string ClubName = clubNameText.Text;
+            string Type = ClubType;
+            string Date = Title;
+            string President = presidentText.Text;
+            string Vice = vicePresidentText.Text;
+            string Secretary = secretaryText.Text;
+            string Details = new TextRange(detailsText.Document.ContentStart, detailsText.Document.ContentEnd).Text;
+            byte[] Image = convertImage.toBin(imagePathText.Text);
+
+            
+            Authorization.AddClub(Image, ClubName, Type, Date, President, Vice, Secretary, Details);
+
         }
     }
 }
