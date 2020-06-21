@@ -42,7 +42,7 @@ namespace APUIOOPAssignment
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            string NumOfRows = Authorization.takeNewsRows();
+            string NumOfRows = Database.takeNewsRows();
             int NewHeight = int.Parse(NumOfRows);
 
             /*do

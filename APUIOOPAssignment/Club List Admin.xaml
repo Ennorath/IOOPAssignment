@@ -5,42 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
-        Title="Club_List_Admin" Height="450" Width="800">
+        Title="Club_List_Admin" Width="768" Height="Auto">
     <ScrollViewer>
-        <Grid Margin="0,0,35.6,-463">
-            <Image HorizontalAlignment="Left" Height="94" Margin="-2,-10,-32.8,0" VerticalAlignment="Top" Width="776" Source="Images\BG up.jpg"/>
-            <Image HorizontalAlignment="Left" Height="77" Margin="0,70,-32.8,0" VerticalAlignment="Top" Width="774" Source="Images\Club BG UP.jpg" Stretch="UniformToFill"/>
-            <Image HorizontalAlignment="Left" Margin="1,147,-33.8,-12" Width="774" Source="Images\red BG.jpg" Stretch="UniformToFill"/>
-            <Image HorizontalAlignment="Left" Height="743" Margin="100,147,0,-7" VerticalAlignment="Top" Width="566" RenderTransformOrigin="0.5,0.5" OpacityMask="#FFD42D2D" Source="Images\White bg.jpg" Stretch="UniformToFill">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform AngleX="0.744"/>
-                        <RotateTransform/>
-                        <TranslateTransform X="1.987"/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Button x:Name="AddNewClubBtn" Margin="-340,190,0,0" VerticalAlignment="Top" Width="140" Height="140" Click="AddNewClubBtn_Click">
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="Images\editClubBG.jpg" Stretch="Fill"/>
+            </Grid.Background>
+            <Image HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="745" Source="Images\BG up.jpg"/>
+            <Image HorizontalAlignment="Left" Margin="0,79,0,0" VerticalAlignment="Top" Width="745" Source="Images\Club BG UP.jpg"/>
+
+
+            <Button x:Name="btnBack" Click="ButtonBack_Click" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,90,0,0" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="{x:Null}" Width="41" Height="33">
+                <Image Source="Images/Back button.png" Height="33" Width="41" />
+            </Button>
+            <Button x:Name="AddNewClubBtn" Margin="0,160,0,0" VerticalAlignment="Top" Width="140" Height="140" Click="AddNewClubBtn_Click">
                 <StackPanel>
                     <Image Height="135" Width="135" Source="Images\Add new club.png"/>
                 </StackPanel>
             </Button>
-
-
-            <Image HorizontalAlignment="Left" Height="135" Margin="317,194,0,0" VerticalAlignment="Top" Width="136" Source="Images\No Image.jpg"/>
-            <Button x:Name="editNewsBtn" Content="Edit" FontFamily="Berlin Sans FB" HorizontalAlignment="Left" Margin="317,347,0,0" VerticalAlignment="Top" Width="56" Height="23" Click="editNewsBtn_Click"/>
-            <Button x:Name="deleteNewsBtn" Content="Delete" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Margin="397,347,0,0" VerticalAlignment="Top" Width="56" Height="23" Click="deleteNewsBtn_Click"/>
-
-            <Image HorizontalAlignment="Left" Height="135" Margin="494,194,0,0" VerticalAlignment="Top" Width="136" Source="Images/No Image.jpg"/>
-            <Button x:Name="btnEditNews_Copy" Content="Edit" FontFamily="Berlin Sans FB" HorizontalAlignment="Left" Margin="494,347,0,0" VerticalAlignment="Top" Width="56" Height="23" Click="editNewsBtn_Click"/>
-            <Button Content="deleteNewsBtn" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" Margin="574,347,0,0" VerticalAlignment="Top" Width="56" Height="23" Click="deleteNewsBtn_Click"/>
-
-            <Button x:Name="btnBack" Margin="29,89,653.8,752.8" Background="#c0c0c0" Click="ButtonBack_Click" BorderThickness="0">
-                <StackPanel>
-                    <Image Source="Images/Back button.png" Height="33" Width="41" />
-                </StackPanel>
-            </Button>
+            <StackPanel Name="ClubsPanel" Orientation="Horizontal"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,320,0,0" Width="665">
+                <Grid x:Name="GridName">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="221"/>
+                        <ColumnDefinition Width="221"/>
+                        <ColumnDefinition Width="221"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </StackPanel>
 
         </Grid>
     </ScrollViewer>

@@ -94,9 +94,6 @@ namespace APUIOOPAssignment
 
         private void saveClub(object sender, RoutedEventArgs e)
         {
-            byte[] data = Authorization.clubImg("10");
-            LogoClub.Source = convertImage.toPicture(data);
-
             string ClubName = clubNameText.Text;
             string Type = ClubType;
             string Date = Title;
@@ -106,8 +103,8 @@ namespace APUIOOPAssignment
             string Details = new TextRange(detailsText.Document.ContentStart, detailsText.Document.ContentEnd).Text;
             byte[] Image = convertImage.toBin(imagePathText.Text);
 
-            
-            Authorization.AddClub(Image, ClubName, Type, Date, President, Vice, Secretary, Details);
+
+            Database.AddClub(Image, ClubName, Type, Date, President, Vice, Secretary, Details);
 
         }
     }

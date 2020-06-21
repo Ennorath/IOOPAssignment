@@ -128,6 +128,7 @@
     <Compile Include="Club List Admin.xaml.cs">
       <DependentUpon>Club List Admin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ClubBox.cs" />
     <Compile Include="ClubListRepresentative.xaml.cs">
       <DependentUpon>ClubListRepresentative.xaml</DependentUpon>
     </Compile>
@@ -135,6 +136,7 @@
     <Compile Include="Create Weekly Updates.xaml.cs">
       <DependentUpon>Create Weekly Updates.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Database.cs" />
     <Compile Include="Edit Club Representative.xaml.cs">
       <DependentUpon>Edit Club Representative.xaml</DependentUpon>
     </Compile>
@@ -446,6 +448,7 @@
     <Content Include="bin\Debug\APUIOOPAssignment.pdb" />
     <Content Include="bin\Debug\BouncyCastle.Crypto.dll" />
     <Content Include="bin\Debug\Google.Protobuf.dll" />
+    <Resource Include="Images\editClubBG.jpg" />
     <Resource Include="Images\68113909-stone-grunge-abstract-wall-stone-background-texture-cracked-texture-used-design-for-background.jpg" />
     <Resource Include="Images\Add News clicked.png" />
     <Resource Include="Images\Add News.png" />

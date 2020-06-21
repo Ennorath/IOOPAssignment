@@ -30,7 +30,7 @@ namespace APUIOOPAssignment
         {
             string Headline = "sada";
 
-            IList<String> NewsInfo = Authorization.LoadNews(Headline);
+            IList<String> NewsInfo = Database.LoadNews(Headline);
             /*IList<string> Data = Authorization.LoadNews(Headline);*/
 
             /*string ImageLocation = Data[0];
