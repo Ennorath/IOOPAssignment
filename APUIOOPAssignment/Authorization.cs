@@ -17,7 +17,7 @@ namespace APUIOOPAssignment
     {
         private const string connectionString = @"SERVER=31.31.198.66;DATABASE=u0994893_ioopproject;USER ID=u0994893_ioop;PASSWORD=SanatovD;";
 
-        public static string Login(string username, string password) {
+        public static void Login(string username, string password) {
             if (!(username == null && password == null))
             {
                 try
@@ -26,38 +26,39 @@ namespace APUIOOPAssignment
                     {
                         string receivedPass = "";
                         string role = "";
-                        
-                        string query = $"SELECT password, role FROM Members WHERE TP = @username";
+                        string id = "";
+                        string query = $"SELECT id, password, role FROM Members WHERE TP = @username";
                         MySqlCommand cmd = new MySqlCommand(query, MySqlConn);
                         cmd.Parameters.AddWithValue("@username", username);
                         MySqlConn.Open();
                         MySqlDataReader sqlreader = cmd.ExecuteReader();
                         while (sqlreader.Read())
                         {
-                            receivedPass = sqlreader[0].ToString();
-                            role = sqlreader[1].ToString();
+                            id = sqlreader[0].ToString();
+                            receivedPass = sqlreader[1].ToString();
+                            role = sqlreader[2].ToString();
                         }
                         sqlreader.Close();
                         MySqlConn.Close();
 
                         if (MD5Hash(password) == receivedPass)
                         {
-                            return role;
+                            Properties.Settings.Default.userID = id;
+                            Properties.Settings.Default.login = username;
+                            Properties.Settings.Default.role = role;
+                            Properties.Settings.Default.Save();
                         }
                         else {
                             MessageBox.Show("Incorrect data");
-                            return "false";
                         }
                     }
                 }
                 catch (Exception e){
                     MessageBox.Show("Error: " + e);
-                    return "false";
                 }
             }
             else {
                 MessageBox.Show("Empty login or pass field");
-                return "false";
             }
         }
 

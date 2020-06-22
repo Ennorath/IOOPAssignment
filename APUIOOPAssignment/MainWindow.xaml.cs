@@ -31,20 +31,20 @@ namespace APUIOOPAssignment
         {
             string username = LoginUsernameBox.Text;
             string password = LoginPasswordBox.Text;
-            string loginInfo = Authorization.Login(username, password);
-            if (loginInfo == "0")
+            Authorization.Login(username, password);
+            if (Properties.Settings.Default.role == "0")
             {
                 Member member = new Member();
                 member.Show();
                 this.Close();
             }
-            else if (loginInfo == "1")
+            else if (Properties.Settings.Default.role == "1")
             {
                 Representative representative = new Representative();
                 representative.Show();
                 this.Close();
             }
-            else if (loginInfo == "2")
+            else if (Properties.Settings.Default.role == "2")
             {
                 Admin_Page admin = new Admin_Page();
                 admin.Show();

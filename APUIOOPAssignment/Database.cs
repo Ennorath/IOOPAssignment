@@ -305,6 +305,175 @@ namespace APUIOOPAssignment
 
         }
 
+        public static void AddWeeklyUpd(string Headline, string ClubName, string Type, string Date, string TimeStart, string TimeEnd, string Location, string Description, string Achievement, byte[] Image)
+        {
+            try
+            {
+                if (!(Image == null || Headline == null || ClubName == null || Type == null || Date == null || TimeStart == null || TimeEnd == null || Location == null || Description == null || Achievement == null))
+                {
+                    using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                    {
+                        string CreatingWeek = $"INSERT into WeeklyUpd (Headline, ClubName, Type, Date, TimeStart, TimeEnd, Location, Description, Achievement, Image) VALUES ('{Headline}','{ClubName}','{Type}','{Date}','{TimeStart}','{TimeEnd}','{Location}','{Description}', '{Achievement}', @image)";
+                        MySqlCommand cmd = new MySqlCommand(CreatingWeek, MySqlConn);
+                        MySqlConn.Open();
+                        cmd.Parameters.Add("@image", MySqlDbType.Blob).Value = Image;
+                        cmd.ExecuteNonQuery();
+                        MySqlConn.Close();
+                        MessageBox.Show("News Successfully created");
+                    }
+                }
+                else if (!(Headline == null || ClubName == null || Type == null || Date == null || TimeStart == null || TimeEnd == null || Location == null || Description == null || Achievement == null))
+                {
+                    using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                    {
+                        string CreatingWeek = $"INSERT into WeeklyUpd (Headline, ClubName, Type, Date, TimeStart, TimeEnd, Location, Description, Achievement) VALUES ('{Headline}','{ClubName}','{Type}','{Date}','{TimeStart}','{TimeEnd}','{Location}','{Description}', '{Achievement}')";
+                        MySqlCommand cmd = new MySqlCommand(CreatingWeek, MySqlConn);
+                        MySqlConn.Open();
+                        cmd.ExecuteNonQuery();
+                        MySqlConn.Close();
+                        MessageBox.Show("Weekly updates Successfully created");
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error: " + e);
+            }
+
+        }
+
+        public static List<byte[]> weeklyUpds(out List<string> weeklyIds, out List<string> weeklyHeaders)
+        {
+            weeklyIds = new List<string>();
+            weeklyHeaders = new List<string>();
+            List<byte[]> weeklyImages = new List<byte[]>();
+            try
+            {
+                using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                {
+
+                    MySqlConn.Open();
+                    string query = $"SELECT `weekID`, `Headline` FROM WeeklyUpd";
+                    MySqlCommand cmd = new MySqlCommand(query, MySqlConn);
+                    using (MySqlDataReader club = cmd.ExecuteReader())
+                    {
+                        while (club.Read())
+                        {
+                            weeklyIds.Add(club.GetString("weekID"));
+                            weeklyHeaders.Add(club.GetString("Headline"));
+                        }
+                    }
+                    foreach (string id in weeklyIds)
+                    {
+                        query = "SELECT Image FROM WeeklyUpd WHERE weekID = @id";
+                        DataSet ds = new DataSet();
+                        cmd = new MySqlCommand(query, MySqlConn);
+                        cmd.Parameters.AddWithValue("@id", id);
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        MySqlConn.Close();
+                        da.Fill(ds);
+                        weeklyImages.Add((byte[])ds.Tables[0].Rows[0][0]);
+                        cmd.Dispose();
+                    }
+                    return weeklyImages;
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+        }
+
+        public static byte[] takeWeeklyUpd(string weekID, out List<string> weekDetails)
+        {
+            byte[] Data;
+            weekDetails = new List<string>();
+            List<byte[]> weekImage = new List<byte[]>();
+            try
+            {
+                using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                {
+                    MySqlConn.Open();
+                    string query = $"SELECT `weekID`, `Headline`, `ClubName`, `Type`, `Date`, `TimeStart`, `TimeEnd`, `Location`, `Description`, `Achievement` FROM WeeklyUpd WHERE weekID = @id";
+                    MySqlCommand cmd = new MySqlCommand(query, MySqlConn);
+                    cmd.Parameters.AddWithValue("@id", weekID);
+                    using (MySqlDataReader week = cmd.ExecuteReader())
+                    {
+                        while (week.Read())
+                        {
+                            weekDetails.Add(week.GetString("weekID"));
+                            weekDetails.Add(week.GetString("Headline"));
+                            weekDetails.Add(week.GetString("ClubName"));
+                            weekDetails.Add(week.GetString("Type"));
+                            weekDetails.Add(week.GetString("Date"));
+                            weekDetails.Add(week.GetString("TimeStart"));
+                            weekDetails.Add(week.GetString("TimeEnd"));
+                            weekDetails.Add(week.GetString("Location"));
+                            weekDetails.Add(week.GetString("Description"));
+                            weekDetails.Add(week.GetString("Achievement"));
+                        }
+                    }
+                    query = "SELECT Image FROM WeeklyUpd WHERE weekID = @id";
+                    DataSet ds = new DataSet();
+                    cmd = new MySqlCommand(query, MySqlConn);
+                    cmd.Parameters.AddWithValue("@id", weekID);
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                    MySqlConn.Close();
+                    if (da != null)
+                    {
+                        da.Fill(ds);
+                        Data = (byte[])ds.Tables[0].Rows[0][0];
+                        cmd.Dispose();
+                        return Data;
+                    }
+                    else
+                        return null;
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+        }
+
+        public static void UpdWeeklyUpd(string weekID, string Headline, string ClubName, string Type, string Date, string TimeStart, string TimeEnd, string Location, string Description, string Achievement, byte[] Image)
+        {
+            try
+            {
+                if (!(weekID == null || Image == null || Headline == null || ClubName == null || Type == null || Date == null || TimeStart == null || TimeEnd == null || Location == null || Description == null || Achievement == null))
+                {
+                    using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                    {
+                        string CreatingWeek = $"UPDATE WeeklyUpd SET Headline = '{Headline}', ClubName = '{ClubName}', Type = '{Type}', Date = '{Date}', TimeStart = '{TimeStart}', TimeEnd = '{TimeEnd}', Location = '{Location}', Description = '{Description}', Achievement = '{Achievement}', Image = @image WHERE weekID = '{weekID}'";
+                        MySqlCommand cmd = new MySqlCommand(CreatingWeek, MySqlConn);
+                        MySqlConn.Open();
+                        cmd.Parameters.Add("@image", MySqlDbType.Blob).Value = Image;
+                        cmd.ExecuteNonQuery();
+                        MySqlConn.Close();
+                        MessageBox.Show("News Successfully created");
+                    }
+                }
+                else if (!(weekID == null || Headline == null || ClubName == null || Type == null || Date == null || TimeStart == null || TimeEnd == null || Location == null || Description == null || Achievement == null))
+                {
+                    using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                    {
+                        string CreatingWeek = $"UPDATE WeeklyUpd SET Headline = '{Headline}', ClubName = '{ClubName}', Type = '{Type}', Date = '{Date}', TimeStart = '{TimeStart}', TimeEnd = '{TimeEnd}', Location = '{Location}', Description = '{Description}', Achievement = '{Achievement}' WHERE weekID = '{weekID}'";
+                        MySqlCommand cmd = new MySqlCommand(CreatingWeek, MySqlConn);
+                        MySqlConn.Open();
+                        cmd.ExecuteNonQuery();
+                        MySqlConn.Close();
+                        MessageBox.Show("Weekly updates Successfully created");
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error: " + e);
+            }
+
+        }
 
         public static List<string> memberList(int clubID, out List<int> memberID, out List<int> memberRole)
         {
@@ -337,6 +506,34 @@ namespace APUIOOPAssignment
             }
         }
 
+
+        
+        public static string checkMemberClub(int userID)
+        {
+            try
+            {
+                using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                {
+                    string clubMember = "0";
+                    MySqlConn.Open();
+                    string query = $"SELECT `clubMember` FROM Members WHERE id = {userID}";
+                    MySqlCommand cmd = new MySqlCommand(query, MySqlConn);
+                    using (MySqlDataReader member = cmd.ExecuteReader())
+                    {
+                        while (member.Read())
+                        {
+                            clubMember = member.GetString("clubMember");
+                        }
+                    }
+                    return clubMember;
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return "0";
+            }
+        }
 
         public static bool deleteClub(string clubID)
         {

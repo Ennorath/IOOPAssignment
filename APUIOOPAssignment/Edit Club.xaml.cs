@@ -23,23 +23,40 @@ namespace APUIOOPAssignment
         public Edit_Club()
         {
             InitializeComponent();
-            string sendClubID = Club_List_Admin.SendClubID;
             List<string> clubDetails = new List<string>();
-            byte[] image = Database.takeClub(sendClubID, out clubDetails);
-            if (image != null)
+            string sendClubID = "a";
+            if (Club_List_Admin.SendClubID != null)
             {
-                LogoClub.Source = convertImage.toPicture(image);
+                sendClubID = Club_List_Admin.SendClubID;
             }
-            if (clubDetails != null)
+            else if (Representative.clubID != null) {
+                sendClubID = Representative.clubID;
+            }
+            if (sendClubID != "a")
             {
-                lblClubName.Content = clubDetails[1];
-                lblType.Content = clubDetails[2];
-                lblDate.Content = clubDetails[3];
-                txtPresident.Text = clubDetails[4];
-                txtVicePresident.Text = clubDetails[5];
-                txtSecretary.Text = clubDetails[6];
-                TextRange textRange = new TextRange(txtDetails.Document.ContentStart, txtDetails.Document.ContentEnd);
-                textRange.Text = clubDetails[7];
+                byte[] image = Database.takeClub(sendClubID, out clubDetails);
+
+                if (image != null)
+                {
+                    LogoClub.Source = convertImage.toPicture(image);
+                }
+                if (clubDetails != null)
+                {
+                    lblClubName.Content = clubDetails[1];
+                    lblType.Content = clubDetails[2];
+                    lblDate.Content = clubDetails[3];
+                    txtPresident.Text = clubDetails[4];
+                    txtVicePresident.Text = clubDetails[5];
+                    txtSecretary.Text = clubDetails[6];
+                    TextRange textRange = new TextRange(txtDetails.Document.ContentStart, txtDetails.Document.ContentEnd);
+                    textRange.Text = clubDetails[7];
+                    if (Properties.Settings.Default.role == "1") {
+                        txtPresident.IsReadOnly = true;
+                        txtVicePresident.IsReadOnly = true;
+                        txtSecretary.IsReadOnly = true;
+
+                    }
+                }
             }
         }
 
@@ -63,8 +80,8 @@ namespace APUIOOPAssignment
 
         private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
-            ClubListRepresentative Cl = new ClubListRepresentative();
-            Cl.Show();
+            Representative R = new Representative();
+            R.Show();
             this.Close();
         }
 

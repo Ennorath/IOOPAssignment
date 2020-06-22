@@ -19,6 +19,7 @@ namespace APUIOOPAssignment
     /// </summary>
     public partial class Representative : Window
     {
+        public static string clubID;
         public Representative()
         {
             InitializeComponent();
@@ -26,9 +27,17 @@ namespace APUIOOPAssignment
 
         private void ButtonClubInfo_Click(object sender, RoutedEventArgs e)
         {
-            ClubListRepresentative Cl = new ClubListRepresentative();
-            Cl.Show();
-            this.Close();
+            clubID = Database.checkMemberClub(Convert.ToInt32(Properties.Settings.Default.userID));
+            if (clubID == "0")
+            {
+                MessageBox.Show("Something goes wrong, you don't have club");
+            }
+            else
+            {
+                Edit_Club EC = new Edit_Club();
+                EC.Show();
+                this.Close();
+            }
         }
 
         private void btnWeekly_Click(object sender, RoutedEventArgs e)

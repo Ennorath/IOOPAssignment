@@ -321,15 +321,16 @@
         </ComboBox>
         <DatePicker x:Name="txtDate" HorizontalAlignment="Left" Margin="275,330,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="12"/>
         <TextBox x:Name="txtLocation" HorizontalAlignment="Left" Height="23" Margin="275,422,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" FontFamily="Berlin Sans FB" FontSize="12"/>
-        <RichTextBox HorizontalAlignment="Left" Height="120" Margin="275,468,0,0" VerticalAlignment="Top" Width="234" RenderTransformOrigin="0.5,0.536" FontFamily="Berlin Sans FB" FontSize="12">
+        <RichTextBox x:Name="txtDescription" HorizontalAlignment="Left" Height="120" Margin="275,468,0,0" VerticalAlignment="Top" Width="234" RenderTransformOrigin="0.5,0.536" FontFamily="Berlin Sans FB" FontSize="12">
             <FlowDocument/>
         </RichTextBox>
-        <RichTextBox HorizontalAlignment="Left" Height="100" Margin="275,628,0,0" VerticalAlignment="Top" Width="234" FontFamily="Berlin Sans FB" FontSize="14">
+        <RichTextBox x:Name="txtAchievement" HorizontalAlignment="Left" Height="100" Margin="275,628,0,0" VerticalAlignment="Top" Width="234" FontFamily="Berlin Sans FB" FontSize="14">
             <FlowDocument/>
         </RichTextBox>
-        <Image HorizontalAlignment="Left" Height="159" Margin="275,767,0,0" VerticalAlignment="Top" Width="264" Source="Images\No Image News.jpg"/>
-        <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Left" Margin="378,1004,0,0" VerticalAlignment="Top" Width="69" Height="26" FontFamily="Berlin Sans FB" FontSize="14" Click="BtnOK_Click"/>
-        <Button x:Name="btnAddImage" Content="Add Image" HorizontalAlignment="Left" Margin="369,946,0,0" VerticalAlignment="Top" Width="85" Height="26" FontFamily="Berlin Sans FB" FontSize="14" RenderTransformOrigin="0.5,0.5" Click="btnAddImage_Click">
+        <Image x:Name="img" HorizontalAlignment="Left" Height="159" Margin="275,767,0,0" VerticalAlignment="Top" Width="264" Source="Images\No Image News.jpg"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="450,1004,0,0" VerticalAlignment="Top" Width="69" Height="26" FontFamily="Berlin Sans FB" FontSize="14" Click="BtnOK_Click"/>
+        <TextBox x:Name="imagePath" HorizontalAlignment="Left" Height="23" Margin="275,940,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" FontFamily="Berlin Sans FB" FontSize="12"/>
+        <Button x:Name="btnAddImage" Content="Add Image" HorizontalAlignment="Left" Margin="350,970,0,0" VerticalAlignment="Top" Width="85" Height="26" FontFamily="Berlin Sans FB" FontSize="14" RenderTransformOrigin="0.5,0.5" Click="btnAddImage_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
