@@ -63,7 +63,7 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <Grid>
+    <Grid x:Name="memberListGrid">
         <Image HorizontalAlignment="Left" Height="73" VerticalAlignment="Top" Width="686" Source="Images\BG up.jpg"/>
         <Image HorizontalAlignment="Left" Height="64" Margin="0,73,0,0" VerticalAlignment="Top" Width="686" Source="Images\Club representative BG UP.jpg"/>
         <Image HorizontalAlignment="Left" Height="61" Margin="0,136,0,0" VerticalAlignment="Top" Width="686" Source="Images\configure status.jpg"/>
@@ -74,112 +74,13 @@
 
             </StackPanel>
         </Button>
-        <Image HorizontalAlignment="Left" Height="765" Margin="0,197,-0.4,0" VerticalAlignment="Top" Width="686" Source="Images\bg blue light.jpg" Stretch="UniformToFill"/>
-        <Image HorizontalAlignment="Left" Height="44" Margin="61,261,0,0" VerticalAlignment="Top" Width="572" Source="Images\bg white representative.png"/>
-        <Image HorizontalAlignment="Left" Height="44" Margin="61,325,0,0" VerticalAlignment="Top" Width="572" Source="Images\bg white representative.png"/>
-        <Image HorizontalAlignment="Left" Height="44" Margin="61,390,0,0" VerticalAlignment="Top" Width="572" Source="Images\bg white representative.png"/>
-        <Image HorizontalAlignment="Left" Height="44" Margin="61,457,0,0" VerticalAlignment="Top" Width="572" Source="Images\bg white representative.png"/>
-        <Image HorizontalAlignment="Left" Height="44" Margin="61,521,0,0" VerticalAlignment="Top" Width="572" Source="Images\bg white representative.png"/>
-        <Image HorizontalAlignment="Left" Height="44" Margin="61,586,0,0" VerticalAlignment="Top" Width="572" Source="Images\bg white representative.png"/>
-        <Image HorizontalAlignment="Left" Height="44" Margin="61,655,0,0" VerticalAlignment="Top" Width="572" Source="Images\bg white representative.png"/>
-        <Image HorizontalAlignment="Left" Height="44" Margin="61,719,0,0" VerticalAlignment="Top" Width="572" Source="Images\bg white representative.png"/>
-        <Image HorizontalAlignment="Left" Height="44" Margin="61,784,0,0" VerticalAlignment="Top" Width="572" Source="Images\bg white representative.png"/>
-        <Image HorizontalAlignment="Left" Height="44" Margin="61,851,0,0" VerticalAlignment="Top" Width="572" Source="Images\bg white representative.png"/>
-        <Button x:Name="RegisterBtn" HorizontalAlignment="Left" Margin="531,208,0,0" VerticalAlignment="Top" Width="102" Height="37" Background="#ffb432" FontFamily="Berlin Sans FB" FontSize="24" Style="{DynamicResource ButtonStyle2}">
-            <StackPanel>
-                <Image Source="Images\Next list.png" Height="28" Width="56" />
+        <Image HorizontalAlignment="Left" Margin="0,197,-0.4,0" VerticalAlignment="Top" Width="686" Source="Images\bg blue light.jpg" Stretch="Fill"/>
 
-            </StackPanel>
-        </Button>
-        <Button x:Name="RegisterBtn_Copy" HorizontalAlignment="Left" Margin="61,208,0,0" VerticalAlignment="Top" Width="102" Height="37" Background="#ffb432" FontFamily="Berlin Sans FB" FontSize="24" Style="{DynamicResource ButtonStyle2}">
-            <StackPanel>
-                <Image Source="Images\Previous.png" Height="28" Width="70" />
+        <StackPanel x:Name="memberList" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,260,0,0" Width="572" Height="Auto">
 
-            </StackPanel>
-        </Button>
-        <Label x:Name="lblName1" Content="Name" HorizontalAlignment="Left" Margin="92,266,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71"/>
-        <Label x:Name="lblName2" Content="Name" HorizontalAlignment="Left" Margin="92,330,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71"/>
-        <Label x:Name="lblName3" Content="Name" HorizontalAlignment="Left" Margin="92,396,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71"/>
-        <Label x:Name="lblName4" Content="Name" HorizontalAlignment="Left" Margin="92,460,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71"/>
-        <Label x:Name="lblName5" Content="Name" HorizontalAlignment="Left" Margin="92,527,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71"/>
-        <Label x:Name="lblName6" Content="Name" HorizontalAlignment="Left" Margin="92,591,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71"/>
-        <Label x:Name="lblName7" Content="Name" HorizontalAlignment="Left" Margin="92,661,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71"/>
-        <Label x:Name="lblName8" Content="Name" HorizontalAlignment="Left" Margin="92,725,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71"/>
-        <Label x:Name="lblName9" Content="Name" HorizontalAlignment="Left" Margin="92,790,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71"/>
-        <Label x:Name="lblName10" Content="Name" HorizontalAlignment="Left" Margin="92,854,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71"/>
-        <Label x:Name="lblStatus1" Content="Status" HorizontalAlignment="Left" Margin="316,266,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71" Foreground="#777777"/>
-        <Label x:Name="lblStatus2" Content="Status" HorizontalAlignment="Left" Margin="316,330,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71" Foreground="#777777"/>
-        <Label x:Name="lblStatus3" Content="Status" HorizontalAlignment="Left" Margin="316,396,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71" Foreground="#777777"/>
-        <Label x:Name="lblStatus4" Content="Status" HorizontalAlignment="Left" Margin="316,461,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71" Foreground="#777777"/>
-        <Label x:Name="lblStatus5" Content="Status" HorizontalAlignment="Left" Margin="316,525,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71" Foreground="#777777"/>
-        <Label x:Name="lblStatus6" Content="Status" HorizontalAlignment="Left" Margin="316,591,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71" Foreground="#777777"/>
-        <Label x:Name="lblStatus7" Content="Status" HorizontalAlignment="Left" Margin="316,660,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71" Foreground="#777777"/>
-        <Label x:Name="lblStatus8" Content="Status" HorizontalAlignment="Left" Margin="316,724,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71" Foreground="#777777"/>
-        <Label x:Name="lblStatus9" Content="Status" HorizontalAlignment="Left" Margin="316,790,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71" Foreground="#777777"/>
-        <Label x:Name="lblStatus10" Content="Status" HorizontalAlignment="Left" Margin="316,858,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="20" Width="71" Foreground="#777777"/>
-        <Button x:Name="btnON_OFF1"  HorizontalAlignment="Left" Margin="537,267,0,0" VerticalAlignment="Top" Width="75" BorderThickness="0" Background="Transparent">
-            <StackPanel>
-                <Image Source="Images\button OFF.png" Height="28" Width="56" />
+        </StackPanel>
 
-            </StackPanel>
-        </Button>
-        <Button x:Name="btnON_OFF2"  HorizontalAlignment="Left" Margin="537,331,0,0" VerticalAlignment="Top" Width="75" BorderThickness="0" Background="Transparent">
-            <StackPanel>
-                <Image Source="Images\button OFF.png" Height="28" Width="56" />
-
-            </StackPanel>
-        </Button>
-        <Button x:Name="btnON_OFF3"  HorizontalAlignment="Left" Margin="537,397,0,0" VerticalAlignment="Top" Width="75" BorderThickness="0" Background="Transparent">
-            <StackPanel>
-                <Image Source="Images\button OFF.png" Height="28" Width="56" />
-
-            </StackPanel>
-        </Button>
-        <Button x:Name="btnON_OFF4"  HorizontalAlignment="Left" Margin="537,461,0,0" VerticalAlignment="Top" Width="75" BorderThickness="0" Background="Transparent">
-            <StackPanel>
-                <Image Source="Images\button OFF.png" Height="28" Width="56" />
-
-            </StackPanel>
-        </Button>
-        <Button x:Name="btnON_OFF5"  HorizontalAlignment="Left" Margin="537,527,0,0" VerticalAlignment="Top" Width="75" BorderThickness="0" Background="Transparent">
-            <StackPanel>
-                <Image Source="Images\button OFF.png" Height="28" Width="56" />
-
-            </StackPanel>
-        </Button>
-        <Button x:Name="btnON_OFF6"  HorizontalAlignment="Left" Margin="537,591,0,0" VerticalAlignment="Top" Width="75" BorderThickness="0" Background="Transparent">
-            <StackPanel>
-                <Image Source="Images\button OFF.png" Height="28" Width="56" />
-
-            </StackPanel>
-        </Button>
-        <Button x:Name="btnON_OFF7"  HorizontalAlignment="Left" Margin="537,662,0,0" VerticalAlignment="Top" Width="75" BorderThickness="0" Background="Transparent">
-            <StackPanel>
-                <Image Source="Images\button OFF.png" Height="28" Width="56" />
-
-            </StackPanel>
-        </Button>
-        <Button x:Name="btnON_OFF8"  HorizontalAlignment="Left" Margin="537,726,0,0" VerticalAlignment="Top" Width="75" BorderThickness="0" Background="Transparent">
-            <StackPanel>
-                <Image Source="Images\button OFF.png" Height="28" Width="56" />
-
-            </StackPanel>
-        </Button>
-        <Button x:Name="btnON_OFF9"  HorizontalAlignment="Left" Margin="537,792,0,0" VerticalAlignment="Top" Width="75" BorderThickness="0" Background="Transparent">
-            <StackPanel>
-                <Image Source="Images\button OFF.png" Height="28" Width="56" />
-
-            </StackPanel>
-        </Button>
-        <Button x:Name="btnON_OFF10"  HorizontalAlignment="Left" Margin="537,856,0,0" VerticalAlignment="Top" Width="75" BorderThickness="0" Background="Transparent">
-            <StackPanel>
-                <Image Source="Images\button OFF.png" Height="28" Width="56" />
-
-            </StackPanel>
-        </Button>
-        <Image HorizontalAlignment="Left" Height="150" Margin="0,962,-0.4,0" VerticalAlignment="Top" Width="686" Source="Images\BG down.jpg"/>
-        <Label x:Name="lblClubName" Content="ClubName" HorizontalAlignment="Left" Margin="222,213,0,0" VerticalAlignment="Top" Width="249"  HorizontalContentAlignment="Center" FontFamily="Berlin Sans FB" FontSize="20"/>
-        <Button x:Name="btnUpdate" Content="Update Status" HorizontalAlignment="Left" Margin="277,910,0,0" VerticalAlignment="Top" Width="140" Height="33" FontFamily="Berlin Sans FB" FontSize="18"/>
+        <Label x:Name="lblClubName" HorizontalAlignment="Left" Margin="222,213,0,0" VerticalAlignment="Top" Width="249"  HorizontalContentAlignment="Center" FontFamily="Berlin Sans FB" FontSize="20"/>
         <Button x:Name="btnBack" HorizontalAlignment="Left" Margin="27,83,0,0" VerticalAlignment="Top" Width="75" Height="38" Background="#c0c0c0" BorderThickness="0" Click="btnBlack_Click">
             <StackPanel>
                 <Image Source="Images\Back button.png" Height="36" Width="50"/>

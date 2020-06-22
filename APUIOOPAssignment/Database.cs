@@ -132,9 +132,6 @@ namespace APUIOOPAssignment
 
         public static List<byte[]> takeClubs(out List<string> clubID, out List<string> clubNames)
         {
-            UInt32 FileSize;
-            byte[] Data;
-            Bitmap outImage;
             clubID = new List<string>();
             clubNames = new List<string>();
             List<byte[]> clubImages = new List<byte[]>();
@@ -178,6 +175,192 @@ namespace APUIOOPAssignment
                 return null;
             }
         }
+
+        public static byte[] takeClub(string clubID, out List<string> clubDetails)
+        {
+            byte[] Data;
+            clubDetails = new List<string>();
+            List<byte[]> clubImage = new List<byte[]>();
+            try
+            {
+                using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                {
+                    MySqlConn.Open();
+                    string query = $"SELECT `clubID`, `ClubName`, `Type`, `Date`, `President`, `Vice`, `Secretary`, `Details` FROM Clubs WHERE clubID = @id";
+                    MySqlCommand cmd = new MySqlCommand(query, MySqlConn);
+                    cmd.Parameters.AddWithValue("@id", clubID);
+                    using (MySqlDataReader club = cmd.ExecuteReader())
+                    {
+                        while (club.Read())
+                        {
+                            clubDetails.Add(club.GetString("clubID"));
+                            clubDetails.Add(club.GetString("ClubName"));
+                            clubDetails.Add(club.GetString("Type"));
+                            clubDetails.Add(club.GetString("Date"));
+                            clubDetails.Add(club.GetString("President"));
+                            clubDetails.Add(club.GetString("Vice"));
+                            clubDetails.Add(club.GetString("Secretary"));
+                            clubDetails.Add(club.GetString("Details"));
+                            //clubIDS += $"{club.GetInt32("clubID")}";
+                            //clubNamess += $"{club.GetString("ClubName")}";
+                        }
+                    }
+                    query = "SELECT Image FROM Clubs WHERE clubID = @id";
+                    DataSet ds = new DataSet();
+                    cmd = new MySqlCommand(query, MySqlConn);
+                    cmd.Parameters.AddWithValue("@id", clubID);
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                    MySqlConn.Close();
+                    if (da != null)
+                    {
+                        da.Fill(ds);
+                        Data = (byte[])ds.Tables[0].Rows[0][0];
+                        cmd.Dispose();
+                        return Data;
+                    }
+                    else
+                        return null;
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+        }
+
+        public static List<string> takeClubNames(out List<int> clubID)
+        {
+            List<string> clubNames = new List<string>();
+            clubID = new List<int>();
+            try
+            {
+                using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                {
+                    MySqlConn.Open();
+                    string query = $"SELECT `clubID`, `ClubName` FROM Clubs";
+                    MySqlCommand cmd = new MySqlCommand(query, MySqlConn);
+                    using (MySqlDataReader club = cmd.ExecuteReader())
+                    {
+                        while (club.Read())
+                        {
+                            clubID.Add(Convert.ToInt32(club.GetString("clubID")));
+                            clubNames.Add(club.GetString("ClubName"));
+                        }
+                    }
+                    return clubNames;
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+        }
+
+        public static bool updateClub(string clubID, byte[] Image, string President, string Vice, string Secretary, string Details)
+        {
+            try
+            {
+                if (!(clubID == null || President == null || Vice == null || Secretary == null || Details == null))
+                {
+                    if (Image != null)
+                    {
+                        using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                        {
+                            string query = $"UPDATE Clubs SET Image = @image, President = '{President}', Vice = '{Vice}', Secretary = '{Secretary}', Details = '{Details}' WHERE clubID = '{clubID}'";
+                            MySqlCommand cmd = new MySqlCommand(query, MySqlConn);
+                            MySqlConn.Open();
+                            cmd.Parameters.Add("@image", MySqlDbType.Blob).Value = Image;
+                            cmd.ExecuteNonQuery();
+                            MySqlConn.Close();
+                            MessageBox.Show("Club Successfully updated");
+                            return true;
+                        }
+                    }
+                    else {
+                        using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                        {
+                            string query = $"UPDATE Clubs SET President = '{President}', Vice = '{Vice}', Secretary = '{Secretary}', Details = '{Details}' WHERE clubID = {clubID}";
+                            MySqlCommand cmd = new MySqlCommand(query, MySqlConn);
+                            MySqlConn.Open();
+                            cmd.ExecuteNonQuery();
+                            MySqlConn.Close();
+                            MessageBox.Show("Club Successfully updated");
+                            return true;
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("All boxes must be filled!");
+                    return false;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error: " + e);
+                return false;
+            }
+
+        }
+
+
+        public static List<string> memberList(int clubID, out List<int> memberID, out List<int> memberRole)
+        {
+            List<string> memberNames = new List<string>();
+            memberID = new List<int>();
+            memberRole = new List<int>();
+            try
+            {
+                using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                {
+                    MySqlConn.Open();
+                    string query = $"SELECT `id`, `name`, `surname`, `role` FROM Members WHERE clubMember = {clubID}";
+                    MySqlCommand cmd = new MySqlCommand(query, MySqlConn);
+                    using (MySqlDataReader member = cmd.ExecuteReader())
+                    {
+                        while (member.Read())
+                        {
+                            memberID.Add(Convert.ToInt32(member.GetString("id")));
+                            memberNames.Add(member.GetString("name") + " " + member.GetString("surname"));
+                            memberRole.Add(Convert.ToInt32(member.GetString("role")));
+                        }
+                    }
+                    return memberNames;
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+        }
+
+
+        public static bool deleteClub(string clubID)
+        {
+            try
+            {
+                using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                {
+                    string query = $"DELETE FROM `Clubs` WHERE clubID = '{clubID}'";
+                    MySqlCommand cmd = new MySqlCommand(query, MySqlConn);
+                    MySqlConn.Open();
+                    cmd.ExecuteNonQuery();
+                    MySqlConn.Close();
+                    MessageBox.Show("Club Successfully deleted");
+                    return true;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error: " + e);
+                return false;
+            }
+
+        }
+
 
     }
 }

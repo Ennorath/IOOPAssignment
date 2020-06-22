@@ -137,8 +137,8 @@
       <DependentUpon>Create Weekly Updates.xaml</DependentUpon>
     </Compile>
     <Compile Include="Database.cs" />
-    <Compile Include="Edit Club Representative.xaml.cs">
-      <DependentUpon>Edit Club Representative.xaml</DependentUpon>
+    <Compile Include="Edit Club.xaml.cs">
+      <DependentUpon>Edit Club.xaml</DependentUpon>
     </Compile>
     <Compile Include="Edit News.xaml.cs">
       <DependentUpon>Edit News.xaml</DependentUpon>
@@ -200,7 +200,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Edit Club Representative.xaml">
+    <Page Include="Edit Club.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -26,7 +26,7 @@ namespace APUIOOPAssignment
 
         private void btnEditNews_Click(object sender, RoutedEventArgs e)
         {
-            Edit_Club_Representative NC = new Edit_Club_Representative();
+            Edit_Club NC = new Edit_Club();
             NC.Show();
             this.Close();
         }

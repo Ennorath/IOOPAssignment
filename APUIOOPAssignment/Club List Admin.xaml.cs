@@ -19,8 +19,11 @@ namespace APUIOOPAssignment
     /// </summary>
     public partial class Club_List_Admin : Window
     {
+
+        public static string SendClubID;
         public Club_List_Admin()
         {
+
             InitializeComponent();
 
             List<string> clubID = new List<string>();
@@ -94,9 +97,9 @@ namespace APUIOOPAssignment
             Button editBtn = sender as Button;
             if (editBtn != null)
             {
-                Admin_Page hm = new Admin_Page();
-                string num = editBtn.Tag as string;
-                hm.Show();
+                SendClubID = editBtn.Tag as string;
+                Edit_Club EC = new Edit_Club();
+                EC.Show();
                 this.Close();
             }
         }
@@ -106,16 +109,17 @@ namespace APUIOOPAssignment
             Button deleteBtn = sender as Button;
             if (deleteBtn != null) {
                 string clubID = deleteBtn.Tag as string;
-                //Database.deleteClub(clubID);
+                Database.deleteClub(clubID);
+                Club_List_Admin CLA = new Club_List_Admin();
+                CLA.Show();
+                this.Close();
             }
         }
 
-
-
         private void AddNewClubBtn_Click(object sender, RoutedEventArgs e)
         {
-            Add_Club sw = new Add_Club();
-            sw.Show();
+            Add_Club AC = new Add_Club();
+            AC.Show();
             this.Close();
         }
 
