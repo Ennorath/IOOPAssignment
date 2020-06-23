@@ -217,10 +217,53 @@ namespace APUIOOPAssignment
                         while (club.Read())
                         {
                             clubID.Add(club.GetString("clubID"));
-                            //clubDetails.Add(club.GetString("Image"));
                             clubNames.Add(club.GetString("ClubName"));
-                            //clubIDS += $"{club.GetInt32("clubID")}";
-                            //clubNamess += $"{club.GetString("ClubName")}";
+                        }
+                    }
+                    foreach (string id in clubID)
+                    {
+                        query = "SELECT Image FROM Clubs WHERE clubID = @id";
+                        DataSet ds = new DataSet();
+                        cmd = new MySqlCommand(query, MySqlConn);
+                        cmd.Parameters.AddWithValue("@id", id);
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        MySqlConn.Close();
+                        da.Fill(ds);
+                        clubImages.Add((byte[])ds.Tables[0].Rows[0][0]);
+                        cmd.Dispose();
+                    }
+                    return clubImages;
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+        }
+
+        public static List<byte[]> takeOtherClubs(out List<string> clubID, out List<string> clubNames)
+        {
+            clubID = new List<string>();
+            clubNames = new List<string>();
+            List<byte[]> clubImages = new List<byte[]>();
+            try
+            {
+                using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                {
+
+                    MySqlConn.Open();
+                    string query = $"SELECT `clubID`, `Type`, `ClubName` FROM Clubs";
+                    MySqlCommand cmd = new MySqlCommand(query, MySqlConn);
+                    using (MySqlDataReader club = cmd.ExecuteReader())
+                    {
+                        while (club.Read())
+                        {
+                            if (club.GetString("Type") != "Sports" && club.GetString("Type") != "Societies")
+                            {
+                                clubID.Add(club.GetString("clubID"));
+                                clubNames.Add(club.GetString("ClubName"));
+                            }
                         }
                     }
                     foreach (string id in clubID)

@@ -31,14 +31,14 @@ namespace APUIOOPAssignment
             drawClubs(clubID, clubNames, clubImages, Sports);
             clubImages = Database.takeTypeClubs(out clubID, out clubNames, Societies.Name.ToString());
             drawClubs(clubID, clubNames, clubImages, Societies);
-            clubImages = Database.takeTypeClubs(out clubID, out clubNames, Others.Name.ToString());
+            clubImages = Database.takeOtherClubs(out clubID, out clubNames);
             drawClubs(clubID, clubNames, clubImages, Others);
 
 
         }
 
         private void drawClubs(List<string> clubID, List<string> clubNames, List<byte[]> clubImages, Grid stack) {
-            int fromLeft = 20;
+            int fromLeft = 16;
             int fromTop = 20;
             int column = 0;
             for (int i = 0; i < clubID.Count(); i++)
