@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
-        Title="Club_List_Admin" ResizeMode="NoResize" Width="768" Height="Auto">
+        Title="Club_List_Admin" Width="768" Height="Auto">
     <ScrollViewer>
         <Grid>
             <Grid.Background>
