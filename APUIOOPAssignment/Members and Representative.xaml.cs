@@ -19,6 +19,7 @@ namespace APUIOOPAssignment
     /// </summary>
     public partial class Members_and_Representative : Window
     {
+        static public string userID;
         public Members_and_Representative()
         {
             InitializeComponent();
@@ -65,25 +66,28 @@ namespace APUIOOPAssignment
                 lblStatus.HorizontalAlignment = HorizontalAlignment.Left;
                 lblStatus.VerticalAlignment = VerticalAlignment.Top;
                 lblStatus.Margin = new Thickness(260, -38, 0, 0);
-
                 CheckBox onOff = new CheckBox();
-                if (memberRole[i] > 0) {
-                    onOff.IsChecked = true;
-                }
-                onOff.Height = 30;
-                onOff.Width = 30;
-                onOff.HorizontalAlignment = HorizontalAlignment.Left;
-                onOff.Margin = new Thickness(480, -28, 0, 0);
-                onOff.Tag = memberRole;
-                onOff.Click += new RoutedEventHandler(this.CheckedButton);
-
+                 if (memberRole[i] > 0)
+                    {
+                        onOff.IsChecked = true;
+                    }
+                    onOff.Height = 30;
+                    onOff.Width = 30;
+                    onOff.HorizontalAlignment = HorizontalAlignment.Left;
+                    onOff.Margin = new Thickness(480, -28, 0, 0);
+                    onOff.Tag = memberID[i].ToString();
+                    onOff.Click += new RoutedEventHandler(this.CheckedButton);
                 memberList.Children.Add(group);
 
                 //<Image Source="Images\button OFF.png" Height="28" Width="56" />
                 group.Children.Add(img);
                 group.Children.Add(lblName);
                 group.Children.Add(lblStatus);
-                group.Children.Add(onOff);
+                if (memberRole[i] != 2)
+                {
+                    group.Children.Add(onOff);
+                }
+
 
                 //<Button x:Name="btnUpdate" Content="Update Status" HorizontalAlignment="Left" Margin="277,910,0,0" VerticalAlignment="Top" Width="140" Height="33" FontFamily="Berlin Sans FB" FontSize="18"/>
 
@@ -101,14 +105,18 @@ namespace APUIOOPAssignment
 
         private void CheckedButton(object sender, RoutedEventArgs e)
         {
-            Button deleteBtn = sender as Button;
-            if (deleteBtn != null)
+            CheckBox addRole = sender as CheckBox;
+            if (addRole != null)
             {
-                string clubID = deleteBtn.Tag as string;
-                Database.deleteClub(clubID);
-                Club_List_Admin CLA = new Club_List_Admin();
-                CLA.Show();
-                this.Close();
+                userID = addRole.Tag as string;
+                if (addRole.IsChecked == true)
+                {
+                    Database.addRole(userID);
+                }
+                else {
+                    Database.deleteRole(userID);
+                }
+                
             }
         }
 

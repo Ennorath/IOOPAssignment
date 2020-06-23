@@ -53,5 +53,13 @@ namespace APUIOOPAssignment
             MH.Show();
             this.Close();
         }
+
+        private void exit_Click(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.Reset();
+            MainWindow login = new MainWindow();
+            login.Show();
+            this.Close();
+        }
     }
 }

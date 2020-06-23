@@ -33,7 +33,7 @@ namespace APUIOOPAssignment
                 StackPanel group = new StackPanel();
                 group.HorizontalAlignment = HorizontalAlignment.Left;
                 group.VerticalAlignment = VerticalAlignment.Top;
-                group.Margin = new Thickness(0, fromTop, 0, 0);
+                group.Margin = new Thickness(0, fromTop, 0, 60);
                 Image newImage = new Image();
                 newImage.Height = 135;
                 newImage.Width = 135;

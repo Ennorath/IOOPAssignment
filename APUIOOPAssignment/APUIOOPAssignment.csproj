@@ -129,9 +129,6 @@
       <DependentUpon>Club List Admin.xaml</DependentUpon>
     </Compile>
     <Compile Include="ClubBox.cs" />
-    <Compile Include="ClubListRepresentative.xaml.cs">
-      <DependentUpon>ClubListRepresentative.xaml</DependentUpon>
-    </Compile>
     <Compile Include="convertImage.cs" />
     <Compile Include="Create Weekly Updates.xaml.cs">
       <DependentUpon>Create Weekly Updates.xaml</DependentUpon>
@@ -139,9 +136,6 @@
     <Compile Include="Database.cs" />
     <Compile Include="Edit Club.xaml.cs">
       <DependentUpon>Edit Club.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Edit News.xaml.cs">
-      <DependentUpon>Edit News.xaml</DependentUpon>
     </Compile>
     <Compile Include="Edit Representative.xaml.cs">
       <DependentUpon>Edit Representative.xaml</DependentUpon>
@@ -155,24 +149,15 @@
     <Compile Include="Members and Representative.xaml.cs">
       <DependentUpon>Members and Representative.xaml</DependentUpon>
     </Compile>
-    <Compile Include="News List Admin.xaml.cs">
-      <DependentUpon>News List Admin.xaml</DependentUpon>
-    </Compile>
     <Compile Include="News.cs" />
-    <Compile Include="News.xaml.cs">
-      <DependentUpon>News.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="NewsListMember.xaml.cs">
-      <DependentUpon>NewsListMember.xaml</DependentUpon>
-    </Compile>
     <Compile Include="RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Representative.xaml.cs">
       <DependentUpon>Representative.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Sports_Hobbies_Details.xaml.cs">
-      <DependentUpon>Sports_Hobbies_Details.xaml</DependentUpon>
+    <Compile Include="Club_Details.xaml.cs">
+      <DependentUpon>Club_Details.xaml</DependentUpon>
     </Compile>
     <Compile Include="Weekly Updates Representative.xaml.cs">
       <DependentUpon>Weekly Updates Representative.xaml</DependentUpon>
@@ -192,19 +177,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ClubListRepresentative.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Create Weekly Updates.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Edit Club.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Edit News.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -237,18 +214,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="News List Admin.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="News.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="NewsListMember.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="RegisterWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -257,7 +222,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Sports_Hobbies_Details.xaml">
+    <Page Include="Club_Details.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

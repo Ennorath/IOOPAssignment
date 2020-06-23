@@ -6,113 +6,58 @@
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
         Title="Member_Home" Height="694.042" Width="517.372">
-    <Grid Margin="0,0,0.2,28.2">
+    <Grid x:Name="MHome" Margin="0,0,0.2,28.2">
         <Image HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="514" Source="Images\BG up.jpg"/>
         <Image HorizontalAlignment="Left" Height="291" Margin="0,54,0,0" VerticalAlignment="Top" Width="511" Source="Images\red BG.jpg" Stretch="UniformToFill"/>
-        <Button x:Name="btnNews" HorizontalAlignment="Left" Margin="352,97,0,0" VerticalAlignment="Top" Width="139" Height="94" Click="btnNews_Click">
-            <StackPanel>
-                <Image Source="Images\Visit News.jpg" Height="86" Width="130"/>
-
-            </StackPanel>
-        </Button>
-        <Button x:Name="btnClub" HorizontalAlignment="Left" Margin="352,197,0,0" VerticalAlignment="Top" Width="139" Height="94" Click="btnClub_Click">
+        <Button x:Name="btnClub" HorizontalAlignment="Left" Margin="360,142,0,0" VerticalAlignment="Top" Width="139" Height="94" Click="btnClub_Click">
             <StackPanel>
                 <Image Source="Images\Visit club.jpg" Height="88" Width="130" RenderTransformOrigin="0.523,0.191"/>
 
             </StackPanel>
         </Button>
-        <Image HorizontalAlignment="Left" Height="195" Margin="25,96,0,0" VerticalAlignment="Top" Width="317" Source="Images\No Image News.jpg"/>
+        <Button Name="randomWeekBtn" HorizontalAlignment="Left" Height="195" Margin="25,96,0,0" VerticalAlignment="Top" Width="317" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="weekly_Click" >
+            <StackPanel>
+                <Image x:Name="randomWeek" Source="Images\No Image News.jpg"/>
+            </StackPanel>
+        </Button>
         <Label Content="Hightlights:" HorizontalAlignment="Left" Margin="32,66,0,0" VerticalAlignment="Top" Width="137" FontFamily="Berlin Sans FB" FontSize="18" Foreground="White"/>
-        <TabControl HorizontalAlignment="Left" Height="232" Margin="0,322,0,0" VerticalAlignment="Top" Width="511">
-            <TabItem Header="All" Margin="86,-4,-101.2,0" FontFamily="Berlin Sans FB">
-                <Grid Background="#146b84">
-                    <Image x:Name="picNews1" HorizontalAlignment="Left" Height="86" Margin="27,22,0,0" VerticalAlignment="Top" Width="140" Source="Images\No Image News.jpg"/>
-                    <Image x:Name="picNews2" HorizontalAlignment="Left" Height="86" Margin="182,22,0,0" VerticalAlignment="Top" Width="140" Source="Images\No Image News.jpg"/>
-                    <Image x:Name="picNews3" HorizontalAlignment="Left" Height="86" Margin="337,22,0,0" VerticalAlignment="Top" Width="141" Source="Images\No Image News.jpg"/>
-                    <Image HorizontalAlignment="Left" Height="64" Margin="27,108,0,0" VerticalAlignment="Top" Width="140" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
-                    <Image HorizontalAlignment="Left" Height="64" Margin="182,108,0,0" VerticalAlignment="Top" Width="140" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
-                    <Image HorizontalAlignment="Left" Height="64" Margin="337,108,0,0" VerticalAlignment="Top" Width="141" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
-                    <Label x:Name="lblHeadline1" Content="Headline 1" HorizontalAlignment="Left" Margin="32,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11"/>
-                    <Label x:Name="lblDate1" Content="01/05/2020" HorizontalAlignment="Left" Margin="32,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
-                    <Label x:Name="lblHeadline2" Content="Headline 2" HorizontalAlignment="Left" Margin="187,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11"/>
-                    <Label x:Name="lblDate2" Content="01/05/2020" HorizontalAlignment="Left" Margin="187,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
-                    <Label x:Name="lblHeadline3" Content="Headline 3" HorizontalAlignment="Left" Margin="342,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11"/>
-                    <Label x:Name="lblDate3" Content="01/05/2020" HorizontalAlignment="Left" Margin="342,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
-                    <Button x:Name="btnBackNews" HorizontalAlignment="Left" Margin="3,83,0,0" VerticalAlignment="Top" Width="21" Height="34" Background="#146b84" BorderThickness="0">
-                        <StackPanel>
-                            <Image Source="Images\back arrow.png" Height="28" Width="16"/>
+        <Grid Background="#146b84" HorizontalAlignment="Left" Height="232" Margin="0,345,0,0" VerticalAlignment="Top" Width="511">
+            <Button Name="weekly1" HorizontalAlignment="Left" Height="90" Margin="25,19,0,0" VerticalAlignment="Top" Width="145" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="weekly_Click" >
+                <StackPanel>
+                    <Image x:Name="picNews1" Source="Images\No Image News.jpg"/>
+                </StackPanel>
+            </Button>
+            <Button Name="weekly2" HorizontalAlignment="Left" Height="90" Margin="180,19,0,0" VerticalAlignment="Top" Width="145" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="weekly_Click" >
+                <StackPanel>
+                    <Image x:Name="picNews2" Source="Images\No Image News.jpg"/>
+                </StackPanel>
+            </Button>
+            <Button Name="weekly3" HorizontalAlignment="Left" Height="90" Margin="335,19,0,0" VerticalAlignment="Top" Width="145" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="weekly_Click" >
+                <StackPanel>
+                    <Image x:Name="picNews3" Source="Images\No Image News.jpg"/>
+                </StackPanel>
+            </Button>
+            <Image HorizontalAlignment="Left" Height="64" Margin="27,108,0,0" VerticalAlignment="Top" Width="140" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
+            <Image HorizontalAlignment="Left" Height="64" Margin="182,108,0,0" VerticalAlignment="Top" Width="140" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
+            <Image HorizontalAlignment="Left" Height="64" Margin="337,108,0,0" VerticalAlignment="Top" Width="141" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
+            <Label x:Name="lblHeadline1" Content="Headline 1" HorizontalAlignment="Left" Margin="32,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11"/>
+            <Label x:Name="lblDate1" Content="01/05/2020" HorizontalAlignment="Left" Margin="32,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
+            <Label x:Name="lblHeadline2" Content="Headline 2" HorizontalAlignment="Left" Margin="187,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11"/>
+            <Label x:Name="lblDate2" Content="01/05/2020" HorizontalAlignment="Left" Margin="187,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
+            <Label x:Name="lblHeadline3" Content="Headline 3" HorizontalAlignment="Left" Margin="342,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11"/>
+            <Label x:Name="lblDate3" Content="01/05/2020" HorizontalAlignment="Left" Margin="342,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
 
-                        </StackPanel>
-                    </Button>
-                    <Button x:Name="btnNextNews" HorizontalAlignment="Left" Margin="481,83,0,0" VerticalAlignment="Top" Width="21" Height="34" Background="#146b84" BorderThickness="0">
-                        <StackPanel>
-                            <Image Source="Images\next.png" Height="28" Width="16"/>
+            <Button x:Name="btnNextNews" HorizontalAlignment="Left" Margin="481,83,0,0" VerticalAlignment="Top" Width="21" Height="34" Background="#146b84" BorderThickness="0" Click="btnNextNews_Click">
+                <StackPanel>
+                    <Image Source="Images\next.png" Height="28" Width="16"/>
 
-                        </StackPanel>
-                    </Button>
-                </Grid>
-            </TabItem>
-            <TabItem Header="Sports" Margin="101.4,-4,-116.8,0" FontFamily="Berlin Sans FB">
-                <Grid Background="#146b84">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="103*"/>
-                        <ColumnDefinition Width="403*"/>
-                    </Grid.ColumnDefinitions>
-                    <Image x:Name="picNewsSports1" HorizontalAlignment="Left" Height="86" Margin="27,22,0,0" VerticalAlignment="Top" Width="140" Source="Images\No Image News.jpg" Grid.ColumnSpan="2"/>
-                    <Image x:Name="picNewsSports2" HorizontalAlignment="Left" Height="86" Margin="79.2,22,0,0" VerticalAlignment="Top" Width="140" Source="Images\No Image News.jpg" Grid.Column="1"/>
-                    <Image x:Name="picNewsSports3" HorizontalAlignment="Left" Height="86" Margin="234.2,22,0,0" VerticalAlignment="Top" Width="141" Source="Images\No Image News.jpg" Grid.Column="1"/>
-                    <Image HorizontalAlignment="Left" Height="64" Margin="27,108,0,0" VerticalAlignment="Top" Width="140" Source="Images\White bg.jpg" Stretch="UniformToFill" Grid.ColumnSpan="2"/>
-                    <Image HorizontalAlignment="Left" Height="64" Margin="79.2,108,0,0" VerticalAlignment="Top" Width="140" Source="Images\White bg.jpg" Stretch="UniformToFill" Grid.Column="1"/>
-                    <Image HorizontalAlignment="Left" Height="64" Margin="234.2,108,0,0" VerticalAlignment="Top" Width="141" Source="Images\White bg.jpg" Stretch="UniformToFill" Grid.Column="1"/>
-                    <Label x:Name="lblHeadlineSports1" Content="Headline 1" HorizontalAlignment="Left" Margin="32,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11" Grid.ColumnSpan="2"/>
-                    <Label x:Name="lblDateSports1" Content="01/05/2020" HorizontalAlignment="Left" Margin="32,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262" Grid.ColumnSpan="2"/>
-                    <Label x:Name="lblHeadlineSports2" Content="Headline 2" HorizontalAlignment="Left" Margin="84.2,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11" Grid.Column="1"/>
-                    <Label x:Name="lblDateSports2" Content="01/05/2020" HorizontalAlignment="Left" Margin="84.2,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262" Grid.Column="1"/>
-                    <Label x:Name="lblHeadlineSports3" Content="Headline 3" HorizontalAlignment="Left" Margin="239.2,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11" Grid.Column="1"/>
-                    <Label x:Name="lblDateSports3" Content="01/05/2020" HorizontalAlignment="Left" Margin="239.2,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262" Grid.Column="1"/>
-                    <Image Source="Images\back arrow.png" Margin="6,93,80.8,87"/>
-                    <Image Source="Images\next.png" Margin="379.8,93,6.6,87" Grid.Column="1"/>
-                </Grid>
-            </TabItem>
-            <TabItem Header="Societies" Margin="116.8,-4,-132.2,0" FontFamily="Berlin Sans FB">
-                <Grid Background="#146b84">
-                    <Image x:Name="picNewsSocieties1" HorizontalAlignment="Left" Height="86" Margin="27,22,0,0" VerticalAlignment="Top" Width="140" Source="Images\No Image News.jpg"/>
-                    <Image x:Name="picNewsSocieties2" HorizontalAlignment="Left" Height="86" Margin="182.4,22,0,0" VerticalAlignment="Top" Width="140" Source="Images\No Image News.jpg"/>
-                    <Image x:Name="picNewsSocieties3" HorizontalAlignment="Left" Height="86" Margin="337.4,22,0,0" VerticalAlignment="Top" Width="141" Source="Images\No Image News.jpg"/>
-                    <Image HorizontalAlignment="Left" Height="64" Margin="27,108,0,0" VerticalAlignment="Top" Width="140" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
-                    <Image HorizontalAlignment="Left" Height="64" Margin="182.4,108,0,0" VerticalAlignment="Top" Width="140" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
-                    <Image HorizontalAlignment="Left" Height="64" Margin="337.4,108,0,0" VerticalAlignment="Top" Width="141" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
-                    <Label x:Name="lblHeadlineSocieties1" Content="Headline 1" HorizontalAlignment="Left" Margin="32,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11"/>
-                    <Label x:Name="lblDateSocieties1" Content="01/05/2020" HorizontalAlignment="Left" Margin="32,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
-                    <Label x:Name="lblHeadlineSocieties2" Content="Headline 2" HorizontalAlignment="Left" Margin="187.4,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11"/>
-                    <Label x:Name="lblDateSocieties2" Content="01/05/2020" HorizontalAlignment="Left" Margin="187.4,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
-                    <Label x:Name="lblHeadlineSocieties3" Content="Headline 3" HorizontalAlignment="Left" Margin="342.4,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11"/>
-                    <Label x:Name="lblDateSocieties3" Content="01/05/2020" HorizontalAlignment="Left" Margin="342.4,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
-                    <Image Source="Images\back arrow.png" Margin="6,93,483.2,87"/>
-                    <Image Source="Images\next.png" Margin="483,93,6.6,87"/>
-                </Grid>
-            </TabItem>
-            <TabItem Header="Interest" Margin="131.4,-4,-146.8,0" FontFamily="Berlin Sans FB">
-                <Grid Background="#146b84">
-                    <Image x:Name="picNewsInterest1" HorizontalAlignment="Left" Height="86" Margin="27,22,0,0" VerticalAlignment="Top" Width="140" Source="Images\No Image News.jpg"/>
-                    <Image x:Name="picNewsInterest2" HorizontalAlignment="Left" Height="86" Margin="182.4,22,0,0" VerticalAlignment="Top" Width="140" Source="Images\No Image News.jpg"/>
-                    <Image x:Name="picNewsInterest3" HorizontalAlignment="Left" Height="86" Margin="337.4,22,0,0" VerticalAlignment="Top" Width="141" Source="Images\No Image News.jpg"/>
-                    <Image HorizontalAlignment="Left" Height="64" Margin="27,108,0,0" VerticalAlignment="Top" Width="140" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
-                    <Image HorizontalAlignment="Left" Height="64" Margin="182.4,108,0,0" VerticalAlignment="Top" Width="140" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
-                    <Image HorizontalAlignment="Left" Height="64" Margin="337.4,108,0,0" VerticalAlignment="Top" Width="141" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
-                    <Label x:Name="lblHeadlineInterest1" Content="Headline 1" HorizontalAlignment="Left" Margin="32,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11"/>
-                    <Label x:Name="lblDateInterest1" Content="01/05/2020" HorizontalAlignment="Left" Margin="32,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
-                    <Label x:Name="lblHeadlineInterest2" Content="Headline 2" HorizontalAlignment="Left" Margin="187.4,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11"/>
-                    <Label x:Name="lblDateInterest2" Content="01/05/2020" HorizontalAlignment="Left" Margin="187.4,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
-                    <Label x:Name="lblHeadlineInterest3" Content="Headline 3" HorizontalAlignment="Left" Margin="342.4,108,0,0" VerticalAlignment="Top" Width="131" Height="42" FontFamily="Berlin Sans FB" FontSize="11"/>
-                    <Label x:Name="lblDateInterest3" Content="01/05/2020" HorizontalAlignment="Left" Margin="342.4,150,0,0" VerticalAlignment="Top" Width="95" Height="22" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
-                    <Image Source="Images\back arrow.png" Margin="6,93,483.2,87"/>
-                    <Image Source="Images\next.png" Margin="483,93,6.6,87"/>
-                </Grid>
-            </TabItem>
-        </TabControl>
+                </StackPanel>
+            </Button>
+        </Grid>
         <Image HorizontalAlignment="Left" Height="23" Margin="19,322,0,0" VerticalAlignment="Top" Width="85" Source="Images\News.jpg"/>
         <Image HorizontalAlignment="Left" Height="115" Margin="0,554,0,-32.4" VerticalAlignment="Top" Width="511" Source="Images\BG down.jpg"/>
+        <Button x:Name="exit" Content="Exit" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="201,590,0,0" Height="40" Width="100" Background="#FFFF6565" FontFamily="Berlin Sans FB" FontSize="24" Click="exit_Click" Grid.Column="1"/>
+
 
     </Grid>
 </Window>

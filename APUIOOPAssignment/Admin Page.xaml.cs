@@ -23,23 +23,6 @@ namespace APUIOOPAssignment
         {
             InitializeComponent();
         }
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            News_List_Admin sw = new News_List_Admin();
-            sw.Show();
-            this.Close();
-        }
-        private void Button_MouseHover(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            //Club_List_Admin cl = new Club_List_Admin();
-            //cl.Show();
-            //this.Close();
-        }
 
         private void btnClub_Click(object sender, RoutedEventArgs e)
         {
@@ -59,6 +42,14 @@ namespace APUIOOPAssignment
         {
             Edit_Representative er = new Edit_Representative();
             er.Show();
+            this.Close();
+        }
+
+        private void exit_Click(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.Reset();
+            MainWindow login = new MainWindow();
+            login.Show();
             this.Close();
         }
     }

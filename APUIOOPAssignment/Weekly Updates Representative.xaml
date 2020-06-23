@@ -6,24 +6,25 @@
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
         Title="Weekly_Updates_Representative" Height="Auto" Width="652.372">
-    <Grid>
+    <ScrollViewer>
+        <Grid>
 
-        <Grid.Background>
-            <ImageBrush ImageSource="Images\editClubBG.jpg" Stretch="Fill"/>
-        </Grid.Background>
+            <Grid.Background>
+                <ImageBrush ImageSource="Images\editClubBG.jpg" Stretch="Fill"/>
+            </Grid.Background>
 
-        <Image HorizontalAlignment="Left" Height="81" VerticalAlignment="Top" Width="650" Source="Images\BG up.jpg"/>
-        <Image HorizontalAlignment="Left" Height="62" Margin="0,68,0,0" VerticalAlignment="Top" Width="648" Source="Images\Weekly updates UP BG.jpg"/>
+            <Image HorizontalAlignment="Left" Height="81" VerticalAlignment="Top" Width="650" Source="Images\BG up.jpg"/>
+            <Image HorizontalAlignment="Left" Height="62" Margin="0,68,0,0" VerticalAlignment="Top" Width="648" Source="Images\Weekly updates UP BG.jpg"/>
 
-        <StackPanel x:Name="WeeklyList" Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10, 200, 0, 0" Width="500" Height="Auto">
+            <StackPanel x:Name="WeeklyList" Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10, 200, 0, 0" Width="500" Height="Auto">
 
-        </StackPanel>
+            </StackPanel>
 
-        <Button x:Name="btnAdd" Content="Add New" HorizontalAlignment="Left" Margin="240,149,0,0" VerticalAlignment="Top" Width="132" Height="30" FontFamily="Berlin Sans FB" FontSize="16" Click="btnAdd_Click" RenderTransformOrigin="0.508,1.033"/>
-        <Button x:Name="btnBack" Click="ButtonBack_Click" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,80,0,0" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="{x:Null}" Width="41" Height="33">
-            <Image Source="Images/Back button.png" Height="33" Width="41" />
-        </Button>
+            <Button x:Name="btnAdd" Content="Add New" HorizontalAlignment="Left" Margin="240,149,0,0" VerticalAlignment="Top" Width="132" Height="30" FontFamily="Berlin Sans FB" FontSize="16" Click="btnAdd_Click" RenderTransformOrigin="0.508,1.033"/>
+            <Button x:Name="btnBack" Click="ButtonBack_Click" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,80,0,0" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="{x:Null}" Width="41" Height="33">
+                <Image Source="Images/Back button.png" Height="33" Width="41" />
+            </Button>
 
-    </Grid>
-    
+        </Grid>
+    </ScrollViewer>
 </Window>

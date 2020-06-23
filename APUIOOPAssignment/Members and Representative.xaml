@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
-        Title="Members_and_Representative" Height="1141.6" Width="692">
+        Title="Members_and_Representative" Height="700" Width="692">
     <Window.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
@@ -63,29 +63,31 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <Grid x:Name="memberListGrid">
-        <Image HorizontalAlignment="Left" Height="73" VerticalAlignment="Top" Width="686" Source="Images\BG up.jpg"/>
-        <Image HorizontalAlignment="Left" Height="64" Margin="0,73,0,0" VerticalAlignment="Top" Width="686" Source="Images\Club representative BG UP.jpg"/>
-        <Image HorizontalAlignment="Left" Height="61" Margin="0,136,0,0" VerticalAlignment="Top" Width="686" Source="Images\configure status.jpg"/>
-        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="19" Margin="379,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" FontFamily="Berlin Sans FB" FontSize="18"/>
-        <Button x:Name="btnSearch" HorizontalAlignment="Left" Margin="613,155,0,0" VerticalAlignment="Top" Width="38" Height="19" Background="#289cff">
-            <StackPanel>
-                <Image Source="Images\search.png" Height="18" Width="20" />
+    <ScrollViewer>
+        <Grid x:Name="memberListGrid">
+            <Image HorizontalAlignment="Left" Height="73" VerticalAlignment="Top" Width="686" Source="Images\BG up.jpg"/>
+            <Image HorizontalAlignment="Left" Height="64" Margin="0,73,0,0" VerticalAlignment="Top" Width="686" Source="Images\Club representative BG UP.jpg"/>
+            <Image HorizontalAlignment="Left" Height="61" Margin="0,136,0,0" VerticalAlignment="Top" Width="686" Source="Images\configure status.jpg"/>
+            <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="19" Margin="379,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" FontFamily="Berlin Sans FB" FontSize="18"/>
+            <Button x:Name="btnSearch" HorizontalAlignment="Left" Margin="613,155,0,0" VerticalAlignment="Top" Width="38" Height="19" Background="#289cff">
+                <StackPanel>
+                    <Image Source="Images\search.png" Height="18" Width="20" />
+
+                </StackPanel>
+            </Button>
+            <Image HorizontalAlignment="Left" Margin="0,197,-0.4,0" VerticalAlignment="Top" Width="686" Source="Images\bg blue light.jpg" Stretch="Fill"/>
+
+            <StackPanel x:Name="memberList" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,260,0,0" Width="572" Height="Auto">
 
             </StackPanel>
-        </Button>
-        <Image HorizontalAlignment="Left" Margin="0,197,-0.4,0" VerticalAlignment="Top" Width="686" Source="Images\bg blue light.jpg" Stretch="Fill"/>
 
-        <StackPanel x:Name="memberList" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,260,0,0" Width="572" Height="Auto">
+            <Label x:Name="lblClubName" HorizontalAlignment="Left" Margin="222,213,0,0" VerticalAlignment="Top" Width="249"  HorizontalContentAlignment="Center" FontFamily="Berlin Sans FB" FontSize="20"/>
+            <Button x:Name="btnBack" HorizontalAlignment="Left" Margin="27,83,0,0" VerticalAlignment="Top" Width="75" Height="38" Background="#c0c0c0" BorderThickness="0" Click="btnBlack_Click">
+                <StackPanel>
+                    <Image Source="Images\Back button.png" Height="36" Width="50"/>
 
-        </StackPanel>
-
-        <Label x:Name="lblClubName" HorizontalAlignment="Left" Margin="222,213,0,0" VerticalAlignment="Top" Width="249"  HorizontalContentAlignment="Center" FontFamily="Berlin Sans FB" FontSize="20"/>
-        <Button x:Name="btnBack" HorizontalAlignment="Left" Margin="27,83,0,0" VerticalAlignment="Top" Width="75" Height="38" Background="#c0c0c0" BorderThickness="0" Click="btnBlack_Click">
-            <StackPanel>
-                <Image Source="Images\Back button.png" Height="36" Width="50"/>
-
-            </StackPanel>
-        </Button>
-    </Grid>
+                </StackPanel>
+            </Button>
+        </Grid>
+    </ScrollViewer>
 </Window>

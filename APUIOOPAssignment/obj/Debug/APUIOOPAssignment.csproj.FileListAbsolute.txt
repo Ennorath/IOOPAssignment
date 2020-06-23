@@ -14,19 +14,14 @@ C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\bin\Deb
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Add Club.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Admin Page.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club List Admin.g.cs
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\ClubListRepresentative.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Create Weekly Updates.g.cs
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit News.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit Representative.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\MainWindow.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member Home.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Members and Representative.g.cs
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\News List Admin.g.cs
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\NewsListMember.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\RegisterWindow.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Representative.g.cs
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Sports_Hobbies_Details.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Weekly Updates Representative.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Weekly Updates.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\App.g.cs
@@ -36,19 +31,14 @@ C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Deb
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Add Club.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Admin Page.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club List Admin.baml
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\ClubListRepresentative.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Create Weekly Updates.baml
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit News.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit Representative.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\MainWindow.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member Home.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Member.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Members and Representative.baml
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\News List Admin.baml
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\NewsListMember.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\RegisterWindow.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Representative.baml
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Sports_Hobbies_Details.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Weekly Updates Representative.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Weekly Updates.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.g.resources
@@ -58,7 +48,7 @@ C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Deb
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.exe
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.pdb
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\APUIOOPAssignment.csprojAssemblyReference.cache
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\News.g.cs
-C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\News.baml
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit Club.g.cs
 C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Edit Club.baml
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club_Details.g.cs
+C:\Users\Ennorath\source\repos\Ennorath\IOOPAssignment\APUIOOPAssignment\obj\Debug\Club_Details.baml

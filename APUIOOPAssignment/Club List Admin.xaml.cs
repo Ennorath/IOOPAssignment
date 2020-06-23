@@ -42,7 +42,10 @@ namespace APUIOOPAssignment
                 clubBox.Margin = new Thickness(fromLeft, fromTop, 0, 0);
 
                 Image newImage = new Image();
-                newImage.Source = convertImage.toPicture(clubImages[i]);
+                if (clubImages[i].Length != 0)
+                    newImage.Source = convertImage.toPicture(clubImages[i]);
+                else
+                    newImage.Source = new BitmapImage(new Uri(@"\Images\No Image News.jpg", UriKind.Relative));
                 newImage.Height = 135;
                 newImage.Width = 135;
                 newImage.HorizontalAlignment = HorizontalAlignment.Left;

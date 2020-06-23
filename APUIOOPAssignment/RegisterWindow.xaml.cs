@@ -37,9 +37,12 @@ namespace APUIOOPAssignment
             string Surname = SurnameBox.Text;
             string Email = EmailBox.Text;
             string StudentTP = StudentTPBox.Text;
-            string Password = PasswordBox.Text;
-            string RPassword = RPasswordBox.Text;
-            Authorization.Register(FirstName, Surname, Email, StudentTP, Password, RPassword);
+            string Password = PasswordBox.Password;
+            string RPassword = RPasswordBox.Password;
+            if (Password == RPassword)
+                Authorization.checkLogin(FirstName, Surname, Email, StudentTP, Password, RPassword);
+            else
+                MessageBox.Show("Password and repeated password are not same");
         }
     }
 }

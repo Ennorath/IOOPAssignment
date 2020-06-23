@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
-        Title="Create_Weekly_Updates" Height="1230.1" Width="654.8">
+        Title="Create_Weekly_Updates" Height="700" Width="654.8">
+    <ScrollViewer>
     <Grid>
         <Image HorizontalAlignment="Left" Height="81" VerticalAlignment="Top" Width="650" Source="Images\BG up.jpg"/>
         <Image HorizontalAlignment="Left" Height="62" Margin="0,68,0,0" VerticalAlignment="Top" Width="648" Source="Images\Weekly updates UP BG.jpg"/>
@@ -689,4 +690,5 @@
         </Button>
 
     </Grid>
+   </ScrollViewer>
 </Window>

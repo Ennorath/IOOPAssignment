@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
-        Title="RegisterWindow" Height="520" Width="960">
+        Title="RegisterWindow" ResizeMode="NoResize" Height="520" Width="960">
     <Window.Resources>
         <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3"/>
         <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF7EB4EA"/>
@@ -127,8 +127,8 @@
             <TextBox HorizontalAlignment="Left" Height="24" Margin="182,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" FontFamily="Berlin Sans FB" FontSize="20" x:Name="SurnameBox" Style="{DynamicResource TextBoxStyle1}"/>
             <TextBox HorizontalAlignment="Left" Height="24" Margin="182,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" FontFamily="Berlin Sans FB" FontSize="20" x:Name="EmailBox" Style="{DynamicResource TextBoxStyle1}"/>
             <TextBox HorizontalAlignment="Left" Height="24" Margin="182,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" FontFamily="Berlin Sans FB" FontSize="20" x:Name="StudentTPBox" Style="{DynamicResource TextBoxStyle1}"/>
-            <TextBox HorizontalAlignment="Left" Height="24" Margin="182,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" FontFamily="Berlin Sans FB" FontSize="20" x:Name="PasswordBox" Style="{DynamicResource TextBoxStyle1}"/>
-            <TextBox HorizontalAlignment="Left" Height="24" Margin="182,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" FontFamily="Berlin Sans FB" FontSize="20" x:Name="RPasswordBox" Style="{DynamicResource TextBoxStyle1}"/>
+            <PasswordBox HorizontalAlignment="Left" Height="24" Margin="182,324,0,0" VerticalAlignment="Top" Width="335" FontFamily="Berlin Sans FB" FontSize="20" x:Name="PasswordBox"/>
+            <PasswordBox HorizontalAlignment="Left" Height="24" Margin="182,366,0,0" VerticalAlignment="Top" Width="335" FontFamily="Berlin Sans FB" FontSize="20" x:Name="RPasswordBox"/>
             <Button x:Name="RegisterBtn" Content="Register" HorizontalAlignment="Left" Margin="97,421,0,0" VerticalAlignment="Top" Width="143" Height="53" FontSize="36" FontFamily="Berlin Sans FB" Background="#FFF15B5B" Style="{DynamicResource ButtonStyle1}" Click="RegisterBtn_Click"/>
             <Button x:Name="LoginBtn" Content="Log in -&gt;" HorizontalAlignment="Left" Margin="412,427,0,0" VerticalAlignment="Top" Width="105" Height="36" FontSize="22" FontFamily="Berlin Sans FB" Background="White" Style="{DynamicResource ButtonStyle1}" Click="LoginBtn_Click" Foreground="Black" BorderBrush="White"/>
         </Grid>

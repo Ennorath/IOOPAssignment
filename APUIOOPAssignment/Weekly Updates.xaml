@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
-        Title="Weekly_Updates" Height="1026.44" Width="652.8">
+        Title="Weekly_Updates" Height="700" Width="652.8">
     <Window.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
@@ -63,6 +63,7 @@
             </Setter>
         </Style>
     </Window.Resources>
+    <ScrollViewer>
     <Grid>
         <Image HorizontalAlignment="Left" Height="729" Margin="0,133,0,0" VerticalAlignment="Top" Width="650" Source="Images\red BG.jpg" Stretch="UniformToFill"/>
         <Image HorizontalAlignment="Left" Height="713" Margin="390,145,0,0" VerticalAlignment="Top" Width="231" Source="Images\bg Grey light.jpg" Stretch="UniformToFill"/>
@@ -71,7 +72,7 @@
 
         <Image HorizontalAlignment="Left" Height="68" Margin="0,69,0,0" VerticalAlignment="Top" Width="650" Source="Images\Weekly Updates UP.jpg"/>
         <Image HorizontalAlignment="Left" Height="81" VerticalAlignment="Top" Width="650" Source="Images\BG up.jpg"/>
-        <Image HorizontalAlignment="Left" Height="233" Margin="29,183,0,0" VerticalAlignment="Top" Width="378" RenderTransformOrigin="0.492,0.476" Source="Images\No Image News.jpg"/>
+        <Image x:Name="weeklyImg" HorizontalAlignment="Left" Height="233" Margin="29,183,0,0" VerticalAlignment="Top" Width="378" RenderTransformOrigin="0.492,0.476" Source="Images\No Image News.jpg"/>
         <Label x:Name="lblCurrentHeadline" Content="Headline" HorizontalAlignment="Left" Margin="45,435,0,0" VerticalAlignment="Top" Width="345" Height="65" FontFamily="Berlin Sans FB" FontSize="20"/>
         <Label x:Name="lblCurrentClub" Content="APU Basketball club" HorizontalAlignment="Left" Margin="45,505,0,0" VerticalAlignment="Top" Width="345" Height="26" FontFamily="Berlin Sans FB" FontSize="14" Foreground="#626262"/>
         <Label x:Name="lblCurrentDescription" Content="Description" HorizontalAlignment="Left" Margin="45,531,0,0" VerticalAlignment="Top" Width="345" Height="101" FontFamily="Berlin Sans FB" FontSize="14"/>
@@ -79,30 +80,42 @@
         <Label x:Name="lblCurrentDescription_Copy1" Content="Time" HorizontalAlignment="Left" Margin="45,681,0,0" VerticalAlignment="Top" Width="81" Height="27" FontFamily="Berlin Sans FB" FontSize="14"/>
         <Label x:Name="lblCurrentDescription_Copy2" Content="Location" HorizontalAlignment="Left" Margin="45,717,0,0" VerticalAlignment="Top" Width="81" Height="27" FontFamily="Berlin Sans FB" FontSize="14"/>
         <Label x:Name="lblCurrentDescription_Copy3" Content="Achievement" HorizontalAlignment="Left" Margin="45,753,0,0" VerticalAlignment="Top" Width="95" Height="27" FontFamily="Berlin Sans FB" FontSize="14"/>
-        <Label x:Name="lblCurrentDescription_Copy4" Content="06/01/2001" HorizontalAlignment="Left" Margin="168,646,0,0" VerticalAlignment="Top" Width="222" Height="27" FontFamily="Berlin Sans FB" FontSize="14" Foreground="#626262"/>
-        <Label x:Name="lblCurrentDescription_Copy5" Content="Time" HorizontalAlignment="Left" Margin="168,681,0,0" VerticalAlignment="Top" Width="222" Height="27" FontFamily="Berlin Sans FB" FontSize="14" Foreground="#626262"/>
-        <Label x:Name="lblCurrentDescription_Copy6" Content="APU Hall" HorizontalAlignment="Left" Margin="168,717,0,0" VerticalAlignment="Top" Width="222" Height="27" FontFamily="Berlin Sans FB" FontSize="14" Foreground="#626262"/>
-        <Label x:Name="lblCurrentDescription_Copy7" Content="Bob make goal 1 time" HorizontalAlignment="Left" Margin="168,753,0,0" VerticalAlignment="Top" Width="222" Height="78" FontFamily="Berlin Sans FB" FontSize="14" Foreground="#626262"/>
-        <Button x:Name="btnMoreNews" HorizontalAlignment="Left" Margin="407,816,0,0" VerticalAlignment="Top" Width="214" Height="42" Background="#ffd345">
+        <Label x:Name="lblCurrentDate" Content="06/01/2001" HorizontalAlignment="Left" Margin="168,646,0,0" VerticalAlignment="Top" Width="222" Height="27" FontFamily="Berlin Sans FB" FontSize="14" Foreground="#626262"/>
+        <Label x:Name="lblCurrentTime" Content="Time" HorizontalAlignment="Left" Margin="168,681,0,0" VerticalAlignment="Top" Width="222" Height="27" FontFamily="Berlin Sans FB" FontSize="14" Foreground="#626262"/>
+        <Label x:Name="lblCurrentLocation" Content="APU Hall" HorizontalAlignment="Left" Margin="168,717,0,0" VerticalAlignment="Top" Width="222" Height="27" FontFamily="Berlin Sans FB" FontSize="14" Foreground="#626262"/>
+        <Label x:Name="lblCurrentAchievement" Content="Bob make goal 1 time" HorizontalAlignment="Left" Margin="168,753,0,0" VerticalAlignment="Top" Width="222" Height="78" FontFamily="Berlin Sans FB" FontSize="14" Foreground="#626262"/>
+        <Button x:Name="btnMoreNews" HorizontalAlignment="Left" Margin="407,816,0,0" VerticalAlignment="Top" Width="214" Height="42" Background="#ffd345" Click="btnMoreNews_Click">
             <StackPanel>
                 <Image Source="Images\More news.png" Height="28" Width="195"/>
 
             </StackPanel>
         </Button>
-        <Image x:Name="picNews1" HorizontalAlignment="Left" Height="106" Margin="429,194,0,0" VerticalAlignment="Top" Width="172" Source="Images\No Image News.jpg"/>
+        <Button Name="weekly1" HorizontalAlignment="Left" Height="110" Margin="427,194,0,0" VerticalAlignment="Top" Width="176" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="weekly_Click" >
+            <StackPanel>
+                <Image x:Name="picNews1" Source="Images\No Image News.jpg"/>
+            </StackPanel>
+        </Button>
         <Image HorizontalAlignment="Left" Height="78" Margin="429,300,0,0" VerticalAlignment="Top" Width="172" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
         <Label x:Name="lblHeadline1" Content="Headline 1" HorizontalAlignment="Left" Margin="435,300,0,0" VerticalAlignment="Top" Width="161" Height="51" FontFamily="Berlin Sans FB" FontSize="11"/>
         <Label x:Name="lblDate1" Content="01/05/2020" HorizontalAlignment="Left" Margin="435,351,0,0" VerticalAlignment="Top" Width="117" Height="27" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
-        <Image x:Name="picNews1_Copy" HorizontalAlignment="Left" Height="106" Margin="429,402,0,0" VerticalAlignment="Top" Width="172" Source="Images\No Image News.jpg"/>
+        <Button Name="weekly2" HorizontalAlignment="Left" Height="110" Margin="427,402,0,0" VerticalAlignment="Top" Width="176" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="weekly_Click" >
+            <StackPanel>
+                <Image x:Name="picNews2" Source="Images\No Image News.jpg"/>
+            </StackPanel>
+        </Button>
         <Image HorizontalAlignment="Left" Height="78" Margin="429,508,0,0" VerticalAlignment="Top" Width="172" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
-        <Label x:Name="lblHeadline1_Copy" Content="Headline 1" HorizontalAlignment="Left" Margin="435,508,0,0" VerticalAlignment="Top" Width="161" Height="51" FontFamily="Berlin Sans FB" FontSize="11"/>
-        <Label x:Name="lblDate1_Copy" Content="01/05/2020" HorizontalAlignment="Left" Margin="435,559,0,0" VerticalAlignment="Top" Width="117" Height="27" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
-        <Image x:Name="picNews1_Copy1" HorizontalAlignment="Left" Height="106" Margin="429,612,0,0" VerticalAlignment="Top" Width="172" Source="Images\No Image News.jpg"/>
+        <Label x:Name="lblHeadline2" Content="Headline 1" HorizontalAlignment="Left" Margin="435,508,0,0" VerticalAlignment="Top" Width="161" Height="51" FontFamily="Berlin Sans FB" FontSize="11"/>
+        <Label x:Name="lblDate2" Content="01/05/2020" HorizontalAlignment="Left" Margin="435,559,0,0" VerticalAlignment="Top" Width="117" Height="27" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
+        <Button Name="weekly3" HorizontalAlignment="Left" Height="110" Margin="427,612,0,0" VerticalAlignment="Top" Width="176" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="weekly_Click" >
+            <StackPanel>
+                <Image x:Name="picNews3" Source="Images\No Image News.jpg"/>
+            </StackPanel>
+        </Button>
         <Image HorizontalAlignment="Left" Height="78" Margin="429,718,0,0" VerticalAlignment="Top" Width="172" Source="Images\White bg.jpg" Stretch="UniformToFill"/>
-        <Label x:Name="lblHeadline1_Copy1" Content="Headline 1" HorizontalAlignment="Left" Margin="435,718,0,0" VerticalAlignment="Top" Width="161" Height="51" FontFamily="Berlin Sans FB" FontSize="11"/>
-        <Label x:Name="lblDate1_Copy1" Content="01/05/2020" HorizontalAlignment="Left" Margin="435,769,0,0" VerticalAlignment="Top" Width="117" Height="27" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
+        <Label x:Name="lblHeadline3" Content="Headline 1" HorizontalAlignment="Left" Margin="435,718,0,0" VerticalAlignment="Top" Width="161" Height="51" FontFamily="Berlin Sans FB" FontSize="11"/>
+        <Label x:Name="lblDate3" Content="01/05/2020" HorizontalAlignment="Left" Margin="435,769,0,0" VerticalAlignment="Top" Width="117" Height="27" FontFamily="Berlin Sans FB" FontSize="11" Foreground="#626262"/>
         <Label Content="Latest Post" HorizontalAlignment="Left" Margin="454,145,0,0" VerticalAlignment="Top" Width="123" Height="44" FontFamily="Berlin Sans FB" FontSize="24"/>
-        <Image HorizontalAlignment="Left" Margin="0,858,-3.6,-4.2" Width="650" Source="Images\BG down.jpg"/>
+            <Image HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,855,0,0" Height="140" Width="650" Source="Images\BG down.jpg"/>
         <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="22" Margin="324,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" FontFamily="Berlin Sans FB" FontSize="18"/>
         <Button x:Name="btnSearch" HorizontalAlignment="Left" Margin="586,91,0,0" VerticalAlignment="Top" Width="44" Height="22" Background="#289cff">
             <StackPanel>
@@ -115,4 +128,5 @@
         <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" Margin="29,25,0,0" VerticalAlignment="Top" Width="74" Height="27" FontFamily="Berlin Sans FB" Background="#FFF15B5B" Style="{DynamicResource ButtonStyle1}" Click="btnHome_Click" Foreground="White"/>
 
     </Grid>
+  </ScrollViewer>
 </Window>

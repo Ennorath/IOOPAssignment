@@ -17,6 +17,60 @@ namespace APUIOOPAssignment
     {
         private const string connectionString = @"SERVER=31.31.198.66;DATABASE=u0994893_ioopproject;USER ID=u0994893_ioop;PASSWORD=SanatovD;";
 
+        public static void checkLogin(string FirstName, string Surname, string email, string username, string Password, string RPassword)
+        {
+            if (!(username == null && email == null))
+            {
+                try
+                {
+                    using (MySqlConnection MySqlConn = new MySqlConnection(connectionString))
+                    {
+                        string receivedTP = "";
+                        string receivedEmail = "";
+                        string query = $"SELECT TP FROM Members WHERE TP = @username";
+                        MySqlCommand cmd = new MySqlCommand(query, MySqlConn);
+                        cmd.Parameters.AddWithValue("@username", username);
+                        MySqlConn.Open();
+                        MySqlDataReader sqlreader = cmd.ExecuteReader();
+                        while (sqlreader.Read())
+                        {
+                            receivedTP = sqlreader[0].ToString();
+                        }
+                        sqlreader.Close();
+                        query = $"SELECT email FROM Members WHERE email = @email";
+                        cmd = new MySqlCommand(query, MySqlConn);
+                        cmd.Parameters.AddWithValue("@email", email);
+                        sqlreader = cmd.ExecuteReader();
+                        while (sqlreader.Read())
+                        {
+                            receivedEmail = sqlreader[0].ToString();
+                        }
+                        sqlreader.Close();
+                        MySqlConn.Close();
+
+                        if (receivedTP == username)
+                        {
+                            MessageBox.Show("Login already exists");
+                        } else if (receivedEmail == email) {
+                            MessageBox.Show("Email already exists");
+                        }
+                        else
+                        {
+                            Register(FirstName, Surname, email, username, Password, RPassword);
+                        }
+                    }
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show("Error: " + e);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Empty username or email field");
+            }
+        }
+
         public static void Login(string username, string password) {
             if (!(username == null && password == null))
             {

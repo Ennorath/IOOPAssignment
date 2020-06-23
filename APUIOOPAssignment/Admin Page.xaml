@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
-        Title="Admin_Page" Height="675.4" Width="916">
+        Title="Admin_Page" ResizeMode="NoResize" Height="760" Width="916">
     <ScrollViewer>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -14,7 +14,7 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="46*"/>
-                <RowDefinition Height="59*"/>
+                <RowDefinition Height="0"/>
             </Grid.RowDefinitions>
             <Image HorizontalAlignment="Left" Height="734" VerticalAlignment="Top" Width="895" Grid.ColumnSpan="2" Source="Images\Admin BG.jpg" Grid.RowSpan="2" Margin="0,0,-2.2,0"/>
             <Button x:Name="btnAddClub" Background="#33d3b7" HorizontalAlignment="Left" Margin="131,237,0,0" VerticalAlignment="Top" Width="311" Height="233" Grid.ColumnSpan="2" Click="btnClub_Click">
@@ -23,17 +23,18 @@
 
                 </StackPanel>
             </Button>
-            <Button x:Name="btnViewMember" Margin="287.4,380,84.8,309.2" Background="#69efff" Click="btnViewMember_Click" Grid.Column="1">
+            <Button x:Name="btnViewMember" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="287.4,380,0,0" Width="311" Background="#69efff" Click="btnViewMember_Click" Grid.Column="1">
                 <StackPanel>
                     <Image Source="Images/view as member.png" Height="86" Width="256"/>
 
                 </StackPanel>
             </Button>
-            <Button x:Name="btnEditRepresentative" Margin="287.4,237,84.8,422.2" Background="#ffcf4d" Click="btnEditRepresentative_Click" Grid.Column="1">
+            <Button x:Name="btnEditRepresentative" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="287.4,237,0,0" Width="311" Background="#ffcf4d" Click="btnEditRepresentative_Click" Grid.Column="1">
                 <StackPanel>
                     <Image Source="/Images/Edit Representative.png" Height="95" Width="256"/>
                 </StackPanel>
             </Button>
+            <Button x:Name="exit" Content="Exit" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="201,620,0,0" Height="40" Width="100" Background="#FFFF6565" FontFamily="Berlin Sans FB" FontSize="24" Click="exit_Click" Grid.Column="1"/>
 
 
         </Grid>
