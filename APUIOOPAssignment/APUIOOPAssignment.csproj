@@ -149,7 +149,6 @@
     <Compile Include="Members and Representative.xaml.cs">
       <DependentUpon>Members and Representative.xaml</DependentUpon>
     </Compile>
-    <Compile Include="News.cs" />
     <Compile Include="RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>
