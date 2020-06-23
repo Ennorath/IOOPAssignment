@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
-        Title="Club_Details" Height="700"  Width="816.8">
+        Title="Club_Details" Height="680" Width="816.8">
     <Window.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
@@ -65,26 +65,26 @@
     </Window.Resources>
     <ScrollViewer>
         <Grid Margin="0,0,-0.4,-2.8">
-            <Image HorizontalAlignment="Left" Margin="0,263,0,642" Width="794"/>
-            <Image HorizontalAlignment="Left" Height="84" VerticalAlignment="Top" Width="794" Source="Images\BG up.jpg" Margin="0,0,-0.4,0"/>
+            <Image HorizontalAlignment="Left" Margin="0,229,0,642" Width="794"/>
+            <Image HorizontalAlignment="Left" Height="84" VerticalAlignment="Top" Width="794" Source="Images\BG up.jpg" Margin="0,0,0,0"/>
             <Image HorizontalAlignment="Left" Height="81" Margin="0,84,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\Club details UP.jpg"/>
-            <Image HorizontalAlignment="Left" Height="98" Margin="0,165,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\bg Grey.jpg"/>
-            <Image x:Name="picClubLogo" Source="Images\Sport_1.png" HorizontalAlignment="Left" Height="227" Margin="299,309,0,0" VerticalAlignment="Top" Width="235"/>
-            <Label x:Name="lblClubName" HorizontalContentAlignment="Center" Content="APU Taekwondo Club" HorizontalAlignment="Left" Margin="236,564,0,0" VerticalAlignment="Top" Height="46" Width="351" FontFamily="Berlin Sans FB" FontSize="36"/>
-            <Label Content="Club Informartion" HorizontalAlignment="Left" Margin="40,676,0,0" VerticalAlignment="Top" Height="41" Width="216" FontFamily="Berlin Sans FB" FontSize="28" Foreground="#707070"/>
-            <Label Content="Registration date :" HorizontalAlignment="Left" Margin="40,790,0,0" VerticalAlignment="Top" Height="42" Width="216" FontFamily="Berlin Sans FB" FontSize="24" Foreground="#007eff"/>
-            <Label Content="President :" HorizontalAlignment="Left" Margin="40,856,0,0" VerticalAlignment="Top" Height="40" Width="216" FontFamily="Berlin Sans FB" FontSize="24" Foreground="#007eff"/>
-            <Label Content="Vice President :" HorizontalAlignment="Left" Margin="40,918,0,0" VerticalAlignment="Top" Height="42" Width="216" FontFamily="Berlin Sans FB" FontSize="24" Foreground="#007eff"/>
-            <Label Content="Secretary :" HorizontalAlignment="Left" Margin="40,980,0,0" VerticalAlignment="Top" Height="42" Width="216" FontFamily="Berlin Sans FB" FontSize="24" Foreground="#007eff"/>
-            <Label Content="Description :" HorizontalAlignment="Left" Margin="40,1050,0,0" VerticalAlignment="Top" Height="42" Width="216" FontFamily="Berlin Sans FB" FontSize="24" Foreground="#007eff"/>
-            <Label x:Name="lblDate" Content="29 February 2016" HorizontalAlignment="Left" Margin="281,790,0,0" VerticalAlignment="Top" Height="42" Width="437" FontFamily="Berlin Sans FB" FontSize="24"/>
-            <Label x:Name="lblPresident" Content="Tan Sen Seng" HorizontalAlignment="Left" Margin="281,856,0,0" VerticalAlignment="Top" Height="40" Width="437" FontFamily="Berlin Sans FB" FontSize="24" />
-            <Label x:Name="lblVice" Content="abcdefg" HorizontalAlignment="Left" Margin="281,918,0,0" VerticalAlignment="Top" Height="42" Width="437" FontFamily="Berlin Sans FB" FontSize="24"/>
-            <Label x:Name="lblSecretary" Content="uvwxyz" HorizontalAlignment="Left" Margin="281,980,0,0" VerticalAlignment="Top" Height="42" Width="437" FontFamily="Berlin Sans FB" FontSize="24"/>
-            <Label x:Name="lblDescription" Content="It's a club man" HorizontalAlignment="Left" Margin="281,1050,0,0" VerticalAlignment="Top" Height="312" Width="437" FontFamily="Berlin Sans FB" FontSize="24"/>
+            <Image HorizontalAlignment="Left" Height="80" Margin="0,165,-1.6,0" VerticalAlignment="Top" Width="794" Source="Images\bg Grey1.jpg"/>
+            <Image x:Name="picClubLogo" Source="Images\Sport_1.png" HorizontalAlignment="Left" Height="140" Margin="340,240,0,0" VerticalAlignment="Top" Width="140"/>
+            <Label x:Name="lblClubName" HorizontalContentAlignment="Center" Content="APU Taekwondo Club" HorizontalAlignment="Left" Margin="236,380,0,0" VerticalAlignment="Top" Height="46" Width="351" FontFamily="Berlin Sans FB" FontSize="36"/>
+            <Label Content="Club Informartion" HorizontalAlignment="Left" Margin="40,420,0,0" VerticalAlignment="Top" Height="41" Width="216" FontFamily="Berlin Sans FB" FontSize="28" Foreground="#707070"/>
+            <Label Content="Registration date :" HorizontalAlignment="Left" Margin="40,460,0,0" VerticalAlignment="Top" Height="42" Width="216" FontFamily="Berlin Sans FB" FontSize="24" Foreground="#007eff"/>
+            <Label Content="President :" HorizontalAlignment="Left" Margin="40,500,0,0" VerticalAlignment="Top" Height="40" Width="216" FontFamily="Berlin Sans FB" FontSize="24" Foreground="#007eff"/>
+            <Label Content="Vice President :" HorizontalAlignment="Left" Margin="40,540,0,0" VerticalAlignment="Top" Height="42" Width="216" FontFamily="Berlin Sans FB" FontSize="24" Foreground="#007eff"/>
+            <Label Content="Secretary :" HorizontalAlignment="Left" Margin="40,580,0,0" VerticalAlignment="Top" Height="42" Width="216" FontFamily="Berlin Sans FB" FontSize="24" Foreground="#007eff"/>
+            <Label Content="Description :" HorizontalAlignment="Left" Margin="40,620,0,0" VerticalAlignment="Top" Height="42" Width="216" FontFamily="Berlin Sans FB" FontSize="24" Foreground="#007eff"/>
+            <Label x:Name="lblDate" Content="29 February 2016" HorizontalAlignment="Left" Margin="281,460,0,0" VerticalAlignment="Top" Height="42" Width="437" FontFamily="Berlin Sans FB" FontSize="24"/>
+            <Label x:Name="lblPresident" Content="Tan Sen Seng" HorizontalAlignment="Left" Margin="281,500,0,0" VerticalAlignment="Top" Height="40" Width="437" FontFamily="Berlin Sans FB" FontSize="24" />
+            <Label x:Name="lblVice" Content="abcdefg" HorizontalAlignment="Left" Margin="281,540,0,0" VerticalAlignment="Top" Height="42" Width="437" FontFamily="Berlin Sans FB" FontSize="24"/>
+            <Label x:Name="lblSecretary" Content="uvwxyz" HorizontalAlignment="Left" Margin="281,580,0,0" VerticalAlignment="Top" Height="42" Width="437" FontFamily="Berlin Sans FB" FontSize="24"/>
+            <Label x:Name="lblDescription" Content="It's a club man" HorizontalAlignment="Left" Margin="281,620,0,0" VerticalAlignment="Top" Height="312" Width="437" FontFamily="Berlin Sans FB" FontSize="24"/>
             <Image HorizontalAlignment="Left" Height="174" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="794" Source="Images\BG down.jpg"/>
-            <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="40,193,0,0" VerticalAlignment="Top" Width="127" Height="43" FontSize="24" FontFamily="Berlin Sans FB" Background="#FFF15B5B" Style="{DynamicResource ButtonStyle1}" Click="btnBack_Click" Foreground="White"/>
-            <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" Margin="203,193,0,0" VerticalAlignment="Top" Width="127" Height="43" FontSize="24" FontFamily="Berlin Sans FB" Background="#FFF15B5B" Style="{DynamicResource ButtonStyle1}" Click="btnHome_Click" Foreground="White"/>
+            <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="40,174,0,0" VerticalAlignment="Top" Width="127" Height="43" FontSize="24" FontFamily="Berlin Sans FB" Background="#FFF15B5B" Style="{DynamicResource ButtonStyle1}" Click="btnBack_Click" Foreground="White"/>
+            <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" Margin="202,174,0,0" VerticalAlignment="Top" Width="126" Height="43" FontSize="24" FontFamily="Berlin Sans FB" Background="#FFF15B5B" Style="{DynamicResource ButtonStyle1}" Click="btnHome_Click" Foreground="White"/>
             <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="27" Margin="370,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318" FontFamily="Berlin Sans FB" FontSize="18"/>
             <Button x:Name="btnSearch" HorizontalAlignment="Left" Margin="688,112,0,0" VerticalAlignment="Top" Width="53" Height="27" Background="#289cff">
                 <StackPanel>
@@ -94,7 +94,7 @@
             </Button>
             <Label Content="Type :" HorizontalAlignment="Left" Margin="40,726,0,0" VerticalAlignment="Top" Height="42" Width="216" FontFamily="Berlin Sans FB" FontSize="24" Foreground="#007eff"/>
             <Label x:Name="lblType" Content="Sports" HorizontalAlignment="Left" Margin="281,726,0,0" VerticalAlignment="Top" Height="42" Width="437" FontFamily="Berlin Sans FB" FontSize="24"/>
-            <Button x:Name="joinBtn" Content="Join" HorizontalAlignment="Left" Margin="636,309,0,0" VerticalAlignment="Top" Width="128" Height="43" FontSize="24" FontFamily="Berlin Sans FB" Background="#FF00D300" Style="{DynamicResource ButtonStyle1}" Foreground="White" Click="joinBtn_Click"/>
+            <Button x:Name="joinBtn" Content="Join" HorizontalAlignment="Left" Margin="636,290,0,0" VerticalAlignment="Top" Width="128" Height="43" FontSize="24" FontFamily="Berlin Sans FB" Background="#FF00D300" Style="{DynamicResource ButtonStyle1}" Foreground="White" Click="joinBtn_Click"/>
         </Grid>
     </ScrollViewer>
 </Window>

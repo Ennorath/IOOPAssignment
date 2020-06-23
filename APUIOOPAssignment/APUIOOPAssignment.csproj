@@ -414,6 +414,7 @@
     <Content Include="bin\Debug\APUIOOPAssignment.pdb" />
     <Content Include="bin\Debug\BouncyCastle.Crypto.dll" />
     <Content Include="bin\Debug\Google.Protobuf.dll" />
+    <Resource Include="Images\bg Grey1.jpg" />
     <Resource Include="Images\editClubBG.jpg" />
     <Resource Include="Images\68113909-stone-grunge-abstract-wall-stone-background-texture-cracked-texture-used-design-for-background.jpg" />
     <Resource Include="Images\Add News clicked.png" />
