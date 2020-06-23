@@ -5,30 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:APUIOOPAssignment"
         mc:Ignorable="d"
-        Title="Representative" ResizeMode="NoResize" Height="813.6" Width="800">
-    <Grid>
+        Title="Representative" ResizeMode="NoResize" Height="700" Width="800">
+
+    <ScrollViewer>
+        <Grid>
         <Image HorizontalAlignment="Left" Height="456" Margin="0,158,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\red BG.jpg" Stretch="UniformToFill"/>
         <Image HorizontalAlignment="Left" Height="84" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0" Source="Images\BG up.jpg"/>
         <Image HorizontalAlignment="Left" Height="74" Margin="0,84,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\What BG.jpg"/>
         <Image HorizontalAlignment="Left" Height="174" Margin="0,614,-0.4,0" VerticalAlignment="Top" Width="794" Source="Images\BG down.jpg"/>
-        <Button x:Name="btnWeekly" Margin="50,211,436.6,340" Click="btnWeekly_Click" Background="#d349e7">
+        <Button x:Name="btnWeekly" HorizontalAlignment="Left" Height="220" VerticalAlignment="Top" Width="320" Margin="50,211,0,0" Click="btnWeekly_Click" Background="#d349e7">
             <StackPanel>
                 <Image Source="Images/Weekly Updates.png" Width="257" Height="164" />
             </StackPanel>
         </Button>
-        <Button x:Name="btnClubInfo" Margin="432,211,50.6,340" Background="#33d3b7" Click="ButtonClubInfo_Click">
+        <Button x:Name="btnClubInfo" HorizontalAlignment="Left" Height="220" VerticalAlignment="Top" Width="320" Margin="432,211,0,0" Background="#33d3b7" Click="ButtonClubInfo_Click">
             <StackPanel>
                 <Image Source="Images/btn club.png" Height="146" Width="256" />
 
             </StackPanel>
         </Button>
-        <Button x:Name="btnViewMember" Margin="246,491,236.6,201" Background="#69efff" Click="btnViewMember_Click">
+        <Button x:Name="btnViewMember" HorizontalAlignment="Left" Height="110" VerticalAlignment="Top" Width="320" Margin="245,470,0,0" Background="#69efff" Click="btnViewMember_Click">
             <StackPanel>
                 <Image Source="Images/view as member.png" Height="86" Width="256"/>
 
             </StackPanel>
         </Button>
-        <Button x:Name="exit" Content="Exit" Margin="341,689,359,51" Background="#FFFF6565" FontFamily="Berlin Sans FB" FontSize="24" Click="exit_Click">
+        <Button x:Name="exit" Content="Exit" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="80"  Margin="341,689,0,0" Background="#FFFF6565" FontFamily="Berlin Sans FB" FontSize="24" Click="exit_Click">
         </Button>
     </Grid>
+    </ScrollViewer>
 </Window>
