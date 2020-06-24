@@ -23,7 +23,6 @@ namespace APUIOOPAssignment
         public Member()
         {
             InitializeComponent();
-
             List<string> clubID = new List<string>();
             List<string> clubNames = new List<string>();
             List<byte[]> clubImages = new List<byte[]>();
@@ -33,8 +32,6 @@ namespace APUIOOPAssignment
             drawClubs(clubID, clubNames, clubImages, Societies);
             clubImages = Database.takeOtherClubs(out clubID, out clubNames);
             drawClubs(clubID, clubNames, clubImages, Others);
-
-
         }
 
         private void drawClubs(List<string> clubID, List<string> clubNames, List<byte[]> clubImages, Grid stack) {

@@ -80,9 +80,17 @@ namespace APUIOOPAssignment
 
         private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
-            Representative R = new Representative();
-            R.Show();
-            this.Close();
+            if (Properties.Settings.Default.role == "1")
+            {
+                Representative R = new Representative();
+                R.Show();
+                this.Close();
+            }
+            else if (Properties.Settings.Default.role == "2") {
+                Admin_Page AP = new Admin_Page();
+                AP.Show();
+                this.Close();
+            }
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)

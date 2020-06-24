@@ -47,9 +47,7 @@ namespace APUIOOPAssignment
 
         public static byte[] clubImg(string clubID)
         {
-            UInt32 FileSize;
             byte[] Data;
-            Bitmap outImage;
             try
             {
                 MySqlConnection connection = new MySqlConnection(connectionString);
@@ -117,23 +115,12 @@ namespace APUIOOPAssignment
                         while (club.Read())
                         {
                             clubID.Add(club.GetString("clubID"));
-                            //clubDetails.Add(club.GetString("Image"));
                             clubNames.Add(club.GetString("ClubName"));
-                            //clubIDS += $"{club.GetInt32("clubID")}";
-                            //clubNamess += $"{club.GetString("ClubName")}";
                         }
                     }
                     foreach (string id in clubID)
                     {
-                        query = "SELECT Image FROM Clubs WHERE clubID = @id";
-                        DataSet ds = new DataSet();
-                        cmd = new MySqlCommand(query, MySqlConn);
-                        cmd.Parameters.AddWithValue("@id", id);
-                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                        MySqlConn.Close();
-                        da.Fill(ds);
-                        clubImages.Add((byte[])ds.Tables[0].Rows[0][0]);
-                        cmd.Dispose();
+                        clubImages.Add(clubImg(id));
                     }
                     return clubImages;
                 }
@@ -168,15 +155,7 @@ namespace APUIOOPAssignment
                     }
                     foreach (string id in clubID)
                     {
-                        query = "SELECT Image FROM Clubs WHERE clubID = @id";
-                        DataSet ds = new DataSet();
-                        cmd = new MySqlCommand(query, MySqlConn);
-                        cmd.Parameters.AddWithValue("@id", id);
-                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                        MySqlConn.Close();
-                        da.Fill(ds);
-                        clubImages.Add((byte[])ds.Tables[0].Rows[0][0]);
-                        cmd.Dispose();
+                        clubImages.Add(clubImg(id));
                     }
                     return clubImages;
                 }
@@ -214,15 +193,7 @@ namespace APUIOOPAssignment
                     }
                     foreach (string id in clubID)
                     {
-                        query = "SELECT Image FROM Clubs WHERE clubID = @id";
-                        DataSet ds = new DataSet();
-                        cmd = new MySqlCommand(query, MySqlConn);
-                        cmd.Parameters.AddWithValue("@id", id);
-                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                        MySqlConn.Close();
-                        da.Fill(ds);
-                        clubImages.Add((byte[])ds.Tables[0].Rows[0][0]);
-                        cmd.Dispose();
+                        clubImages.Add(clubImg(id));
                     }
                     return clubImages;
                 }
@@ -236,7 +207,6 @@ namespace APUIOOPAssignment
 
         public static byte[] takeClub(string clubID, out List<string> clubDetails)
         {
-            byte[] Data;
             clubDetails = new List<string>();
             List<byte[]> clubImage = new List<byte[]>();
             try
@@ -263,21 +233,7 @@ namespace APUIOOPAssignment
                             //clubNamess += $"{club.GetString("ClubName")}";
                         }
                     }
-                    query = "SELECT Image FROM Clubs WHERE clubID = @id";
-                    DataSet ds = new DataSet();
-                    cmd = new MySqlCommand(query, MySqlConn);
-                    cmd.Parameters.AddWithValue("@id", clubID);
-                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                    MySqlConn.Close();
-                    if (da != null)
-                    {
-                        da.Fill(ds);
-                        Data = (byte[])ds.Tables[0].Rows[0][0];
-                        cmd.Dispose();
-                        return Data;
-                    }
-                    else
-                        return null;
+                        return clubImg(clubID);
                 }
             }
             catch (MySqlException ex)
