@@ -45,26 +45,30 @@ namespace APUIOOPAssignment
 
         }
 
-        public static byte[] clubImg(string clubID)
+        public static byte[] clubImg(string id, string table, string columnName)
         {
             byte[] Data;
             try
             {
                 MySqlConnection connection = new MySqlConnection(connectionString);
-                string query = "SELECT Image FROM Clubs WHERE clubID = @id";
+                string query = $"SELECT Image FROM {table} WHERE {columnName} = @id";
                 connection.Open();
                 DataSet ds = new DataSet();
                 MySqlCommand cmd = new MySqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@id", clubID);
+                cmd.Parameters.AddWithValue("@id", id);
 
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);
 
                 da.Fill(ds);
                 connection.Close();
-                Data = (byte[])ds.Tables[0].Rows[0][0];
-                cmd.Dispose();
-
-                return Data;
+                if (ds != null)
+                {
+                    Data = (byte[])ds.Tables[0].Rows[0][0];
+                    cmd.Dispose();
+                    return Data;
+                }
+                
+                return null;
 
             }
             catch (MySqlException ex)
@@ -120,7 +124,7 @@ namespace APUIOOPAssignment
                     }
                     foreach (string id in clubID)
                     {
-                        clubImages.Add(clubImg(id));
+                        clubImages.Add(clubImg(id, "Clubs", "clubID"));
                     }
                     return clubImages;
                 }
@@ -155,7 +159,7 @@ namespace APUIOOPAssignment
                     }
                     foreach (string id in clubID)
                     {
-                        clubImages.Add(clubImg(id));
+                        clubImages.Add(clubImg(id, "Clubs", "clubID"));
                     }
                     return clubImages;
                 }
@@ -193,7 +197,7 @@ namespace APUIOOPAssignment
                     }
                     foreach (string id in clubID)
                     {
-                        clubImages.Add(clubImg(id));
+                        clubImages.Add(clubImg(id, "Clubs", "clubID"));
                     }
                     return clubImages;
                 }
@@ -229,11 +233,9 @@ namespace APUIOOPAssignment
                             clubDetails.Add(club.GetString("Vice"));
                             clubDetails.Add(club.GetString("Secretary"));
                             clubDetails.Add(club.GetString("Details"));
-                            //clubIDS += $"{club.GetInt32("clubID")}";
-                            //clubNamess += $"{club.GetString("ClubName")}";
                         }
                     }
-                        return clubImg(clubID);
+                        return clubImg(clubID, "Clubs", "clubID");
                 }
             }
             catch (MySqlException ex)
@@ -273,21 +275,7 @@ namespace APUIOOPAssignment
                             weeklyDetails.Add(club.GetString("Achievement"));
                         }
                     }
-                    query = "SELECT Image FROM WeeklyUpd WHERE weekID = @id";
-                    DataSet ds = new DataSet();
-                    cmd = new MySqlCommand(query, MySqlConn);
-                    cmd.Parameters.AddWithValue("@id", weeklyID);
-                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                    MySqlConn.Close();
-                    if (da != null)
-                    {
-                        da.Fill(ds);
-                        Data = (byte[])ds.Tables[0].Rows[0][0];
-                        cmd.Dispose();
-                        return Data;
-                    }
-                    else
-                        return null;
+                    return clubImg(weeklyID, "WeeklyUpd", "weekID");
                 }
             }
             catch (MySqlException ex)
@@ -433,15 +421,7 @@ namespace APUIOOPAssignment
                     }
                     foreach (string id in weeklyIds)
                     {
-                        query = "SELECT Image FROM WeeklyUpd WHERE weekID = @id";
-                        DataSet ds = new DataSet();
-                        cmd = new MySqlCommand(query, MySqlConn);
-                        cmd.Parameters.AddWithValue("@id", id);
-                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                        MySqlConn.Close();
-                        da.Fill(ds);
-                        weeklyImages.Add((byte[])ds.Tables[0].Rows[0][0]);
-                        cmd.Dispose();
+                        weeklyImages.Add(clubImg(id, "WeeklyUpd", "weekID"));
                     }
                     return weeklyImages;
                 }
@@ -482,21 +462,7 @@ namespace APUIOOPAssignment
                             weekDetails.Add(week.GetString("Achievement"));
                         }
                     }
-                    query = "SELECT Image FROM WeeklyUpd WHERE weekID = @id";
-                    DataSet ds = new DataSet();
-                    cmd = new MySqlCommand(query, MySqlConn);
-                    cmd.Parameters.AddWithValue("@id", weekID);
-                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                    MySqlConn.Close();
-                    if (da != null)
-                    {
-                        da.Fill(ds);
-                        Data = (byte[])ds.Tables[0].Rows[0][0];
-                        cmd.Dispose();
-                        return Data;
-                    }
-                    else
-                        return null;
+                    return clubImg(weekID, "WeeklyUpd", "weekID");
                 }
             }
             catch (MySqlException ex)
@@ -672,15 +638,9 @@ namespace APUIOOPAssignment
                                 weekDates.Add(week.GetString("Date"));
                             }
                         }
-                        query = "SELECT Image FROM WeeklyUpd WHERE weekID = @id";
-                        DataSet ds = new DataSet();
-                        cmd = new MySqlCommand(query, MySqlConn);
-                        cmd.Parameters.AddWithValue("@id", weekID[i]);
-                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                        MySqlConn.Close();
-                        da.Fill(ds);
-                        weekImages.Add((byte[])ds.Tables[0].Rows[0][0]);
-                        cmd.Dispose();
+                    MySqlConn.Close();
+                        weekImages.Add(clubImg(weekID[i], "WeeklyUpd", "weekID"));
+                        
                     }
                     if (weekID.Count - number * 3 > 0)
                     {
@@ -720,17 +680,10 @@ namespace APUIOOPAssignment
                                 weekID = week.GetString("weekID");
                             }
                         }
-                        query = "SELECT Image FROM WeeklyUpd WHERE weekID = @id";
-                        DataSet ds = new DataSet();
-                        cmd = new MySqlCommand(query, MySqlConn);
-                        cmd.Parameters.AddWithValue("@id", weekIDs[number]);
-                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                        MySqlConn.Close();
-                        da.Fill(ds);
-                        weekImage.Add((byte[])ds.Tables[0].Rows[0][0]);
-                        cmd.Dispose();
-                        return weekImage;
+                        
+                        weekImage.Add(clubImg(weekIDs[number], "WeeklyUpd", "weekID"));
                 }
+                return weekImage;
             }
             catch (MySqlException ex)
             {

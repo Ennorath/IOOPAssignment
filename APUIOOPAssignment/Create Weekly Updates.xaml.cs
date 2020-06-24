@@ -26,6 +26,7 @@ namespace APUIOOPAssignment
                 string weeklyId = Weekly_Updates_Representative.SendWeeklyUpdID;
                 List<string> weekDetails = new List<string>();
                 byte[] image = Database.takeWeeklyUpd(weeklyId, out weekDetails);
+                img.Source = convertImage.toPicture(image);
                 txtHeadline.Text = weekDetails[1];
                 txtClubName.Text = weekDetails[2];
                 cmbType.Text = weekDetails[3];
